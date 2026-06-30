@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "html-boilerplate",
+			"path": "."
+		},
+		{
+			"name": "VATREX",
+			"path": "../../../../Downloads/VATREX"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html-boilerplate"
+	}
+}

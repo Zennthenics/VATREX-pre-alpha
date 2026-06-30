@@ -1,0 +1,168 @@
+body{
+  
+    background:rgb(245, 242, 242);
+    
+      color:rgb(8, 8, 8);
+      
+    }
+    .title{
+      
+      text-align: center;
+      
+      background:black;
+      
+      color:#0cbdf8;
+      
+      height:2px;
+      font-size:60px;
+      
+      margin:auto;
+      
+      padding-bottom: 80px;
+      
+      padding-top:20px
+    }
+    .line{
+      color:#0cbdf8;
+      
+      background:#0cbdf8;
+
+      
+      height:3px;
+      
+    }
+    .DES{
+      
+      color:black;
+    
+      background: #005f8b;
+      
+      font-size:30px;
+      
+      text-align:center;
+      
+      height:50px;
+      
+      margin:auto;
+      
+      padding-top:13px;
+      
+    }
+    .start{
+      color:rgb(14, 1, 1); 
+      margin-left:20px;
+    }
+    .shirt1des{
+      color:#8b0000;
+
+      text-align:center;
+
+      font-size:30px;
+
+      height:70px;
+      
+      padding:10px;
+
+      margin-left:10px;
+
+      background:black;
+
+      border:2px white solid;
+      
+      border-radius:6px;
+    }
+    
+      .products {
+        
+        height:500px;
+        
+        display: flex; /* makes the images arranged side by side */
+        
+        justify-content: flex-start; /* Centers the row */
+        
+        gap: 150px;              /* Space between images */
+        
+        align-items: center;
+        
+        margin-top: 20px;
+        
+        height:auto;
+         
+        overflow-x: auto;   /* Enables horizontal scrolling */
+         
+        overflow-y: hidden; /* Prevents scrolling in y axis */
+      
+          white-space: nowrap; /* bte3ml wrap lel text elly w5da space*/
+          padding: 20px;
+      }
+      
+      .products::-webkit-scrollbar {
+          height: 8px;
+      }
+      
+      .product {
+          flex: 0 0 auto; /* Prevents shrinking */
+      }
+
+  .product1 img {
+      width: 550px;
+      height: 550px;
+      object-fit: contain;
+  }
+  .product2 img {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+  }
+  .product3 img {
+    width: 500px;
+    height: 600px;
+    object-fit: contain;}
+    
+    .product4 img {
+
+      margin-top: 30px;
+      width: 600px;
+
+      height: 500px;
+
+      object-fit: contain;
+    }
+    .product5 img{
+      height:450px;
+      width:550px;
+      object-fit:contain;
+    }
+    .PANTS{
+    color:rgb(2, 2, 2);
+    margin-left: 20px;
+    font-size: 30px;
+
+    }
+    .bottoms{
+      height:600px;
+
+      display:flex;
+
+      justify-content:flex-start;
+
+      gap:150px;
+
+      align-items:center ;
+
+      white-space: nowrap;
+      overflow-x: auto;
+
+      overflow-y: hidden;
+      flex: 0 0  auto;
+
+
+    }
+    .pants1 img{
+      height:500px;
+      width:500px;
+    }
+    .pants2 img{
+      height:500px;
+      width:500px;
+    }
