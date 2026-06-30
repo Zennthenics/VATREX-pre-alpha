@@ -134,8 +134,8 @@ body{
       object-fit:contain;
     }
     .PANTS{
-    color:white;
-    margin-top: 20px;
+    color:rgb(2, 2, 2);
+    margin-left: 20px;
     font-size: 30px;
 
     }
