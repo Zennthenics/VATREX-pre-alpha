@@ -1,8 +1,8 @@
 body{
   
-    background:black;
+    background:rgb(245, 242, 242);
     
-      color:white;
+      color:rgb(8, 8, 8);
       
     }
     .title{
@@ -11,7 +11,7 @@ body{
       
       background:black;
       
-      color:#8B0000;
+      color:#0cbdf8;
       
       height:2px;
       font-size:60px;
@@ -23,9 +23,10 @@ body{
       padding-top:20px
     }
     .line{
-      color:#8b0000;
+      color:#0cbdf8;
       
-      background:#8b0000;
+      background:#0cbdf8;
+
       
       height:3px;
       
@@ -34,7 +35,7 @@ body{
       
       color:black;
     
-      background:#8b0000;
+      background: #005f8b;
       
       font-size:30px;
       
@@ -48,25 +49,8 @@ body{
       
     }
     .start{
-      color:white; 
+      color:rgb(14, 1, 1); 
       margin-left:20px;
-    }
-    .shirt1{
-      height:300px;
-
-      width:300px;
-
-      margin-left:20px;
-      
-      border : 2px white solid;
-
-      border-radius:6px;
-        transition: all 0.3s ease;
-        cursor: pointer
-    }
-    .shirt1:hover {
-        transform: translateY(-10px);
-     
     }
     .shirt1des{
       color:#8b0000;
@@ -87,75 +71,7 @@ body{
       
       border-radius:6px;
     }
-    .longsleeve{
-
-      transition: all 0.3s ease;
-
-        cursor: pointer;
     
-      height:300px;
-
-      width:300px;
-
-      margin-left:152px;
-      
-      border:2px white solid;
-
-      border-radius:6px;
-    }
-    .longsleeve:hover {
-      transform: translateY(-10px);}
-    .shirt2des{
-      color:#8b0000;
-
-      text-align:center;
-
-      font-size:30px;
-      
-      padding:10px;
-
-      margin-left:45px;
-      
-      background:black;
-      
-      border:2px white solid;
-      
-      border-radius:6px;}
-
-      .hoodie{
-        height:300px;
-
-      width:300px;
-
-      margin-left:110px;
-      
-      border:2px white solid;
-
-      border-radius:6px;
-
-      transition: all 0.3s ease;
-
-        cursor: pointer;
-      }
-      .hoodie:hover {
-        transform: translateY(-10px);}
-
-      .hoodiedes{
-        color:#8b0000;
-
-      text-align:center;
-
-      font-size:30px;
-      
-      padding:10px;
-
-      margin-left:45px;
-      
-      background:black;
-      
-      border:2px white solid;
-      
-      border-radius:6px;}
       .products {
         
         height:500px;
@@ -194,24 +110,26 @@ body{
       object-fit: contain;
   }
   .product2 img {
-    width: 550px;
-    height: 550px;
+    width: 600px;
+    height: 600px;
     object-fit: contain;
   }
   .product3 img {
-    width: 550px;
-    height: 550px;
+    width: 500px;
+    height: 600px;
     object-fit: contain;}
+    
     .product4 img {
 
-      width: 550px;
+      margin-top: 30px;
+      width: 600px;
 
-      height: 550px;
+      height: 500px;
 
       object-fit: contain;
     }
     .product5 img{
-      height:550px;
+      height:450px;
       width:550px;
       object-fit:contain;
     }
@@ -228,7 +146,7 @@ body{
 
       justify-content:flex-start;
 
-      gap:200px;
+      gap:150px;
 
       align-items:center ;
 
