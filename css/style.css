@@ -1,5 +1,11 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 body{
-  
+    overflow-x:hidden;
+
     background:rgb(245, 242, 242);
     
       color:rgb(8, 8, 8);
@@ -34,8 +40,6 @@ body{
     .DES{
       
       color:black;
-    
-      background: #005f8b;
       
       font-size:30px;
       
@@ -50,7 +54,8 @@ body{
     }
     .start{
       color:rgb(14, 1, 1); 
-      margin-left:20px;
+      margin-left:min(20px,0vw);
+      margin-top:30px;
     }
     .shirt1des{
       color:#8b0000;
@@ -103,28 +108,26 @@ body{
       .product {
           flex: 0 0 auto; /* Prevents shrinking */
       }
-
-  .product1 img {
-      width: 550px;
-      height: 550px;
-      object-fit: contain;
+      .product1 img{
+        width:min(550px,80vw);
+        height:auto;
+    }
+  
+    .product2 img{
+      width:min(550px,80vw);
+      height:auto;
   }
-  .product2 img {
-    width: 600px;
-    height: 600px;
-    object-fit: contain;
-  }
-  .product3 img {
-    width: 500px;
-    height: 600px;
-    object-fit: contain;}
+  
+  .product3 img{
+    width:min(550px,80vw);
+    height:auto;
+}
     
     .product4 img {
-
+      width:min(550px,80vw);
+      height:auto;
+    
       margin-top: 30px;
-      width: 600px;
-
-      height: 500px;
 
       object-fit: contain;
     }
@@ -159,12 +162,15 @@ body{
 
     }
     .pants1 img{
-      height:500px;
-      width:500px;
-    }
+      width:min(550px,80vw);
+      height:auto;
+  }
+
     .pants2 img{
-      height:500px;
-      width:500px;
+
+        width:min(550px,80vw);
+
+        height:auto;
     }
     
     @media (max-width: 768px) {
