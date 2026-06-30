@@ -1,0 +1,31 @@
+body{
+    background: black;
+  }
+  .title{
+        color:#0cbdf8;
+        text-align: center;
+        margin-top: 20px;
+        font-size:40px;
+  }
+  .topc{
+      font-size: 30px;
+      color:white;
+      background:#0cbdf8;
+      height:40px;
+      width:250px;
+      text-align: center;
+      padding-top:20px;
+  }
+  .describing{
+      color:#0cbdf8;
+      width: 560px;
+      padding: 30px;
+      white-space: nowrap;
+      font-size: 23px;
+    }
+    .yellow-pants {
+      height: 500px;
+      width: 500px;
+      margin-left: 90px;
+      margin-bottom: 90px;;
+    }
