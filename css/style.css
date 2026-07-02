@@ -3,13 +3,35 @@
   padding:0;
   box-sizing:border-box;
 }
+.logo-container{
+    width: 100%;
+    height: 280px;
+    align-items:center;
+    margin-top:50px;
+    display: flex;
+    justify-content: center; /* Center the logo */
+    padding: 20px 0;
+    overflow-y:hidden
+}
+
+.logo{
+    width: 100%;
+    max-height:500px;
+    max-width: 1000px;   /* Change this to 200px, 300px, etc. */
+    display: block;
+}
 body{
     overflow-x:hidden;
 
-    background:rgb(245, 242, 242);
+    background:rgb(0, 0, 0);
     
-      color:rgb(8, 8, 8);
+      color:rgb(255, 255, 255);
       
+    }
+    .vatrex.logo{
+      width: 100%;
+      height: auto;
+      display:block;
     }
     .title{
       
@@ -39,7 +61,7 @@ body{
     }
     .DES{
       
-      color:black;
+      color:rgb(255, 255, 255);
       
       font-size:30px;
       
@@ -53,8 +75,8 @@ body{
       
     }
     .start{
-      color:rgb(14, 1, 1); 
-      margin-left:min(20px,0vw);
+      color:rgb(255, 255, 255); 
+      text-align:center;
       margin-top:30px;
     }
     .shirt1des{
@@ -80,22 +102,20 @@ body{
       .products {
         
         height:500px;
-        
-        display: flex; /* makes the images arranged side by side */
-        
-        justify-content: flex-start; /* Centers the row */
-        
-        gap: 150px;              /* Space between images */
-        
-        align-items: center;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 20px;          /* Space between images */
         
         margin-top: 20px;
         
         height:auto;
          
-        overflow-x: auto;   /* Enables horizontal scrolling */
+        overflow-x: hidden;   
          
-        overflow-y: hidden; /* Prevents scrolling in y axis */
+        overflow-y:auto; 
       
           white-space: nowrap; /* bte3ml wrap lel text elly w5da space*/
           padding: 20px;
@@ -109,22 +129,22 @@ body{
           flex: 0 0 auto; /* Prevents shrinking */
       }
       .product1 img{
-        width:min(550px,80vw);
+         width:min(480px,80vw);
         height:auto;
     }
   
     .product2 img{
-      width:min(550px,80vw);
+       width:min(480px,80vw);
       height:auto;
   }
   
   .product3 img{
-    width:min(550px,80vw);
+    width:min(480px,80vw);
     height:auto;
 }
     
     .product4 img {
-      width:min(550px,80vw);
+       width:min(480px,80vw);
       height:auto;
     
       margin-top: 30px;
@@ -132,60 +152,39 @@ body{
       object-fit: contain;
     }
     .product5 img{
-      height:450px;
-      width:550px;
-      object-fit:contain;
-    }
+      width:min(480px,80vw);
+    height:auto;
+}
     .PANTS{
-    color:rgb(2, 2, 2);
-    margin-left: 20px;
-    font-size: 30px;
-
+    color:rgb(255, 255, 255);
+    text-align: centerr;
+   
     }
     .bottoms{
+       display:grid;
+      grid-template-columns:repeat(3, 1fr);
       height:600px;
-
-      display:flex;
-
-      justify-content:flex-start;
-
-      gap:150px;
-
-      align-items:center ;
-
+      gap:40px;
       white-space: nowrap;
-      overflow-x: auto;
+      overflow-x: hidden;
 
-      overflow-y: hidden;
-      flex: 0 0  auto;
+      overflow-y: auto;
 
 
     }
     .pants1 img{
-      width:min(550px,80vw);
+      width:min(520px,80vw);
       height:auto;
   }
 
     .pants2 img{
 
-        width:min(550px,80vw);
+        width:min(520px,80vw);
 
         height:auto;
     }
-    
-    @media (max-width: 768px) {
-
-      .products {
-          flex-direction: column;
-          align-items: center;
-          gap: 30px;
-      }
-  
-      .bottoms {
-          flex-direction: column;
-          align-items: center;
-          gap: 30px;
-      }
+         
+      
   
       img {
           width: 90%;
@@ -196,11 +195,224 @@ body{
           font-size: 2rem;
           text-align: center;
       }
-  
-      .DES,
-      .start,
       .PANTS {
-          font-size: 1.3rem;
+          font-size: 2rem;
           text-align: center;
       }
+   @media (max-width: 768px) {
+    .logo-container{
+    width: 100%;
+    max-width:1000px;
+    height: 150px;
+    align-items:center;
+    display: flex;
+    justify-content: center; /* Center the logo */
+    
+    overflow-x:hidden
+}
+
+.logo{
+    width: 100%;
+    max-width: 1000px; 
+    height: 50%;  /* Change this to 200px, 300px, etc. */
+    display: block;
+}
+      .products {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+      }
+       .products {
+        
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap:20px;          /* Space between images */
+        
+        margin-top:-20px;
+        
+        height:auto;
+         
+        overflow-x: hidden;   /* Enables horizontal scrolling */
+         
+        overflow-y:auto; /* Prevents scrolling in y axis */
+      
+          white-space: nowrap; /* bte3ml wrap lel text elly w5da space*/
+          padding: 30px;
+       }
+    .product1 img{
+     width:150px;
+     height:auto;
+    }
+  
+    .product2 img{
+    width:150px; 
+    height:auto;
   }
+  
+  .product3 img{
+     width:150px;
+      margin-top:30px;
+    height:auto;
+}
+    
+    .product4 img {
+      width:150px;
+      height:auto;
+    
+      margin-top: 30px;
+
+      object-fit: contain;
+        }
+
+            .bottoms{
+                
+       display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      height:270px;
+      gap:3px;
+      white-space: nowrap;
+      overflow-x: hidden;
+
+      overflow-y: auto;
+        }
+        .pants1 img{
+        margin-left:20px;
+      width:min(155px,100vw);
+      height:auto;
+  }
+    .pants2 img{
+
+        width:min(155px,100vw);
+        height:auto;
+    }
+
+  }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .logo-container{
+    width: 100%;
+        
+    height: 275px;
+        
+    align-items:center;
+        
+    display: flex;
+        
+    justify-content: center; /* Center the logo */
+        
+    padding: 20px 1;
+        
+    overflow-x:hidden
+    }
+        .logo{
+    width: 100%;
+    max-height:500px;  /* Change this to 200px, 300px, etc. */
+    display: block;
+    }
+          .products {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+          gap:0px;
+      }
+    
+        .product1 img{
+     width:290px;
+     height:auto;
+    }
+  
+        .product2 img{
+    width:290px; 
+    height:auto;
+  }
+  
+      .product3 img{
+     width:280px;
+      margin-top:30px;
+    height:auto;
+}
+    
+        .product4 img {
+      width:290px;
+      height:auto;
+    
+      margin-top: 30px;
+
+      object-fit: contain;}
+
+  
+        .bottoms{
+                
+       display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      height:270px;
+      gap:3px;
+      white-space: nowrap;
+      overflow-x: hidden;
+
+      overflow-y: auto;
+        }
+        .pants1 img{
+        margin-left:20px;
+      width:min(270px,100vw);
+      height:auto;
+  }
+        .pants2 img{
+
+        width:min(270px,100vw);
+        height:auto;
+    }
+      }
+.products img,
+.bottoms img{
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.products img:hover,
+.bottoms img:hover{
+    transform: translateY(-8px) scale(1.04);
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.title,
+.products,
+.logo,
+.bottoms,
+.PANTS{
+    animation:fadeIn 0.8s ease;
+}
+@keyframes glow{
+
+    0%{
+        text-shadow:0 0 5px #0cbdf8;
+    }
+
+    50%{
+        text-shadow:0 0 20px #0cbdf8;
+    }
+
+    100%{
+        text-shadow:0 0 5px #0cbdf8;
+    }
+
+}
+.logo{
+    animation:glow 2.5s infinite;
+}
+html{
+    scroll-behavior:smooth;
+}
+.products img:active,
+.bottoms img:active{
+    transform:scale(0.97);
+}
