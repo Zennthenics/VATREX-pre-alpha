@@ -1,31 +1,82 @@
 body{
-  background: black;
+  background: #000000;
 }
-.title{
-    color:#0cbdf8;
-    text-align: center;
-    margin-top: 20px;
-    font-size:40px;
-}
-.topc{
-  font-size: 30px;
-  color:white;
-  background:#0cbdf8;
-  height:40px;
-  width:250px;
-  text-align: center;
-  padding-top:20px;
-}
+
 .describing{
-  color:#0cbdf8;
-  width: 560px;
-  padding: 30px;
-  white-space: nowrap;
-  font-size: 23px;
+  width:500px;
+  height:550px;
+    color:#ffffff;
+     font-size:30px;
+  font-weight:900;
+    
+    padding-top:px;
+    background:#626161;
+  border-radius:90px;
+  
+
+  }
+.description{
+  color:#ffffff;
+  font-size:30px;
+  font-weight:900;
+  text-align:center;
+  
 }
-.shortsleevered {
-  height: 500px;
-  width: 500px;
-  margin-left: 90px;
-  margin-bottom: 90px;;
+.producttext{
+  width:400px;
+  text-align:center;
+  margin-left:40px;
+}
+.product-container{
+  display:flex;
+  justify-content:start;
+}
+  .productss{
+    height: 400px;
+    width: 400px;
+    align-items:center;
+    display:flex;
+    margin-left:40px;
+    
+    
+  
+  }
+.logo-contain2{
+width:100%;
+  background:#00000000;
+  
+  display:flex;
+}
+.logo2{
+  width:500px;
+  height:330px;
+  display:block;
+  background:transparent;
+}
+.buttonsbox{
+    width:500px;
+    height:120px;
+    background:#6d6d6d;
+    border:4px #b9b9b9 solid;
+    border-radius:90px;
+    display:grid;
+   
+    justify-content:center;
+    margin-left:550px;
+}
+
+.buy{
+    margin-top:20px;
+    font-weight:900;
+    width:300px;
+    height:40px;
+    border-radius:30px;
+}
+
+.add-to-cart{
+    margin-top:0px;
+    font-weight:900;
+    width:300px;
+    height:40px;
+    border-radius:30px;
 }
