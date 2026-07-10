@@ -1,3 +1,11 @@
+body{
+    overflow-x:hidden;
+
+    background:rgb(0, 0, 0);
+    
+      color:rgb(255, 255, 255);
+      
+    }
 *{
   margin:0;
   padding:0;
@@ -13,21 +21,30 @@
     padding: 20px 0;
     overflow-y:hidden
 }
-
+.startinglogo-container{
+width:100%;
+height:auto;
+}
+.startup{
+    width:100%;
+    height:800px;
+     -webkit-mask-image: radial-gradient(       
+         ellipse at center,      
+         black 60%,    
+         transparent 100%    );   
+    mask-image: radial-gradient( ellipse at center,   
+    #000000 50%,
+    #d4050500 94% );
+}
 .logo{
     width: 100%;
     max-height:510px;
     max-width: 850px;   /* Change this to 200px, 300px, etc. */
     display: block;
 }
-body{
-    overflow-x:hidden;
 
-    background:rgb(0, 0, 0);
-    
-      color:rgb(255, 255, 255);
-      
-    }
+
+
     .logo{
       width: 97%;
       height: auto;
@@ -37,9 +54,9 @@ body{
       
       text-align: center;
       
-      background:black;
+      background:#000000;
       
-      color:#0cbdf8;
+      color:#ff0000;
       
       height:2px;
       font-size:30px;
@@ -47,13 +64,14 @@ body{
       margin:auto;
       
       padding-bottom: 80px;
-      
+  
       padding-top:20px
     }
     .line{
+        margin-top:10px;
       color:#0cbdf8;
       
-      background:#0cbdf8;
+      background:#ff0000;
 
       
       height:3px;
@@ -61,7 +79,7 @@ body{
     }
     .DES{
       
-      color:rgb(255, 255, 255);
+      color:rgb(119 21 21);
       
       font-size:30px;
       
@@ -70,7 +88,7 @@ body{
       height:50px;
       
       padding-top:13px;
-      
+      margin-top:10px;
     }
     .start{
       color:rgb(255, 255, 255); 
@@ -207,7 +225,21 @@ body{
     
     overflow-x:hidden
 }
-
+.startinglogo-container{
+width:100%;
+height:200px;
+}
+.startup{
+    width:100%;
+    height:210px;
+       -webkit-mask-image: radial-gradient(       
+         ellipse at center,      
+         black 60%,    
+         transparent 100%    );   
+    mask-image: radial-gradient( ellipse at center,   
+    #000000 45%,
+    #d4050500 88% );
+}
 .logo{
     width: 500px;
   /* Change this to 200px, 300px, etc. */
@@ -219,7 +251,7 @@ body{
 
         display: flex;
 
-        gap:10px;          /* Space between images */
+        gap:60px;          /* Space between images */
         
         margin-top:-30px;
         
@@ -258,14 +290,11 @@ body{
 
             .bottoms{
                 
-       display:grid;
-      grid-template-columns:repeat(2, 1fr);
+       display:flex;
       height:270px;
-      gap:3px;
+      gap:60px;
       white-space: nowrap;
-      overflow-x: hidden;
-
-      overflow-y: auto;
+      overflow-x: auto;
         }
         .pants1 img{
         margin-left:20px;
@@ -294,6 +323,15 @@ body{
         
     overflow-x:hidden
     }
+    .startinglogo-container{
+    width:100%;
+    height:410px;
+    }
+    .startup{
+    width:100%;
+    height:400px;
+        
+    }
         .logo{
     
     height:500px;
@@ -303,7 +341,7 @@ body{
           .products {
     display:grid;
     grid-template-columns:repeat(2, 1fr);
-          gap:0px;
+          gap:10px;
       }
     
         .product1 img{
@@ -336,7 +374,7 @@ body{
        display:grid;
       grid-template-columns:repeat(2, 1fr);
       height:270px;
-      gap:200px;
+      gap:50px;
       white-space: nowrap;
       overflow-x: hidden;
 

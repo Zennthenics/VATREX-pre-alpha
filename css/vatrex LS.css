@@ -30,6 +30,7 @@ body{
 .product-container{
   display:flex;
   justify-content:start;
+  transition:.5s;
 }
   .productss{
     height: 400px;
@@ -79,4 +80,14 @@ width:100%;
     width:300px;
     height:40px;
     border-radius:30px;
+}
+input{
+    display:none;
+}
+.slider{
+
+    width:400px;
+
+    overflow:hidden;
+
 }
