@@ -254,14 +254,14 @@ height:140px;
          
        }
     .product1 img{
-     width:160px;
+     width:150px;
      height:auto;
     margin-top:27px;
 
     }
   
     .product2 img{
-    width:170px; 
+    width:150px; 
     height:auto;
      margin-top:18px;
   
@@ -274,7 +274,7 @@ height:140px;
     }
     
     .product4 img {
-      width:160px;
+      width:140px;
       height:auto;
         }
 
@@ -288,12 +288,12 @@ height:140px;
         }
         .pants1 img{
         margin-left:10px;
-      width:min(155px,100vw);
+      width:min(155px,90vw);
       height:auto;
   }
     .pants2 img{
 
-        width:min(155px,100vw);
+        width:min(155px,90vw);
         height:auto;
     }
    }
