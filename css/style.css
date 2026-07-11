@@ -13,7 +13,7 @@ body{
 }
 .logo-container{
     width: 100%;
-    height: 300px;
+    height: 450px;
     align-items:center;
     margin-top:50px;
     display: flex;
@@ -27,7 +27,7 @@ height:auto;
 }
 .startup{
     width:100%;
-    height:500px;
+    height:800px;
     display:block
      -webkit-mask-image radial-gradient(       
          ellipse at center,      
@@ -114,23 +114,23 @@ height:auto;
                overflow-x: hidden;
       }
       .product1 img{
-         width:600px;
+width:min(480px,80vw);
         height:auto;
     }
   
     .product2 img{
-       width:600px;
+width:min(480px,80vw);
       height:auto;
   }
   
   .product3 img{
-   width:600px;
-    height:auto;
+width:min(480px,80vw);
+height:auto;
 }
     
     .product4 img {
-     width:600px;
-      height:auto;
+width:min(480px,80vw);
+        height:auto;
     
       margin-top: 30px;
 
