@@ -71,7 +71,7 @@ body {
     font-size: 30px;
     font-weight: 900;
     text-align: center;
-    overflow-x:hidden
+  
 }
 
 .producttext {
@@ -79,6 +79,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-top:100px;
 }
 
 .product-container {
@@ -150,22 +151,24 @@ body {
         display:flex;
     }
 .productsss.slide{
-    mask-image: radial-gradient( ellipse at top,   
-    #fff8f8 60%,
-    #ff000000 74% );
- mask-image: radial-gradient( ellipse at bottom,
-      #fff8f8 67%,
-    #ff000000 74% );
+ mask-image: radial-gradient( ellipse at top,
+      #000000 80%,
+    #ff000000 88% );
      height:auto;
         display:flex;
 }
 .productssss.slide{
     mask-image: radial-gradient( ellipse at top,   
     #000000 70%,
-    #d4050500 74% );
+    #ffffff00 74% );
+     height:auto;
+    display:flex;}
+.productsssss.slide{
+    mask-image: radial-gradient( ellipse at center,   
+    #000000 30%,
+    #ffffff00 78% );
      height:auto;
     display:flex;
-
 }
 @keyframes fadeIn{
     from{
@@ -239,6 +242,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow-x:hidden;
     }
 
     .description {
@@ -250,7 +254,8 @@ body {
 
     .producttext {
         width: 300px;
-        text-align: start;
+
+        margin-top:50px;
         margin-left: 1px;
     }
 
