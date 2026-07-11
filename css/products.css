@@ -18,7 +18,7 @@ body {
     object-fit: contain;
     display: none;
     opacity:0;
-     transform:translateX(40px);
+     transform:translateX(100px);
       transition:.5s ease;
 }
 
@@ -30,7 +30,7 @@ body {
 .prev, .next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-00%);
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border-width: medium;
@@ -71,6 +71,7 @@ body {
     font-size: 30px;
     font-weight: 900;
     text-align: center;
+    overflow-x:hidden
 }
 
 .producttext {
@@ -144,6 +145,10 @@ body {
     user-select: none;
     
 }
+.productss.slide{
+        height:auto;
+        display:flex;
+    }
 .productsss.slide{
     mask-image: radial-gradient( ellipse at top,   
     #fff8f8 60%,
@@ -151,11 +156,15 @@ body {
  mask-image: radial-gradient( ellipse at bottom,
       #fff8f8 67%,
     #ff000000 74% );
+     height:auto;
+        display:flex;
 }
 .productssss.slide{
     mask-image: radial-gradient( ellipse at top,   
     #000000 70%,
     #d4050500 74% );
+     height:auto;
+    display:flex;
 
 }
 @keyframes fadeIn{
@@ -185,7 +194,11 @@ body {
     .slide {
         display: none;
     }
-
+    .productss.slide{
+        width:300px;
+        height:auto;
+        display:flex;
+    }
     .slide.active {
         display: block;
     }
@@ -203,7 +216,8 @@ body {
         border-color: currentcolor;
         border-image: initia;
         cursor: pointer;
-        font-size: 25px;
+        font-size: 40px;
+        margin:-20px;
         padding: 10px;
         border-radius: 70%;
     }
