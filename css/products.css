@@ -226,11 +226,11 @@ body {
     }
 
     .prev {
-        left: -15px;
+        left: -10px;
     }
 
     .next {
-        right: -15px;
+        right: -10px;
     }
 
     .describing {
@@ -261,7 +261,7 @@ body {
 
     .product-container {
         position: relative;
-        width: 300px;
+         width: clamp(280px, 80vw, 340px);
         height: 300px;
     }
 
@@ -298,7 +298,7 @@ body {
     margin:auto ;
     position: static;
     transform: none;
-    width:90%;
+    width: clamp(280px, 80vw, 340px);
     height: 100px;
     margin: 0px auto;
     display: flex;
