@@ -79,7 +79,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top:100px;
+    margin-top:2px;
 }
 
 .product-container {
@@ -255,7 +255,7 @@ body {
     .producttext {
         width: 300px;
 
-        margin-top:50px;
+        margin-top:40px;
         margin-left: 1px;
     }
 
@@ -294,7 +294,8 @@ body {
 }
 
 .buttonsbox {
-    margin:auto 0;
+    margin-top:30px;
+    margin:auto ;
     position: static;
     transform: none;
     width:90%;

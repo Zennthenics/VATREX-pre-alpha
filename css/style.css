@@ -65,7 +65,7 @@ height:auto;
     .DES{
       
       color:rgb(158 158 158);
-      
+       font-family: "metal mania", serif;
       font-size:60px;
       
       text-align:center;
@@ -76,8 +76,8 @@ height:auto;
       margin-top:10px;
     }
     .start{
-      color:rgb(119 21 21); 
       text-align:center;
+       font-family: "metal mania", serif;
       margin-top:30px;
         font-size:45px;
     }
@@ -166,8 +166,7 @@ width:min(480px,80vw);
       .PANTS {
              font-size:45px;
           text-align: center;
-          color:
-    rgb(119 21 21);}
+           font-family: "metal mania", serif;}
 
    @media (max-width: 768px) {
        body{
@@ -254,27 +253,27 @@ height:140px;
          
        }
     .product1 img{
-     width:150px;
+     width:min(150px,100vw);
      height:auto;
     margin-top:27px;
 
     }
   
     .product2 img{
-    width:150px; 
-    height:auto;
+ width:min(150px,100vw);
+        height:auto;
      margin-top:18px;
   
   }
   
   .product3 img{
-     width:140px;
+     width:min(150px,100vw);
     height:auto;
     margin-top:30px;
     }
     
     .product4 img {
-      width:140px;
+       width:min(160px,100vw);
       height:auto;
         }
 
@@ -288,16 +287,17 @@ height:140px;
         }
         .pants1 img{
         margin-left:10px;
-      width:min(155px,90vw);
-      height:auto;
+     height:auto;
+ width:min(160px,100vw);
+            height:auto;
   }
     .pants2 img{
 
-        width:min(155px,90vw);
+ width:min(160px,100vw);
         height:auto;
     }
    }
-      @media (min-width: 769px) and (max-width: 1024px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
          .DES{
       
       color:rgb(158 158 158);
@@ -356,30 +356,31 @@ height:140px;
     display:grid;
             width:120%;
     grid-template-columns:repeat(2, 1fr);
-          gap:10px;
+          gap:0px;
               justify-content:center;
               align-items:center;
               
       }
     
         .product1 img{
-     width:290px;
      height:auto;
+ width:min(290px,100vw);
+            
     }
   
         .product2 img{
-    width:290px; 
+ width:min(290px,100vw);
     height:auto;
   }
   
       .product3 img{
-     width:280px;
+ width:min(290px,100vw);
       margin-top:30px;
     height:auto;
 }
     
         .product4 img {
-      width:290px;
+ width:min(290px,100vw);
       height:auto;
     
       margin-top: 30px;
@@ -393,7 +394,7 @@ height:140px;
       grid-template-columns:repeat(2, 1fr);
       height:270px;
             width:120%;
-      gap:50px;
+      gap:0px;
       white-space: nowrap;
       overflow-x: hidden;
 
@@ -401,12 +402,12 @@ height:140px;
         }
         .pants1 img{
         margin-left:20px;
-      width:min(270px,100vw);
+      width:min(290px,100vw);
       height:auto;
   }
         .pants2 img{
 
-        width:min(270px,100vw);
+        width:min(290px,100vw);
         height:auto;
     }
       }
