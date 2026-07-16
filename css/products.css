@@ -134,7 +134,7 @@ body {
         display:flex;
     }
 .productsss.slide{
- mask-image: radial-gradient ( ellipse at top,
+ mask-image: radial-gradient( ellipse at top,
       #000000 80%,
     #ff000000 88% );
      height:auto;
@@ -200,11 +200,11 @@ body {
     }
 
     .prev {
-        right:60vw;
+        right:70vw;
     }
 
     .next {
-        left: 60vw;
+        left: 70vw;
     }
 
     .describing {
@@ -229,7 +229,7 @@ body {
     .producttext {
         width: 70vw;
 
-        margin-top:4px;
+        margin-top:13vw;
         margin-left: 1px;
     }
 
@@ -239,7 +239,7 @@ body {
         height:80vw;
         justify-content:center;
         align-items:center;
-        margin:autp 0;
+        margin:auto 0;
     }
 
 
@@ -247,15 +247,18 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 80vw;
+    margin: auto 0;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    
 }
 
 .logo-contain2 {
     margin:auto 0;
     width: 100%;
-    height:auto;
+    height:45vw;
     background: rgba(255, 0, 0, 0);
     justify-content: center;
     align-items: center;
@@ -276,16 +279,16 @@ body {
     position: static;
     transform: none;
    width:90vw;
-    height: 20vw;
+    height:24vw;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    row-gap:5px;
+    row-gap:25px;
     background: rgb(47 42 42);
     border: 4px solid rgb(86 0 0);
-    border-radius: 70px;
+    border-radius: 60px;
     padding: 20px 0;
 }
 
@@ -294,12 +297,34 @@ body {
     border:6px black solid;
     margin-top:0px;
     font-weight: 900;
-    width: 60vw;
-    height: 20vw;
+    width: 70vw;
+    height: 80vw;
     border-radius: 20px;
-    font-size:5vw;
+    font-size:20px;
     -webkit-tap-highlight-color: transparent;
     outline: none;
     user-select: none;
+}
+.productss.slide{
+        height:auto;
+        display:flex;
+    }
+.productsss.slide{
+ mask-image: radial-gradient(ellipse at top,  #000000 80%, #ff000000 1% );
+     height:auto;
+        display:flex;
+}
+.productssss.slide{
+    mask-image: radial-gradient( ellipse at top,   
+    #000000 70%,
+    #ffffff00 94% );
+     height:auto;
+    display:flex;}
+.productsssss.slide{
+    mask-image: radial-gradient( ellipse at center,   
+    #000000 30%,
+    #ffffff00 78% );
+     height:auto;
+    display:flex;
 }
 }

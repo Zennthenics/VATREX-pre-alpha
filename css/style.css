@@ -199,7 +199,7 @@ height:48vw;
       
       color:rgb(158 158 158);
       
-      font-size:6vw;
+      font-size:8vw;
       
       text-align:center;
       
@@ -212,9 +212,9 @@ height:48vw;
       color:rgb(119 21 21); 
       text-align:center;
       margin-top:39px;
-        font-size:6vw;}
+        font-size:10vw;}
        .PANTS {
-             font-size:6vw;
+             font-size:10vw;
           text-align: center;
           color:
     rgb(119 21 21);}
@@ -237,8 +237,7 @@ height:48vw;
         grid-template-columns:repeat(2, 1fr);
         column-gap:2vw;          /* Space between images */
         
-        margin-top:-30px;
-        margin-left:20px;
+        margin-top:-10vw;
         height:auto;  /* Enables horizontal scrolling */
           /* Prevents scrolling in y axis */
       
@@ -246,28 +245,29 @@ height:48vw;
          
        }
     .product1 img{
-     width:33vw;
+     width:45vw;
      height:auto;
-    margin-top:27px;
+    margin-top:8vw;
 
     }
   
     .product2 img{
- width:33vw;
+ width:45vw;
         height:auto;
-     margin-top:18px;
+     margin-top:7vw;
   
   }
   
   .product3 img{
-     width:33vw;
+     width:45vw;
     height:auto;
-    margin-top:30px;
+    margin-top:9vw;
     }
     
     .product4 img {
-       width:33vw;
+       width:45vw;
       height:auto;
+        margin-top:10vw
         }
 
             .bottoms{
@@ -283,11 +283,11 @@ height:48vw;
         .pants1 img{
         
      height:auto;
- width:35vw;
+ width:43vw;
   }
     .pants2 img{
         height:auto;
-        width:35vw;
+        width:43vw;
     }
    }
       @media (min-width: 768px) and (max-width: 1024px) {
