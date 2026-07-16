@@ -12,24 +12,24 @@ body{
   box-sizing:border-box;
 }
 .logo-container{
-    width: 100%;
-    height: 450px;
+    width: 100vw;
+    height:20vw;
     align-items:center;
-    margin-top:50px;
+    margin-top:4vw;
     display: flex;
     justify-content: center; /* Center the logo */
     padding: 20px 0;
-    overflow-y:hidden
+    overflow-y:hidden;
 }
 .startinglogo-container{
-width:100%;
+width:100vw;
 height:auto;
 }
 .startup{
-    width:100%;
-    height:800px;
-    display:block
-     -webkit-mask-image radial-gradient(       
+    width:100vw;
+    height:50vw;
+    display:block;
+     -webkit-mask-image: radial-gradient(       
          ellipse at center,      
          black 60%,    
          transparent 100%    );   
@@ -39,38 +39,32 @@ height:auto;
          overflow-x: hidden;
 }
 .logo{
-    width: 100%;
-    max-height:510px;
-    max-width: 850px;   /* Change this to 200px, 300px, etc. */
+    width: 50vw;
+    height:30vw;  /* Change this to 200px, 300px, etc. */
     display: block;
 }
 
-
-
-    .logo{
-      width: 97%;
-      height: auto;
-      display:block;
-    }
     .line{
-        margin-top:45px;
+        margin-top:4VW;
+        width:100vw;
+    height:0.3vw;
       color:#00000000;
       
       background:#850000;
 
       
-      height:3px;
+    
       
     }
     .DES{
       
       color:rgb(158 158 158);
        font-family: "metal mania", serif;
-      font-size:60px;
+      font-size:5vw;
       
       text-align:center;
       
-      height:50px;
+      height:3vw;
       
       padding-top:13px;
       margin-top:10px;
@@ -79,18 +73,18 @@ height:auto;
       text-align:center;
        font-family: "metal mania", serif;
       margin-top:30px;
-        font-size:45px;
+        font-size:4vw;
     }
     
       .products {
         
-        height:500px;
+        height:50vw;
 
         display: grid;
 
         grid-template-columns: repeat(3, 1fr);
 
-        gap: 20px;          /* Space between images */
+        column-gap: 5vw;          /* Space between images */
         
         margin-top: 20px;
         
@@ -114,25 +108,25 @@ height:auto;
                overflow-x: hidden;
       }
       .product1 img{
-width:min(480px,80vw);
-        height:auto;
+          width:28vw;  
+          height:auto;
     }
   
     .product2 img{
-width:min(480px,80vw);
-      height:auto;
+width:28vw;  
+        height:auto;
   }
   
   .product3 img{
-width:min(480px,80vw);
-height:auto;
+        width:28vw;  
+      height:auto;
 }
     
     .product4 img {
-width:min(480px,80vw);
+width:28vw;  
         height:auto;
     
-      margin-top: 30px;
+      margin-top: 6vw;
 
       object-fit: contain;
     }
@@ -143,28 +137,26 @@ width:min(480px,80vw);
     .bottoms{
        display:grid;
       grid-template-columns:repeat(3, 1fr);
-      height:600px;
+      height:auto;
       gap:40px;
       white-space: nowrap;
-      overflow-x: hidden;
-
-      overflow-y: auto;
+      overflow:hidden;
 
 
     }
     .pants1 img{
-      width:min(520px,80vw);
+    width:30vw;
       height:auto;
   }
 
     .pants2 img{
 
-        width:min(520px,80vw);
+        width:30vw;
 
         height:auto;
     }
       .PANTS {
-             font-size:45px;
+             font-size:5vw;
           text-align: center;
            font-family: "metal mania", serif;}
 
@@ -175,7 +167,7 @@ width:min(480px,80vw);
        }
     .logo-container{
     width: 100%;
-        height:190px;
+        height:50vw;
     align-items:center;
     display: flex;
     justify-content: center; /* Center the logo */
@@ -184,11 +176,11 @@ width:min(480px,80vw);
 }
 .startinglogo-container{
 width:100%;
-height:140px;
+height:48vw;
 }
 .startup{
     width:100%;
-    height:200px;
+    height:55vw;
        -webkit-mask-image: radial-gradient(       
          ellipse at center,      
          black 60%,    
@@ -199,6 +191,7 @@ height:140px;
 }
 .logo{
     width: 100%;
+    height:65vw;
   /* Change this to 200px, 300px, etc. */
     display: block;
 }
@@ -206,7 +199,7 @@ height:140px;
       
       color:rgb(158 158 158);
       
-      font-size:25px;
+      font-size:6vw;
       
       text-align:center;
       
@@ -218,10 +211,10 @@ height:140px;
           .start{
       color:rgb(119 21 21); 
       text-align:center;
-      margin-top:30px;
-        font-size:35px;}
+      margin-top:39px;
+        font-size:6vw;}
        .PANTS {
-             font-size:33px;
+             font-size:6vw;
           text-align: center;
           color:
     rgb(119 21 21);}
@@ -242,10 +235,10 @@ height:140px;
         overflow-x: hidden;
         display:grid;
         grid-template-columns:repeat(2, 1fr);
-        gap:17px;          /* Space between images */
+        column-gap:2vw;          /* Space between images */
         
         margin-top:-30px;
-        
+        margin-left:20px;
         height:auto;  /* Enables horizontal scrolling */
           /* Prevents scrolling in y axis */
       
@@ -253,27 +246,27 @@ height:140px;
          
        }
     .product1 img{
-     width:min(150px,100vw);
+     width:33vw;
      height:auto;
     margin-top:27px;
 
     }
   
     .product2 img{
- width:min(150px,100vw);
+ width:33vw;
         height:auto;
      margin-top:18px;
   
   }
   
   .product3 img{
-     width:min(150px,100vw);
+     width:33vw;
     height:auto;
     margin-top:30px;
     }
     
     .product4 img {
-       width:min(160px,100vw);
+       width:33vw;
       height:auto;
         }
 
@@ -282,19 +275,19 @@ height:140px;
        display:grid;
     grid-template-columns:repeat(2, 1fr);
       height:auto;
-      gap:20px;
+      column-gap:1px;
       overflow-x: hidden;
+                margin-top:30px;
+                margin-left:20px;
         }
         .pants1 img{
-        margin-left:10px;
+        
      height:auto;
- width:min(160px,100vw);
-            height:auto;
+ width:35vw;
   }
     .pants2 img{
-
- width:min(160px,100vw);
         height:auto;
+        width:35vw;
     }
    }
       @media (min-width: 768px) and (max-width: 1024px) {
@@ -302,7 +295,7 @@ height:140px;
       
       color:rgb(158 158 158);
       
-      font-size:48px;
+      font-size:7vw;
       
       text-align:center;
       
@@ -319,13 +312,13 @@ height:140px;
     .start{
       color:rgb(119 21 21); 
       text-align:center;
-        font-size:50px;
+        font-size:6vw;
       margin-top:30px;
     }
   
         .logo-container{
-    width: 100%;
-            height:300px;
+    width: 100vw;
+            height:50vw;
         
     align-items:center;
         
@@ -338,18 +331,18 @@ height:140px;
     overflow-x:hidden
     }
     .startinglogo-container{
-    width:100%;
-    height:410px;
+    width:100vw;
+    height:50vw;
     }
     .startup{
     width:100%;
-    height:400px;
+    height:48vw;
         
     }
         .logo{
     
-    height:500px;
-            width:900px;/* Change this to 200px, 300px, etc. */
+    height:60vw;
+            width:100vw;
     display: block;
     }
           .products {
