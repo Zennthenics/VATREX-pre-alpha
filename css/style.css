@@ -3,7 +3,7 @@ body {
   min-height: 100vh;
   overflow-x:hidden;
   background-image:
-      linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+      linear-gradient(rgba(30,0,0,.65), rgba(10,0,0,.65)),
       url("../images/background.png");
 
   background-size: cover;
@@ -26,23 +26,6 @@ body {
     justify-content: center; /* Center the logo */
     padding: 20px 0;
     overflow-y:hidden;
-}
-.startinglogo-container{
-width:100vw;
-height:auto;
-}
-.startup{
-    width:100vw;
-    height:50vw;
-    display:block;
-     -webkit-mask-image: radial-gradient(       
-         ellipse at center,      
-         black 60%,    
-         transparent 100%    );   
-    mask-image: radial-gradient( ellipse at center,   
-    #000000 50%,
-    #d4050500 74% );
-         overflow-x: hidden;
 }
 .logo{
     width: 50vw;
@@ -67,7 +50,7 @@ height:auto;
       color:rgb(158 158 158);
        font-family: "metal mania", serif;
       font-size:5vw;
-      
+      animation: glow 2s ease-in-out infinite;
       text-align:center;
       
       height:3vw;
@@ -78,6 +61,7 @@ height:auto;
     .start{
       text-align:center;
       color:whitesmoke;
+      animation: glow 2s ease-in-out infinite;
        font-family: "metal mania", serif;
       margin-top:30px;
         font-size:4vw;
@@ -164,9 +148,34 @@ width:28vw;
     }
       .PANTS {
              font-size:5vw;
-             color:whitesmoke;
           text-align: center;
-           font-family: "metal mania", serif;}
+           font-family: "metal mania", serif;
+           animation: glow 2s ease-in-out infinite,fadeIn 0.8s ease;
+           
+      }
+           @keyframes glow {
+            0% {
+                text-shadow:
+                    0 0 5px #ff0000,
+                    0 0 10px #ff0000,
+                    0 0 20px #ff0000;
+            }
+        
+            50% {
+                text-shadow:
+                    0 0 10px #ff0000,
+                    0 0 20px #ff0000,
+                    0 0 40px #ff0000,
+                    0 0 80px #ff0000;
+            }
+        
+            100% {
+                text-shadow:
+                    0 0 5px #ff0000,
+                    0 0 10px #ff0000,
+                    0 0 20px #ff0000;
+            }
+        }
 
    @media (max-width: 768px) {
        body{
@@ -217,15 +226,15 @@ height:48vw;
       margin-top:40px;
     }
           .start{
-      color:rgb(119 21 21); 
+      
       text-align:center;
       margin-top:39px;
         font-size:10vw;}
        .PANTS {
+           color:white;
              font-size:10vw;
           text-align: center;
-          color:
-    rgb(119 21 21);}
+       }
 
      .line{
         margin-top:12px;
@@ -313,7 +322,6 @@ height:48vw;
       margin-top:10px;
     }
           .PANTS{
-    color:rgb(119 21 21);
     text-align: centerr;
    font-size:50px;
     }
@@ -436,24 +444,8 @@ height:48vw;
 .title,
 .products,
 .logo,
-.bottoms,
-.PANTS{
+.bottoms{
     animation:fadeIn 0.8s ease;
-}
-@keyframes glow{
-
-    0%{
-        text-shadow:0 0 5px #0cbdf8;
-    }
-
-    50%{
-        text-shadow:0 0 20px #0cbdf8;
-    }
-
-    100%{
-        text-shadow:0 0 5px #0cbdf8;
-    }
-
 }
 .logo{
     animation:glow 2.5s infinite;
