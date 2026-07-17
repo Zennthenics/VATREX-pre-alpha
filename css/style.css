@@ -41,7 +41,7 @@ height:auto;
          transparent 100%    );   
     mask-image: radial-gradient( ellipse at center,   
     #000000 50%,
-    #d4050500 94% );
+    #d4050500 74% );
          overflow-x: hidden;
 }
 .logo{
