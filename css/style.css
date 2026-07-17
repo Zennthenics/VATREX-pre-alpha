@@ -34,7 +34,7 @@ body {
 }
 
     .line{
-        margin-top:4VW;
+        margin-top:5VW;
         width:100vw;
     height:0.3vw;
       color:#00000000;
@@ -47,10 +47,10 @@ body {
     }
     .DES{
       
-      color:white;
+      color:black;
        font-family: "metal mania", serif;
       font-size:5vw;
-      animation: glow 2s ease-in-out infinite;
+      animation: glow 3s ease-in-out infinite;
       text-align:center;
       
       height:3vw;
@@ -60,8 +60,8 @@ body {
     }
     .start{
       text-align:center;
-      color:whitesmoke;
-      animation: glow 2s ease-in-out infinite;
+      color:black;
+      animation: glow 3s ease-in-out infinite;
        font-family: "metal mania", serif;
       margin-top:30px;
         font-size:4vw;
@@ -150,32 +150,27 @@ width:28vw;
              font-size:5vw;
           text-align: center;
            font-family: "metal mania", serif;
-           animation: glow 2s ease-in-out infinite,fadeIn 0.8s ease;
+          color:black;
+           animation: glow 3s ease-in-out infinite,fadeIn 0.8s ease;
            
       }
-           @keyframes glow {
-            0% {
-                text-shadow:
-                    0 0 5px #ff0000,
-                    0 0 10px #ff0000,
-                    0 0 20px #ff0000;
-            }
-        
-            50% {
-                text-shadow:
-                    0 0 10px #ff0000,
-                    0 0 20px #ff0000,
-                    0 0 40px #ff0000,
-                    0 0 80px #ff0000;
-            }
-        
-            100% {
-                text-shadow:
-                    0 0 5px #ff0000,
-                    0 0 10px #ff0000,
-                    0 0 20px #ff0000;
-            }
+      @keyframes glow {
+        0%, 100% {
+            text-shadow: 0 0 4px #ff0000, 0 0 8px #ff0000;
         }
+    
+        25% {
+            text-shadow: 0 0 5px #ff1111, 0 0 10px #ff1111;
+        }
+    
+        50% {
+            text-shadow: 0 0 7px #ff2222, 0 0 14px #ff2222, 0 0 24px #ff2222;
+        }
+    
+        75% {
+            text-shadow: 0 0 5px #ff1111, 0 0 10px #ff1111;
+        }
+    }
 
    @media (max-width: 768px) {
        body{
@@ -195,17 +190,7 @@ width:28vw;
 width:100%;
 height:48vw;
 }
-.startup{
-    width:100%;
-    height:55vw;
-       -webkit-mask-image: radial-gradient(       
-         ellipse at center,      
-         black 60%,    
-         transparent 100%    );   
-    mask-image: radial-gradient( ellipse at center,   
-    #000000 34%,
-    #d4050500 83% );
-}
+
 .logo{
     width: 100%;
     height:65vw;
@@ -216,7 +201,7 @@ height:48vw;
       font-size:7.1vw;
       
       text-align:center;
-      
+      color:black;
       height:50px;
       
       padding-top:25px;
@@ -225,10 +210,11 @@ height:48vw;
           .start{
       
       text-align:center;
+              color:black;
       margin-top:39px;
         font-size:10vw;}
        .PANTS {
-           color:white;
+           color:black;
              font-size:10vw;
           text-align: center;
        }
@@ -307,7 +293,7 @@ height:48vw;
       @media (min-width: 768px) and (max-width: 1024px) {
          .DES{
       
-      color:rgb(158 158 158);
+      color:black;
       
       font-size:7vw;
       
@@ -320,10 +306,11 @@ height:48vw;
     }
           .PANTS{
     text-align: centerr;
+              color:black;
    font-size:50px;
     }
     .start{
-      color:rgb(119 21 21); 
+      color:black; 
       text-align:center;
         font-size:6vw;
       margin-top:30px;
