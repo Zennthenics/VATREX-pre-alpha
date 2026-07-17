@@ -47,7 +47,7 @@ body {
     }
     .DES{
       
-      color:rgb(158 158 158);
+      color:white;
        font-family: "metal mania", serif;
       font-size:5vw;
       animation: glow 2s ease-in-out infinite;
@@ -213,10 +213,7 @@ height:48vw;
     display: block;
 }
     .DES{
-      
-      color:rgb(158 158 158);
-      
-      font-size:8vw;
+      font-size:7.1vw;
       
       text-align:center;
       
