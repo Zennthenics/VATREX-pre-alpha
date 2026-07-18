@@ -4,7 +4,7 @@ body {
   overflow-x:hidden;
   background-image:
       linear-gradient(rgba(30,0,0,.65), rgba(10,0,0,.65)),
-      url("../images/background.png");
+      url("../images/background.webp");
 
   background-size: cover;
   background-position: center;
@@ -15,6 +15,57 @@ body {
   margin:0;
   padding:0;
   box-sizing:border-box;
+}
+#loader{
+    position:fixed;
+    inset:0;
+
+    background:#050000;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    z-index:999999;
+
+    transition:opacity .8s ease,
+               visibility .8s ease;
+}
+
+.loader-logo{
+    width:260px;
+    animation:pulse 2s infinite;
+}
+
+.loader-text{
+    margin-top:25px;
+
+    color:#ffffff;
+
+    font-size:25px;
+
+    font-family:"Metal Mania", serif;
+
+    letter-spacing:2px;
+
+    animation:pulse 2s infinite;
+}
+
+#loader.hidden{
+    opacity:0;
+    visibility:hidden;
+}
+
+@keyframes pulse{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
 }
 
 .logo-container{
