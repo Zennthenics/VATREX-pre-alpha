@@ -16,6 +16,57 @@ body {
   padding:0;
   box-sizing:border-box;
 }
+#loader{
+    position:fixed;
+    inset:0;
+
+    background:#050000;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    z-index:999999;
+
+    transition:opacity .8s ease,
+               visibility .8s ease;
+}
+
+.loader-logo{
+    width:260px;
+    animation:pulse 2s infinite;
+}
+
+.loader-text{
+    margin-top:25px;
+
+    color:#9b0000;
+
+    font-size:28px;
+
+    font-family:"Metal Mania", serif;
+
+    letter-spacing:2px;
+
+    animation:glow 2s infinite;
+}
+
+#loader.hidden{
+    opacity:0;
+    visibility:hidden;
+}
+
+@keyframes pulse{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+}
 
 .logo-container{
     width: 100vw;
@@ -407,9 +458,33 @@ height:48vw;
 .products img,
 .bottoms img{
     transition: transform 0.3s ease;
-    cursor: pointer;
+}
+body{
+    cursor:none;
 }
 
+.cursor{
+    position:fixed;
+
+    width:70px;
+    height:70px;
+
+    pointer-events:none;
+    z-index:99999;
+
+    left:0;
+    top:0;
+
+    will-change:transform;
+    backface-visibility:hidden;
+    transform-style:preserve-3d;
+}
+.cursor img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    user-select:none;
+}
 .products img:hover,
 .bottoms img:hover{
     transform: translateY(-8px) scale(1.04);
@@ -457,4 +532,15 @@ img,
     -webkit-tap-highlight-color: transparent;
     outline: none;
     user-select: none;
+}
+*,
+*::before,
+*::after,
+a,
+button,
+img,
+input,
+textarea,
+select {
+    cursor: none !important;
 }
