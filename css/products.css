@@ -73,19 +73,26 @@ body {
         flex-direction:column;
         
     }
+    .related-category{
+        margin-top:12vw;
+        font-size:4vw;
+        color:white;
+        font-family:"Metal Mania", serif;
+    }
     .relatedproducts{
             font-family:"Metal Mania", serif;
-            font-size:3vw;
-        color:white;
         flex-direction:column;
-         width:clamp(300px,40vw,600px);
+         width:61vw;
         display:flex;
+        flex-direction:row;
         margin-top:8vw;
-        transform:translateX(5vw);
-        
+        transform:translatey(-5vw);
+        background:#000000;
+        overflow-x:auto;
+        gap:20px;
     }
     .relatedproducts img{
-        width:300px;
+        width:27vw;
          -webkit-tap-highlight-color: transparent;
     outline: none;
     user-select: none;
@@ -248,20 +255,22 @@ body {
             font-weight: 500;
             text-align: center;
             margin:auto;
+            
             font-size:40px;
             width:300px;
         }
          .relatedproducts{
         color:white;
-        flex-direction:column;
-         width:clamp(300px,40vw,350px);
+        flex-direction:row;
+        width:100%;
         display:flex;
-        margin-top:4vw;
-        transform:translateX(5vw);
+        margin-top:0vw;
+        transform:translateX(1vw);
+             overflow-x:auto;
         
     }
     .relatedproducts img{
-        width:62vw;
+        width:60vw;
     }
     
         .producttext {
@@ -363,7 +372,8 @@ body {
         display:flex;
     }
         .relatedproducts,
-        .related{
+        .related,
+        .related2{
              -webkit-tap-highlight-color: transparent;
         outline: none;
         user-select: none;
