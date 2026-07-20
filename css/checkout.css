@@ -139,13 +139,13 @@ input {
     min-height: 100vh;
     overflow-x:hidden;
     background-image:
-        linear-gradient(rgba(30,0,0,.65), rgba(10,0,0,.65)),
+        linear-gradient(rgba(250,0,0,.65), rgba(60,0,0,.65)),
         url("../images/background.webp");
 
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment:fixed;
   }
   .logo-container{
       height:40vw;
@@ -174,7 +174,7 @@ input {
 }
 #checkoutform{
   width:100%;
-  height:100vw;
+  height:auto;
   background:#ff000000;
   color:white;
   display:flex;
@@ -239,4 +239,47 @@ input {
     font-weight:800;       
     letter-spacing: 1.3px;   
     text-align: center;      
-}}
+}
+   label[for="governorate"]{
+     font-size:10vw;
+   }
+   #governorate{
+     width: 85%;
+     text-align:center;
+     height:8vw;
+     font-size:5vw;
+     border-radius:25px;
+   }
+   label[for="city"]{
+     font-size:9vw;
+   }
+   #city{
+     width:80%;
+     height:10vw;
+     border-radius:30px;
+   }
+   label[for="street"]{
+     font-size:9vw;
+   }
+   #street{
+      width:80%;
+     height:10vw;
+     border-radius:30px;
+   }
+    
+   label[for="apartment"]{
+     font-size:9vw;
+   }
+   #apartment{
+      width:80%;
+     height:10vw;
+     border-radius:30px;
+   }
+   label[for="postal"]{
+     font-size:9vw;
+   }
+   #postal{
+      width:50%;
+     height:10vw;
+     border-radius:30px;
+   }}

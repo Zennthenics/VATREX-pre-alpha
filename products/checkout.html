@@ -90,9 +90,56 @@
         placeholder="Enter your phone number"
 
         required>
+        <br>
+        <hr>
+        <hr>
+        <h2>Shipping Address</h2>
 
+<label for="governorate">Governorate</label>
+<select id="governorate" name="governorate" required>
+    <option value="">Select Governorate</option>
+    <option>Cairo</option>
+    <option>Giza</option>
+    <option>Alexandria</option>
+    <option>Qalyubia</option>
+    <option>Sharqia</option>
+    <option>Dakahlia</option>
+    <option>Beheira</option>
+    <option>Monufia</option>
+    <option>Gharbia</option>
+    <option>Kafr El Sheikh</option>
+    <option>Damietta</option>
+    <option>Port Said</option>
+    <option>Ismailia</option>
+    <option>Suez</option>
+    <option>Faiyum</option>
+    <option>Beni Suef</option>
+    <option>Minya</option>
+    <option>Assiut</option>
+    <option>Sohag</option>
+    <option>Qena</option>
+    <option>Luxor</option>
+    <option>Aswan</option>
+    <option>Red Sea</option>
+    <option>New Valley</option>
+    <option>Matrouh</option>
+    <option>North Sinai</option>
+    <option>South Sinai</option>
+</select>
+
+<label for="city">City / District</label>
+<input type="text" id="city" placeholder="e.g. Nasr City"required>
+
+<label for="street">Street Address</label>
+<input type="text" id="street" placeholder="Street name and building number"required>
+
+<label for="apartment">Apartment / Floor </label>
+<input type="text" id="apartment" placeholder="Apartment, floor, landmark"required>
+
+<label for="postal">Postal Code (Optional)</label>
+<input type="tel" id="postal" maxlength="5" placeholder="e.g. 12345">
             </form>
-
+        
         </div>
 
     </div>
