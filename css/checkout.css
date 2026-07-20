@@ -9,7 +9,7 @@ body{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment:fixed;
   }
   ::-webkit-scrollbar{
     width:8px;
@@ -133,6 +133,69 @@ input {
     letter-spacing: 1px;   
     text-align: center;      
 }
+   label[for="governorate"]{
+     font-size:7vw;
+   }
+   #governorate{
+    border: 2px red solid;
+     width: 45%;
+     text-align:center;
+     height:3vw;
+     font-size:2vw;
+     border-radius:25px;
+   }
+   label[for="city"]{
+     font-size:7vw;
+   }
+   #city{
+         border: 2px red solid;
+
+     width:80%;
+     height:70vw;
+     font-size:40px;
+     border-radius:30px;
+   }
+   label[for="street"]{
+     font-size:9vw;
+   }
+   #street{
+         border: 2px red solid;
+
+      width:80%;
+     height:90vw;
+     border-radius:30px;
+          font-size:35px;
+
+   }
+    
+   label[for="apartment"]{
+     font-size:9vw;
+   }
+   #apartment{
+         border: 2px red solid;
+       font-size:35px;
+
+      width:80%;
+     height:10vw;
+     border-radius:30px;
+   }
+   label[for="postal"]{
+     font-size:9vw;
+   }
+   #postal{
+    border: 2px red solid;
+
+      width:50%;
+     height:10vw;
+     border-radius:30px;
+   }
+   #submitorder{
+    border: 2px red solid;
+    font-size:25px;
+     width:50%;
+     height:8vw;
+     border-radius:50px;
+   }
  @media (max-width: 780px) {
      body{
     margin: 0;
@@ -244,6 +307,7 @@ input {
      font-size:10vw;
    }
    #governorate{
+    border: 2px red solid;
      width: 85%;
      text-align:center;
      height:8vw;
@@ -254,6 +318,8 @@ input {
      font-size:9vw;
    }
    #city{
+         border: 2px red solid;
+
      width:80%;
      height:10vw;
      border-radius:30px;
@@ -262,6 +328,8 @@ input {
      font-size:9vw;
    }
    #street{
+         border: 2px red solid;
+
       width:80%;
      height:10vw;
      border-radius:30px;
@@ -271,6 +339,8 @@ input {
      font-size:9vw;
    }
    #apartment{
+         border: 2px red solid;
+
       width:80%;
      height:10vw;
      border-radius:30px;
@@ -279,7 +349,16 @@ input {
      font-size:9vw;
    }
    #postal{
+    border: 2px red solid;
+
       width:50%;
      height:10vw;
      border-radius:30px;
+   }
+   #submitorder{
+    border: 2px red solid;
+    font-size:25px;
+     width:50%;
+     height:8vw;
+     border-radius:50px;
    }}
