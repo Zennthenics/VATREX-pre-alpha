@@ -10,6 +10,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  overflow-y:scroll;
+  body::-webkit-scrollbar {
+    display: none;
+}
+}
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #8b0000 #111;
 }
 *{
   margin:0;

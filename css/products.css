@@ -106,7 +106,10 @@ body {
         font-family:"Metal Mania", serif;
 
     }
-    
+    html {
+    scrollbar-width: thin;
+    scrollbar-color: #8b0000 #111;
+}
     .producttext {
         margin-top:10.5vw;
         display: flex;
