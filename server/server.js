@@ -120,6 +120,13 @@ app.post("/checkout", (req, res) => {
 
 // View all orders
 app.get("/orders", (req, res) => {
+
+    const adminKey = req.headers["x-admin-key"];
+
+    if (adminKey !== process.env.ADMIN_KEY) {
+        return res.status(401).send("Unauthorized");
+    }
+
     db.all("SELECT * FROM orders", [], (err, rows) => {
 
         if (err) {
@@ -128,11 +135,10 @@ app.get("/orders", (req, res) => {
         }
 
         res.json(rows);
-
     });
 });
 
 // Start server
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
