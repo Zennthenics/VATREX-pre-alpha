@@ -1,5 +1,5 @@
 const params = new URLSearchParams(window.location.search);
-const productId = params.get("product")
+const productId = params.get("product");
 console.log("Product ID:", productId);
 
 const products = {
@@ -39,13 +39,20 @@ const selectedProduct = products[productId];
 if (!selectedProduct) {
     alert("Invalid product.");
     window.location.href = "../index.html";
+    throw new Error("Invalid product");
 }
 
 document.getElementById("checkoutForm").addEventListener("submit", async (e) => {
 
     e.preventDefault();
+    const submitButton = e.target.querySelector("button[type='submit']");
+    submitButton.disabled = true;
+    submitButton.textContent = "Processing...";
 
-    const response = await fetch("vatrex-production.up.railway.app", {
+let response;
+
+try {
+    response = await fetch("https://vatrex-production.up.railway.app/checkout", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -66,15 +73,35 @@ document.getElementById("checkoutForm").addEventListener("submit", async (e) => 
             }
         })
     });
+} catch (err) {
+    console.error(err);
+    alert("Could not connect to server.");
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit Order";
+    return;
+}
+let result;
 
-   const result = await response.json();
+try {
+    result = await response.json();
+} catch (err) {
+    console.error(err);
+    alert("Invalid server response.");
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit Order";
+    return;
+}
 
 if (response.ok) {
     alert(result.message);
+    e.target.reset();
     console.log(result);
+
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit Order";
 } else {
     alert(result.message || "Something went wrong.");
     console.error(result);
 }
-
-});
+submitButton.disabled = false;
+submitButton.textContent = "Submit Order";});
