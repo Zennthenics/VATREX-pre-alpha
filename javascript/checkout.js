@@ -45,7 +45,7 @@ document.getElementById("checkoutForm").addEventListener("submit", async (e) => 
 
     e.preventDefault();
 
-    const response = await fetch("http://localhost:3000/checkout", {
+    const response = await fetch("https://vatrex-pre-alpha-adminkey.up.railway.app/checkout", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -67,7 +67,14 @@ document.getElementById("checkoutForm").addEventListener("submit", async (e) => 
         })
     });
 
-    const result = await response.text();
+   const result = await response.json();
+
+if (response.ok) {
+    alert(result.message);
     console.log(result);
+} else {
+    alert(result.message || "Something went wrong.");
+    console.error(result);
+}
 
 });

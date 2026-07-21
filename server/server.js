@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const sqlite3 = require("sqlite3").verbose();
+const { Pool } = require("pg");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,38 +9,21 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Connect to SQLite database
-const db = new sqlite3.Database("database.db", (err) => {
-    if (err) {
-        console.error("Failed to connect to database:", err);
-    } else {
-        console.log("Connected to SQLite database.");
+// Connect to PostgreSQL (Railway)
+const db = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
     }
 });
 
-// Create orders table
-db.run(`
-CREATE TABLE IF NOT EXISTS orders (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    fullname TEXT,
-    email TEXT,
-    phone TEXT,
-    governorate TEXT,
-    city TEXT,
-    street TEXT,
-    apartment TEXT,
-    postal TEXT,
-    productId TEXT,
-    productName TEXT,
-    productPrice INTEGER
-)
-`, (err) => {
-    if (err) {
-        console.error("Error creating table:", err);
-    } else {
-        console.log("Orders table is ready.");
-    }
-});
+db.connect()
+    .then(() => {
+        console.log("Connected to PostgreSQL.");
+    })
+    .catch((err) => {
+        console.error("Failed to connect to PostgreSQL:", err);
+    });
 
 // Home route
 app.get("/", (req, res) => {
@@ -48,7 +31,7 @@ app.get("/", (req, res) => {
 });
 
 // Checkout route
-app.post("/checkout", (req, res) => {
+app.post("/checkout", async (req, res) => {
 
     // Validation
     if (!req.body.fullname) {
@@ -75,51 +58,52 @@ app.post("/checkout", (req, res) => {
         return res.status(400).send("Product information missing");
     }
 
-    // Save order
-    db.run(
-        `INSERT INTO orders (
-            fullname,
-            email,
-            phone,
-            governorate,
-            city,
-            street,
-            apartment,
-            postal,
-            productId,
-            productName,
-            productPrice
-        )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-        [
-            req.body.fullname,
-            req.body.email,
-            req.body.phone,
-            req.body.governorate,
-            req.body.city,
-            req.body.street,
-            req.body.apartment,
-            req.body.postal,
-            req.body.product.id,
-            req.body.product.name,
-            req.body.product.price
-        ],
-        (err) => {
-            if (err) {
-                console.error(err);
-                return res.status(500).send("Database error");
-            }
+    try {
 
-            res.json({
+        await db.query(
+            `INSERT INTO order_list (
+                fullname,
+                email,
+                phone,
+                governorate,
+                city,
+                street,
+                apartment,
+                postal,
+                productid,
+                productname,
+                productprice
+            )
+            VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)`,
+            [
+                req.body.fullname,
+                req.body.email,
+                req.body.phone,
+                req.body.governorate,
+                req.body.city,
+                req.body.street,
+                req.body.apartment,
+                req.body.postal,
+                req.body.product.id,
+                req.body.product.name,
+                req.body.product.price
+            ]
+        );
+
+        res.json({
             success: true,
             message: "Order saved successfully!"
-            });
-        }
-    );
+        });
+
+    } catch (err) {
+        console.error(err);
+        res.status(500).send("Database error");
+    }
+
 });
 
 // View all orders
-app.get("/orders", (req, res) => {
+app.get("/orders", async (req, res) => {
 
     const adminKey = req.headers["x-admin-key"];
 
@@ -127,17 +111,24 @@ app.get("/orders", (req, res) => {
         return res.status(401).send("Unauthorized");
     }
 
-    db.all("SELECT * FROM orders", [], (err, rows) => {
+    try {
 
-        if (err) {
-            console.error(err);
-            return res.status(500).send("Database error");
-        }
+        const result = await db.query(
+            "SELECT * FROM order_list ORDER BY id DESC"
+        );
 
-        res.json(rows);
-    });
+        res.json(result.rows);
+
+    } catch (err) {
+
+        console.error(err);
+        res.status(500).send("Database error");
+
+    }
+
 });
 
+// Admin login
 app.post("/admin/login", (req, res) => {
 
     const { password } = req.body;
@@ -146,7 +137,6 @@ app.post("/admin/login", (req, res) => {
         return res.json({
             success: true,
             message: "Login successful"
-
         });
     }
 
@@ -154,9 +144,10 @@ app.post("/admin/login", (req, res) => {
         success: false,
         message: "Wrong password"
     });
+
 });
 
-
+// Start server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
