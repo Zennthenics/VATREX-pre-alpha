@@ -45,7 +45,7 @@ document.getElementById("checkoutForm").addEventListener("submit", async (e) => 
 
     e.preventDefault();
 
-    const response = await fetch("https://vatrex-pre-alpha-adminkey.up.railway.app/checkout", {
+    const response = await fetch("vatrex-production.up.railway.app", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
