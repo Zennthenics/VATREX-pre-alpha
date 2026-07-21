@@ -267,7 +267,7 @@ label[for="phone"]{
 }
 #fullname::placeholder{
   width:auto;
-  height:20vw;
+  height:30vw;
   font-size:3vw;
   
   text-align:center;
@@ -282,7 +282,7 @@ label[for="phone"]{
 }
 #email::placeholder{
   width:auto;
-  height:4vw;
+  height:13vw;
   font-size:3vw;
   justify-content:center;
   text-align:center;
@@ -308,10 +308,10 @@ input {
    }
    #governorate{
     border: 2px red solid;
-     width: 85%;
+     width: 55%;
      text-align:center;
      height:8vw;
-     font-size:5vw;
+     font-size:3vw;
      border-radius:25px;
    }
    label[for="city"]{
@@ -323,6 +323,7 @@ input {
      width:80%;
      height:10vw;
      border-radius:30px;
+     font-size:5vw;
    }
    label[for="street"]{
      font-size:9vw;
@@ -333,6 +334,7 @@ input {
       width:80%;
      height:10vw;
      border-radius:30px;
+     font-size:3vw
    }
     
    label[for="apartment"]{
@@ -344,6 +346,7 @@ input {
       width:80%;
      height:10vw;
      border-radius:30px;
+     font-size:3vw
    }
    label[for="postal"]{
      font-size:9vw;
@@ -354,8 +357,9 @@ input {
       width:50%;
      height:10vw;
      border-radius:30px;
+     font-size:4vw;
    }
-   #submitorder{
+   #submit-order{
     border: 2px red solid;
     font-size:25px;
      width:50%;
