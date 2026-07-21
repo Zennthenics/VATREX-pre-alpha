@@ -138,7 +138,25 @@ app.get("/orders", (req, res) => {
     });
 });
 
-// Start server
+app.post("/admin/login", (req, res) => {
+
+    const { password } = req.body;
+
+    if (password === process.env.ADMIN_KEY) {
+        return res.json({
+            success: true,
+            message: "Login successful"
+
+        });
+    }
+
+    res.status(401).json({
+        success: false,
+        message: "Wrong password"
+    });
+});
+
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
