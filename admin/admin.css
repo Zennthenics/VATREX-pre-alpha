@@ -1,0 +1,61 @@
+body{
+
+    background:#111;
+
+    color:white;
+
+    font-family:Arial;
+
+    margin:0;
+
+}
+
+.login-box{
+
+    width:350px;
+
+    margin:120px auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+input,
+button{
+
+    padding:12px;
+
+    font-size:16px;
+
+}
+
+table{
+
+    width:95%;
+
+    margin:40px auto;
+
+    border-collapse:collapse;
+
+}
+
+th,
+td{
+
+    border:1px solid #444;
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+th{
+
+    background:#990000;
+
+}
