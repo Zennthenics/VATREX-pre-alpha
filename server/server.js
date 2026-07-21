@@ -61,7 +61,7 @@ app.post("/checkout", async (req, res) => {
     try {
 
         await db.query(
-            `INSERT INTO order_list (
+            `INSERT INTO order-list (
                 fullname,
                 email,
                 phone,
