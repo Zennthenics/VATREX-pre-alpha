@@ -72,12 +72,14 @@ document.getElementById("customer-postal").textContent =
 document.getElementById("summary-product-price").textContent =
     `${data.product.price} EGP`;
 
+document.getElementById("summary-quantity").textContent=
+
+`${quantity}`;
+
 document.getElementById("summary-shipping").textContent =
     `${shipping} EGP`;
-
 document.getElementById("summary-total").textContent =
     `${total} EGP`;
-
 // Back button
 document.getElementById("back-button").addEventListener("click", () => {
     history.back();

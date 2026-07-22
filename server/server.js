@@ -65,7 +65,7 @@ app.post("/checkout", async (req, res) => {
     try {
 
         await db.query(
-            `INSERT INTO "order-list" (
+            `INSERT INTO "order-list-new" (
                 fullname,
                 email,
                 phone,
@@ -126,7 +126,7 @@ app.get("/orders", async (req, res) => {
     try {
 
         const result = await db.query(
-            'SELECT * FROM "order-list" ORDER BY id DESC'
+            'SELECT * FROM "order-list-new" ORDER BY id DESC'
             );
 
         res.json(result.rows);
