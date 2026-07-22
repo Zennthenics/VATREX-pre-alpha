@@ -40,9 +40,9 @@ const shippingPrices = {
 const productImages = {
     "vatrex-ss": "../images/VSS.webp",
     "vatrex-ls": "../images/VLS.webp",
-    "vatrex-hoodie": "../images/VH.webp",
+    "vatrex-HOODIE": "../images/VH.webp",
     "vatrex-v-LASTLY-pants": "../images/VP.webp",
-    "vatrex-mixed-shoulderss": "../images/blacksho.webp",
+    "vatrex-mixed-shoulderss": "../images/Vshirtblack.webp",
     "vatrex-shadow-pants": "../images/redpants.webp"
 };
 

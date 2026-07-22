@@ -13,7 +13,7 @@ const products = {
         price: 899,
         image: "../images/VLS.webp"
     },
-    "vatrex-hoodie": {
+    "vatrex-HOODIE": {
         name: "VATREX Hoodie",
         price: 1499,
         image: "../images/VH.webp"
