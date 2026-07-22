@@ -203,6 +203,19 @@ input {
      height:8vw;
      border-radius:50px;
    }
+   label[for="quantity"]{
+     font-size:9vw;
+   }
+   #quantity{
+      border: 2px red solid;
+    font-size:25px;
+     width:49vw;
+     height:14vw;
+     border-radius:50px;
+     text-align:center;
+   }
+   #quantity::placeholder{
+     font-size:25px;  }
  @media (max-width: 780px) {
      body{
     margin: 0;
@@ -372,4 +385,16 @@ input {
      width:50%;
      height:8vw;
      border-radius:50px;
-   }}
+   }
+   label[for="quantity"]{
+     font-size:9vw;
+   }
+   #quantity{
+      border: 2px red solid;
+    font-size:25px;
+     width:90vw;
+     height:9vw;
+     border-radius:50px;
+   }
+   #quantity::placeholder{
+     font-size:25px;  }}

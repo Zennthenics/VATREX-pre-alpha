@@ -57,6 +57,10 @@ app.post("/checkout", async (req, res) => {
     if (!req.body.product) {
         return res.status(400).send("Product information missing");
     }
+    if (![1, 2, 3].includes(req.body.quantity)) {
+    return res.status(400).send("Invalid quantity");
+}
+
 
     try {
 
@@ -72,10 +76,11 @@ app.post("/checkout", async (req, res) => {
                 postal,
                 productid,
                 productname,
+                quantity,
                 productprice,
                 shippingPrice,
-                totalPrice,
-                quantity
+                totalPrice
+                
             )
             VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)`,
             [
@@ -89,10 +94,11 @@ app.post("/checkout", async (req, res) => {
                 req.body.postal,
                 req.body.product.id,
                 req.body.product.name,
+                req.body.quantity,
                 req.body.product.price,
                 req.body.shippingPrice,
-                req.body.totalPrice,
-                req.body.quantity
+                req.body.totalPrice
+                
             ]
         );
 
