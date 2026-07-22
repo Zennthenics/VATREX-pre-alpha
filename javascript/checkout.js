@@ -42,66 +42,26 @@ if (!selectedProduct) {
     throw new Error("Invalid product");
 }
 
-document.getElementById("checkoutForm").addEventListener("submit", async (e) => {
+document.getElementById("checkoutForm").addEventListener("submit", (e) => {
 
     e.preventDefault();
-    const submitButton = e.target.querySelector("button[type='submit']");
-    submitButton.disabled = true;
-    submitButton.textContent = "Processing...";
 
-let response;
+    sessionStorage.setItem("checkout", JSON.stringify({
+        fullname: document.getElementById("fullname").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        governorate: document.getElementById("governorate").value,
+        city: document.getElementById("city").value,
+        street: document.getElementById("street").value,
+        apartment: document.getElementById("apartment").value,
+        postal: document.getElementById("postal").value,
+        product: {
+            id: productId,
+            name: selectedProduct.name,
+            price: selectedProduct.price
+        }
+    }));
 
-try {
-    response = await fetch("https://vatrex-production.up.railway.app/checkout", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            fullname: document.getElementById("fullname").value,
-            email: document.getElementById("email").value,
-            phone: document.getElementById("phone").value,
-            governorate: document.getElementById("governorate").value,
-            city: document.getElementById("city").value,
-            street: document.getElementById("street").value,
-            apartment: document.getElementById("apartment").value,
-            postal: document.getElementById("postal").value,
-            product: {
-                id: productId,
-                name: selectedProduct.name,
-                price: selectedProduct.price
-            }
-        })
-    });
-} catch (err) {
-    console.error(err);
-    alert("Could not connect to server.");
-    submitButton.disabled = false;
-    submitButton.textContent = "Submit Order";
-    return;
-}
-let result;
+    window.location.href = "review.html";
 
-try {
-    result = await response.json();
-} catch (err) {
-    console.error(err);
-    alert("Invalid server response.");
-    submitButton.disabled = false;
-    submitButton.textContent = "Submit Order";
-    return;
-}
-
-if (response.ok) {
-    alert(result.message);
-    e.target.reset();
-    console.log(result);
-
-    submitButton.disabled = false;
-    submitButton.textContent = "Submit Order";
-} else {
-    alert(result.message || "Something went wrong.");
-    console.error(result);
-}
-submitButton.disabled = false;
-submitButton.textContent = "Submit Order";});
+});

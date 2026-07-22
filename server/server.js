@@ -72,9 +72,11 @@ app.post("/checkout", async (req, res) => {
                 postal,
                 productid,
                 productname,
-                productprice
+                productprice,
+                shippingPrice,
+                totalPrice
             )
-            VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)`,
+            VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)`,
             [
                 req.body.fullname,
                 req.body.email,
@@ -86,7 +88,9 @@ app.post("/checkout", async (req, res) => {
                 req.body.postal,
                 req.body.product.id,
                 req.body.product.name,
-                req.body.product.price
+                req.body.product.price,
+                req.body.shippingPrice,
+                req.body.totalPrice
             ]
         );
 
@@ -114,7 +118,7 @@ app.get("/orders", async (req, res) => {
     try {
 
         const result = await db.query(
-            "SELECT * FROM order_list ORDER BY id DESC"
+            "SELECT * FROM order-list ORDER BY id DESC"
         );
 
         res.json(result.rows);
