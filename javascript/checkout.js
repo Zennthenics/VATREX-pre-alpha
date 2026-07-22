@@ -55,12 +55,14 @@ document.getElementById("checkoutForm").addEventListener("submit", (e) => {
         street: document.getElementById("street").value,
         apartment: document.getElementById("apartment").value,
         postal: document.getElementById("postal").value,
+         quantity:Number(document.getElementById("quantity").value),
+
         product: {
             id: productId,
             name: selectedProduct.name,
-            price: selectedProduct.price
-        }
-    }));
+            price: selectedProduct.price,
+        },
+        }));
 
     window.location.href = "review.html";
 

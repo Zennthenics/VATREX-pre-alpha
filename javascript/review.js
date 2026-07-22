@@ -46,8 +46,11 @@ const productImages = {
     "vatrex-shadow-pants": "../images/redpants.webp"
 };
 
+const quantity = Number(data.quantity) || 1;
+
 const shipping = shippingPrices[data.governorate] || 0;
-const total = data.product.price + shipping;
+const subtotal = data.product.price * quantity;
+const total = subtotal + shipping;
 
 // Product
 document.getElementById("product-image").src = productImages[data.product.id];
