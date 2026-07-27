@@ -158,6 +158,7 @@ html {
                overflow-x: hidden;
       }
       .product1 img{
+          margin-top:4.5vw;
           width:28vw;  
           height:auto;
     }
@@ -304,9 +305,9 @@ height:48vw;
          
        }
     .product1 img{
-     width:45vw;
+     width:43vw;
      height:auto;
-    margin-top:8vw;
+    margin-top:15vw;
 
     }
   

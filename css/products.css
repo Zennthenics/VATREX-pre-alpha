@@ -308,7 +308,7 @@ body {
         .producttext {
             width:300px;
             transform:translatey(-150px);
-            margin-top:240px;
+            margin-top:60vw;
         }
     
         .product-container {
@@ -352,7 +352,7 @@ body {
     }
     
     .buttonsbox {
-        transform:translatey(-14vw);
+        transform:translatey(-10vw);
         margin:auto ;
         position: static;
        width:90vw;
@@ -384,6 +384,7 @@ body {
     .productss.slide{
             height:auto;
             display:flex;
+            margin-top:11vw;
         }
     .productsss.slide{
      mask-image: radial-gradient(ellipse at center,  #000000 40%, #ff000000 92% );

@@ -42,7 +42,7 @@ const productImages = {
     "vatrex-ls": "../images/VLS.webp",
     "vatrex-HOODIE": "../images/VH.webp",
     "vatrex-v-LASTLY-pants": "../images/VP.webp",
-    "vatrex-mixed-shoulderss": "../images/Vshirtblack.webp",
+    "vatrex-mixed-shoulderss": "../images/VATREXmix.webp",
     "vatrex-shadow-pants": "../images/redpants.webp"
 };
 
