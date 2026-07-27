@@ -139,7 +139,7 @@ document.getElementById("confirm-button").addEventListener("click", async () => 
 
         console.error(err);
 
-        alert("Invalid server response. please check the form you entered if the number is correct, or check your e-mail if it has the @");
+        alert("order could not be sent,please check if the number you entered or check the email you entered if it's correct");
 
         button.disabled = false;
         button.textContent = "Confirm Order";

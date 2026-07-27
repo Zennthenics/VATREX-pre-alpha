@@ -26,7 +26,7 @@ const products = {
     "vatrex-mixed-shoulderss": {
         name: "VATREX Mixed Shoulderss",
         price: 1299,
-        image: "../images/blacksho.webp"
+        image: "../images/VATREXmix.webp"
     },
     "vatrex-shadow-pants": {
         name: "VATREX Shadow Pants",
