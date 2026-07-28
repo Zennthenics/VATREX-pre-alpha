@@ -230,7 +230,7 @@ body {
         animation:fadeIn 0.8s ease;
     }
    
-    @media (max-width: 840px) {
+    @media (max-width: 780px) {
         body {
             overflow-x: hidden;
         }
@@ -284,19 +284,23 @@ body {
         .description {
             color: rgb(255, 255, 255);
             font-size:clamp(25px,9vw,30px);
-            font-weight: 500;
-            text-align: center;
+            text-align: start;
             margin:auto;
             
             font-size:40px;
             width:300px;
         }
+        .related-category{
+        margin-top:-10vw;
+        font-size:9vw;
+        color:white;
+        font-family:"Metal Mania", serif;}
          .relatedproducts{
         color:white;
         flex-direction:row;
         width:100%;
         display:flex;
-        margin-top:0vw;
+        margin-top:-10vw;
         transform:translateX(1vw);
              overflow-x:auto;
         
@@ -307,14 +311,15 @@ body {
     
         .producttext {
             width:300px;
-            transform:translatey(-150px);
-            margin-top:60vw;
+            transform:translatey(-40vw);
+            margin-top:35vw;
+            height:0;
         }
     
         .product-container {
             position: relative;
             width:80vw;
-            height:80vw;
+            height:90vw;
             justify-content:center;
             align-items:center;
             margin:auto 0;
@@ -356,15 +361,16 @@ body {
         margin:auto ;
         position: static;
        width:90vw;
-        height:40vw;
+        height:20vw;
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        row-gap:20px;
+        gap:44px;
         border:none;
         background:none;
         border-radius:40px;
         padding: 14px 0;
+        
     }
     
     .buy, .back {
@@ -373,10 +379,10 @@ body {
         border:2px #929292 solid;
         margin-top:0px;
         font-weight: 900;
-        width: 70vw;
-        height:17vw;
-        border-radius: 20px;
-        font-size:6vw;
+        width: 60vw;
+        height:15vw;
+        border-radius: 40px;
+        font-size:4.3vw;
         font-family:aria;
         
         -webkit-tap-highlight-color: transparent;
