@@ -412,8 +412,8 @@ input {
    color:white;
    border:1px white solid;
   font-size:3vw;
-   width:40%;
-   height:9vw;
+   width:30%;
+   height:8vw;
    border-radius:30px;
  }
  label[for="quantity"]{
@@ -439,7 +439,7 @@ input {
    color:white;
   border: 1px #820000 solid;
   font-size:3vw;
-   width:40%;
-   height:9vw;
+   width:30%;
+   height:8vw;
    border-radius:50px;
  }}
