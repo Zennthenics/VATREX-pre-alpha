@@ -21,7 +21,7 @@ body {
 
 .review-card {
     width: 100%;
-    max-width: 800px;
+    max-width:80VW;
     background: #171717;
     border: 1px solid #2d2d2d;
     border-radius: 18px;
@@ -34,7 +34,7 @@ body {
 }
 
 .logo {
-    width:40vw;
+    width:44vw;
     user-select: none;
     pointer-events: none;
 }

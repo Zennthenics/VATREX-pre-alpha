@@ -1,400 +1,445 @@
 body{
-    margin: 0;
-    min-height: 100vh;
-    overflow-x:hidden;
-    background-image:
-       linear-gradient(rgba(250,0,0,.65), rgba(60,0,0,.65)),
-        url("../images/background.webp");
+  margin: 0;
+  min-height: 100vh;
+  overflow-x:hidden;
+  background-image:
+     linear-gradient(rgba(250,0,0,.65), rgba(60,0,0,.65)),
+      url("../images/background.webp");
 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment:fixed;
-  }
-  ::-webkit-scrollbar{
-    width:8px;
-  }
-  
-  ::-webkit-scrollbar-track{
-    background:#090909;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background:linear-gradient(
-        180deg,
-        #ff1a1a,
-        #8b0000
-    );
-    border-radius:100px;
-    border:2px solid #090909;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover{
-    background:linear-gradient(
-        180deg,
-        #ff4040,
-        #b30000
-    );
-  }
-  
-  html{
-    scrollbar-width:thin;
-    scrollbar-color:#b30000 #090909;
-  }
-  .logo-container{
-      height:27vw;
-      width:100%;
-      display:flex;
-      justify-content:start;
-      align-items:start;
-      flex-direction:row;
-      overflow:hidden;
-      }
-      
-      .logo{
-      width:40vw;
-      height:25vw;
-      
-      }
-    .start{
-      color:#ffffff;
-      margin-left:2vw;
-      font-size:50px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+}
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#090909;
+}
+
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(
+      180deg,
+      #ff1a1a,
+      #8b0000
+  );
+  border-radius:100px;
+  border:2px solid #090909;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:linear-gradient(
+      180deg,
+      #ff4040,
+      #b30000
+  );
+}
+
+html{
+  scrollbar-width:thin;
+  scrollbar-color:#b30000 #090909;
+}
+.logo-container{
+    height:27vw;
+    width:100%;
+    display:flex;
+    justify-content:start;
+    align-items:start;
+    flex-direction:row;
+    overflow:hidden;
     }
+    
+    .logo{
+    width:40vw;
+    height:25vw;
+    
+    }
+  .start{
+    color:#ffffff;
+    margin-left:2vw;
+    font-size:50px;
+  }
 .starter{
-  color:whitesmoke;
-  margin-left:2vw;
-  font-size:30px;
+color:whitesmoke;
+margin-left:2vw;
+font-size:30px;
 }
 #checkoutform{
-  width:100%;
-  height:60vw;
-  background:#ff000000;
-  color:white;
-  display:flex;
-  flex-direction:column;
-  row-gap:20px;
-  align-items:center;
-  
+width:100%;
+height:60vw;
+background:#ff000000;
+color:white;
+display:flex;
+flex-direction:column;
+row-gap:20px;
+  padding:10px;
 }
 label[for="email"] {
-  color:white;
-  font-size:30px;
-  
+color:white;
+font-size:4vw;
+
 }
 label[for="fullname"]{
-     color:white;
-     font-size:30px;}
+   color:white;
+   font-size:4vw;}
 label[for="phone"]{
-  color:white;
-  font-size:30px;
+color:white;
+font-size:4vw;
 }
 #fullname{
-  width:60%;
-  height:4vw;
-  border-radius:30px;
-  border: 2px red solid;
+width:80%;
+height:5vw;
+border-radius:10px;
+border: 2px red solid;
 }
 #fullname::placeholder{
-  width:auto;
-  height:3vw;
-  font-size:2.3vw;
-  
-  text-align:center;
-  justify-content:center;
+width:auto;
+height:3vw;
+font-size:2.3vw;
+
+text-align:start;
+justify-content:center;
 }
 #email{
-  width:80%;
-  height:6vw;
-  border-radius:30px;
-    border: 2px red solid;
+width:80%;
+height:6vw;
+border-radius:10px;
+  border: 2px red solid;
 
 }
 #email::placeholder{
-  width:auto;
-  height:4vw;
-  font-size:2.3vw;
-  justify-content:center;
-  text-align:center;
-  
+width:auto;
+height:4vw;
+font-size:2.3vw;
+justify-content:center;
+text-align:start;
+
 }
 #phone{
-  width:40%;
-  height:6vw;
-  border-radius:30px;
-    border: 2px red solid;
+width:80%;
+height:6vw;
+border-radius:10px;
+  border: 2px red solid;
 }
 #phone::placeholder{
-  width:auto;
-  height:4vw;
-  font-size:2.3vw;
-  justify-content:center;
-  text-align:center;
+width:auto;
+height:4vw;
+font-size:2.3vw;
+justify-content:center;
+text-align:start;
 
 }
 input {
-    color: #000000;         
-    font-size: 3vw;      
-    font-family: Arial;    
-    font-weight: 600;       
-    letter-spacing: 1px;   
-    text-align: center;      
+  color: #000000;         
+  font-size: 3vw;      
+  font-family:serif;    
+  font-weight: 500;       
+  letter-spacing: 2px;   
+  text-align: center;      
 }
-   label[for="governorate"]{
-     font-size:7vw;
-   }
-   #governorate{
+ label[for="governorate"]{
+   font-size:4vw;
+ }
+ #governorate{
+  border: 2px red solid;
+   width: 45%;
+   text-align:center;
+   height:4vw;
+   font-size:2vw;
+   border-radius:10px;
+ }
+ label[for="city"]{
+   font-size:3vw;
+ }
+ #city{
+       border: 2px red solid;
+
+   width:80%;
+   height:6vw;
+   font-size:4vw;
+   border-radius:30px;
+ }
+ label[for="street"]{
+   font-size:3vw;
+ }
+ #street{
+       border: 2px red solid;
+
+    width:80%;
+   height:5vw;
+   border-radius:30px;
+        font-size:3vw;
+
+ }   #submit-order{
+  border: 2px red solid;
+  font-size:25px;
+   width:50%;
+   height:8vw;
+   border-radius:50px;
+ }
+  
+ label[for="apartment"]{
+   font-size:3vw;
+ }
+ #apartment{
+       border: 2px red solid;
+     font-size:35px;
+
+    width:80%;
+   height:10vw;
+   border-radius:30px;
+ }
+ label[for="postal"]{
+   font-size:3vw;
+ }
+ #postal{
+  border: 2px red solid;
+
+    width:50%;
+   height:5vw;
+   border-radius:20px;
+   font-size:25px;
+ }
+#buttonbox{
+  width:100%;
+  height:30px;
+  display:flex;
+  justify-content:center;
+  column-gap:20px;
+}
+#submit-order{
+  background:#820000;
+   color:white;
+   border:1px white solid;
+  font-size:3vw;
+   width:30%;
+   height:8vw;
+   border-radius:30px;
+ }
+ label[for="quantity"]{
+   font-size:3vw;
+ }
+ #quantity{
     border: 2px red solid;
-     width: 45%;
-     text-align:center;
-     height:3vw;
-     font-size:2vw;
-     border-radius:25px;
-   }
-   label[for="city"]{
-     font-size:7vw;
-   }
-   #city{
-         border: 2px red solid;
+  font-size:2vw;
+   width:40vw;
+   height:4vw;
+   border-radius:10px;
+   text-align:center;
+ }
+ .back{
+   background:#474747;
+   color:white;
+  border: 1px #820000 solid;
+  font-size:3vw;
+   width:30%;
+   height:8vw;
+   border-radius:50px;
+ }
+@media (max-width: 780px) {
+   body{
+  margin: 0;
+  min-height: 100vh;
+  overflow-x:hidden;
+  background-image:
+      linear-gradient(rgba(250,0,0,.65), rgba(60,0,0,.65)),
+      url("../images/background.webp");
 
-     width:80%;
-     height:70vw;
-     font-size:40px;
-     border-radius:30px;
-   }
-   label[for="street"]{
-     font-size:9vw;
-   }
-   #street{
-         border: 2px red solid;
-
-      width:80%;
-     height:90vw;
-     border-radius:30px;
-          font-size:35px;
-
-   }
-    
-   label[for="apartment"]{
-     font-size:9vw;
-   }
-   #apartment{
-         border: 2px red solid;
-       font-size:35px;
-
-      width:80%;
-     height:10vw;
-     border-radius:30px;
-   }
-   label[for="postal"]{
-     font-size:9vw;
-   }
-   #postal{
-    border: 2px red solid;
-
-      width:50%;
-     height:10vw;
-     border-radius:30px;
-   }
-   #submitorder{
-    border: 2px red solid;
-    font-size:25px;
-     width:50%;
-     height:8vw;
-     border-radius:50px;
-   }
-   label[for="quantity"]{
-     font-size:9vw;
-   }
-   #quantity{
-      border: 2px red solid;
-    font-size:25px;
-     width:49vw;
-     height:14vw;
-     border-radius:50px;
-     text-align:center;
-   }
-   #quantity::placeholder{
-     font-size:25px;  }
- @media (max-width: 780px) {
-     body{
-    margin: 0;
-    min-height: 100vh;
-    overflow-x:hidden;
-    background-image:
-        linear-gradient(rgba(250,0,0,.65), rgba(60,0,0,.65)),
-        url("../images/background.webp");
-
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment:fixed;
-  }
-  .logo-container{
-      height:40vw;
-      width:100%;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      flex-direction:row;
-      overflow:hidden;
-      }
-      
-      .logo{
-      width:80vw;
-      height:50vw;
-      
-      }
-    .start{
-      color:#ffffff;
-      margin-left:2vw;
-      font-size:50px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+}
+.logo-container{
+    height:40vw;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    overflow:hidden;
     }
+    
+    .logo{
+    width:80vw;
+    height:50vw;
+    
+    }
+  .start{
+    color:#ffffff;
+    margin-left:2vw;
+    font-size:50px;
+  }
 .starter{
-  color:whitesmoke;
-  margin-left:2vw;
-  font-size:30px;
+color:whitesmoke;
+margin-left:2vw;
+font-size:30px;
 }
 #checkoutform{
-  width:100%;
-  height:auto;
-  background:#ff000000;
-  color:white;
-  display:flex;
-  flex-direction:column;
-  row-gap:20px;
-  align-items:center;
-  
+width:100%;
+height:auto;
+background:#ff000000;
+color:white;
+display:flex;
+flex-direction:column;
+row-gap:20px;
+align-items:center;
+
 }
 label[for="email"] {
-  color:white;
-  font-size:10vw;
-  
+color:white;
+font-size:10vw;
+
 }
 label[for="fullname"]{
-     color:white;
-     font-size:10vw;
+   color:white;
+   font-size:10vw;
 }
 label[for="phone"]{
-  color:white;
-  font-size:10vw;
+color:white;
+font-size:10vw;
 }
 #fullname{
-  width:80%;
-  height:13vw;
-  border-radius:30px;
-  border: 2px red solid;
+width:80%;
+height:13vw;
+border-radius:30px;
+border: 2px red solid;
 }
 #fullname::placeholder{
-  width:auto;
-  height:30vw;
-  font-size:3vw;
-  
-  text-align:center;
-  justify-content:center;
+width:auto;
+height:30vw;
+font-size:3vw;
+
+text-align:center;
+justify-content:center;
 }
 #email{
-  width:70%;
-  height:13vw;
-  border-radius:30px;
-    border: 2px red solid;
+width:70%;
+height:13vw;
+border-radius:30px;
+  border: 2px red solid;
 
 }
 #email::placeholder{
-  width:auto;
-  height:13vw;
-  font-size:3vw;
-  justify-content:center;
-  text-align:center;
-  
+width:auto;
+height:13vw;
+font-size:3vw;
+justify-content:center;
+text-align:center;
+
 }
 #phone{
-  width:50%;
-  height:13vw;
-  border-radius:30px;
-    border: 2px red solid;
+width:50%;
+height:13vw;
+border-radius:30px;
+  border: 2px red solid;
 
 }
+  #phone::placeholder{
+width:auto;
+height:4vw;
+font-size:2.7vw;
+justify-content:center;
+text-align:center;}
 input {
-    color: #000000;         
-      font-size:3vw;      
-    font-family: Arial;    
-    font-weight:800;       
-    letter-spacing: 1.3px;   
-    text-align: center;      
+  color: #000000;         
+    font-size:3vw;      
+  font-family: Arial;    
+  font-weight:800;       
+  letter-spacing: 1.3px;   
+  text-align: center;      
 }
-   label[for="governorate"]{
-     font-size:10vw;
-   }
-   #governorate{
+ label[for="governorate"]{
+   font-size:10vw;
+ }
+ #governorate{
+  border: 2px red solid;
+   width: 60%;
+   text-align:center;
+   height:7vw;
+   font-size:3.5vw;
+   border-radius:25px;
+ }
+ label[for="city"]{
+   font-size:9vw;
+ }
+ #city{
+       border: 2px red solid;
+
+   width:80%;
+   height:10vw;
+   border-radius:30px;
+   font-size:5vw;
+ }
+ label[for="street"]{
+   font-size:9vw;
+ }
+ #street{
+       border: 2px red solid;
+
+    width:80%;
+   height:10vw;
+   border-radius:30px;
+   font-size:3vw
+ }
+  
+ label[for="apartment"]{
+   font-size:9vw;
+ }
+ #apartment{
+       border: 2px red solid;
+
+    width:80%;
+   height:10vw;
+   border-radius:30px;
+   font-size:3vw
+ }
+ label[for="postal"]{
+   font-size:5vw;
+ }
+ #postal{
+  border: 2px red solid;
+
+    width:50%;
+   height:10vw;
+   border-radius:30px;
+   font-size:4vw;
+ }
+ #submit-order{
+  background:#820000;
+   color:white;
+   border:1px white solid;
+  font-size:3vw;
+   width:30%;
+   height:8vw;
+   border-radius:30px;
+ }
+ label[for="quantity"]{
+   font-size:9vw;
+ }
+ #quantity{
     border: 2px red solid;
-     width: 55%;
-     text-align:center;
-     height:8vw;
-     font-size:3vw;
-     border-radius:25px;
-   }
-   label[for="city"]{
-     font-size:9vw;
-   }
-   #city{
-         border: 2px red solid;
+  font-size:4vw;
+   width:60%;
+   height:7vw;
+   border-radius:50px;
+ }
 
-     width:80%;
-     height:10vw;
-     border-radius:30px;
-     font-size:5vw;
-   }
-   label[for="street"]{
-     font-size:9vw;
-   }
-   #street{
-         border: 2px red solid;
-
-      width:80%;
-     height:10vw;
-     border-radius:30px;
-     font-size:3vw
-   }
-    
-   label[for="apartment"]{
-     font-size:9vw;
-   }
-   #apartment{
-         border: 2px red solid;
-
-      width:80%;
-     height:10vw;
-     border-radius:30px;
-     font-size:3vw
-   }
-   label[for="postal"]{
-     font-size:9vw;
-   }
-   #postal{
-    border: 2px red solid;
-
-      width:50%;
-     height:10vw;
-     border-radius:30px;
-     font-size:4vw;
-   }
-   #submit-order{
-    border: 2px red solid;
-    font-size:25px;
-     width:50%;
-     height:8vw;
-     border-radius:50px;
-   }
-   label[for="quantity"]{
-     font-size:9vw;
-   }
-   #quantity{
-      border: 2px red solid;
-    font-size:25px;
-     width:90vw;
-     height:9vw;
-     border-radius:50px;
-   }
-   #quantity::placeholder{
-     font-size:25px;  }}
+#buttonbox{
+  width:100%;
+  height:30px;
+  display:flex;
+  justify-content:center;
+  column-gap:20px;
+}
+ .back{
+   background:#474747;
+   color:white;
+  border: 1px #820000 solid;
+  font-size:3vw;
+   width:30%;
+   height:8vw;
+   border-radius:50px;
+ }
