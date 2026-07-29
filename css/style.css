@@ -52,7 +52,7 @@ html {
     z-index:2000;
 }
 .sidebar a{
-
+    font-family:"metal mania";
     display:block;
 
     color:white;
@@ -69,10 +69,10 @@ html {
 
     position:absolute;
 
-    top:5vw;
-    right:8vw;
+    top:20px;
+    right:20px;
 
-    font-size:9vw;
+    font-size:35px;
 
     background:none;
 
@@ -205,7 +205,7 @@ width:12vw
       height:3vw;
       
       padding-top:13px;
-      margin-top:4vw;
+      margin-top:20vw;
     }
     .start{
       text-align:center;
@@ -248,14 +248,14 @@ width:12vw
                overflow-x: hidden;
       }
       .product1 img{
-          margin-top:4.5vw;
+          margin-top:-4vw;
           width:28vw;  
           height:auto;
     }
   
     .product2 img{
-width:28vw;  
-        height:auto;
+width:28vw;        
+height:auto;
   }
   
   .product3 img{
@@ -510,7 +510,40 @@ height:48vw;
     }
    }
       @media (min-width: 768px) and (max-width: 1024px) {
-         .DES{
+        .sidebar{
+
+    position:fixed;
+
+    top:0;
+    left:-280px;
+
+    width:280px;
+    height:100vh;
+
+    background:#111;
+
+    padding-top:90px;
+
+    transition:0.35s ease;
+
+    z-index:2000;
+}
+.sidebar a{
+    font-family:"metal mania";
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:20px 30px;
+
+    font-size:22px;
+
+    transition:.3s;
+}
+          
+          .DES{
       
       color:black;
       
@@ -704,6 +737,6 @@ img,
 }
 
 html{
-  scrollbar-width:none;
+  scrollbar-width:thin;
   scrollbar-color:#350e0e #090909;
 }
