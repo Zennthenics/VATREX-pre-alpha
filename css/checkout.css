@@ -68,7 +68,7 @@ font-size:30px;
 }
 #checkoutForm{
 width:100%;
-height:60vw;
+height:clamp(1200px,10vw,1300px);
 background:#ff000000;
 color:white;
 display:flex;
@@ -97,6 +97,7 @@ border: 2px red solid;
 #fullname::placeholder{
 width:auto;
 height:3vw;
+  padding-left:0.7vw;
 font-size:2.3vw;
 
 text-align:start;
@@ -113,6 +114,7 @@ border-radius:10px;
 width:auto;
 height:4vw;
 font-size:2.3vw;
+  padding-left:0.7vw;
 justify-content:center;
 text-align:start;
 
@@ -125,6 +127,7 @@ border-radius:10px;
 }
 #phone::placeholder{
 width:auto;
+padding-left:0.7vw;
 height:4vw;
 font-size:2.3vw;
 justify-content:center;
@@ -204,19 +207,19 @@ input {
  }
 #buttonbox{
   width:100%;
-  height:30px;
+  height:20px;
   display:flex;
   justify-content:center;
-  column-gap:20px;
+  column-gap:150px;
 }
 #submit-order{
   background:#820000;
    color:white;
    border:1px white solid;
   font-size:3vw;
-   width:30%;
-   height:8vw;
-   border-radius:30px;
+   width:40%;
+   height:7vw;
+   border-radius:50px;
  }
  label[for="quantity"]{
    font-size:3vw;
@@ -234,8 +237,8 @@ input {
    color:white;
   border: 1px #820000 solid;
   font-size:3vw;
-   width:30%;
-   height:8vw;
+   width:40%;
+   height:7vw;
    border-radius:50px;
  }
 @media (max-width: 780px) {
