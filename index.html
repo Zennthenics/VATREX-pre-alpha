@@ -20,10 +20,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     <div class="loader-text">Forging Darkness...</div>
 </div>
 <nav class="navbar">
+  
     <div class="nav-left">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
     </div>
+    <div id="sidebar" class="sidebar">
 
+    <button class="close-btn" onclick="closeMenu()">&times;</button>
+
+    <a href="#tops">TOPS</a>
+    <a href="#pants">PANTS</a>
+
+</div>
+
+<div id="overlay" class="overlay" onclick="closeMenu()"></div>
     <div class="nav-center">
         <img src="images/VATREXX.webp" alt="VATREX Logo">
     </div>
@@ -32,7 +42,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     <img src="images/tiktok.webp">
     </a>
     </div>
-    </div>
+    
 </nav>
   <h2 class="DES">𐎂 FROM PASSION TO LEGACY 𐎂 </h2>
     
@@ -75,7 +85,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 <script src="javascript/cursor.js"></script>
 
 <!-- Force GitHub Pages rebuild -->
+<script>
 
+function openMenu(){
+
+    document.getElementById("sidebar").style.left="0";
+
+    document.getElementById("overlay").style.display="block";
+
+}
+
+function closeMenu(){
+
+    document.getElementById("sidebar").style.left="-280px";
+
+    document.getElementById("overlay").style.display="none";
+
+}
+
+</script>
 
 
     
