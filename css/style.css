@@ -2,14 +2,7 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow-x:hidden;
-  background-image:
-      linear-gradient(rgba(30,0,0,.65), rgba(10,0,0,.65)),
-      url("../images/background.webp");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+ background:#000000;
   overflow-y:scroll;
   body::-webkit-scrollbar {
     display: none;
@@ -76,20 +69,69 @@ html {
     }
 }
 
-.logo-container{
-    width: 100vw;
-    height:20vw;
-    align-items:center;
-    margin-top:4vw;
-    display: flex;
-    justify-content: center; /* Center the logo */
-    padding: 20px 0;
-    overflow-y:hidden;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-.logo{
-    width: 50vw;
-    height:30vw;  /* Change this to 200px, 300px, etc. */
-    display: block;
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+/* Navigation */
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:18vw;
+
+    background:#ffffff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 30px;
+
+    z-index:1000;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.nav-left i,
+.nav-right i{
+    font-size:7vw;
+    cursor:pointer;
+    color:#111;
+    transition:.3s;
+}
+.nav-right img{
+width:12vw
+
+}
+
+.nav-left i:hover,
+.nav-right i:hover{
+    color:#850000;
+}
+
+/* Center Logo */
+.nav-center{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    
+}
+
+.nav-center img{
+    height:25vw;
+}
+
+/* Push page below navbar */
+.content{
+    padding-top:100px;
 }
 
     .line{
@@ -291,63 +333,132 @@ height:48vw;
     }
 
        .products {
-        
+        width:auto;
         overflow-x: hidden;
-        display:grid;
-        grid-template-columns:repeat(2, 1fr);
-        column-gap:2vw;          /* Space between images */
-        
-        margin-top:-10vw;
-        height:auto;  /* Enables horizontal scrolling */
-          /* Prevents scrolling in y axis */
-      
-          white-space: nowrap; /* bte3ml wrap lel text elly w5da space*/
+        display:flex;
+           padding:4vw;
+        gap:5vw;          /* Space between images */
+        margin-top:-1vw;
+        height:100vw; 
+        overflow-x:auto;
+        overflow-y:hidden;
+        scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
          
        }
+       .products img{
+            scroll-snap-align:center;
+
+       }
+    .product1{
+    background:#00000000;
+    height:auto;
+    width:100vw;
+    padding:7vw;
+    border:1px red solid;
+    border-radius:30px;
+    }
+        .product2{
+    background:#fdfdfd00;
+    width:100vw;
+    height:100%;
+    padding:2vw;
+    border:1px red solid;
+    border-radius:30px;
+    }
+     .product3{
+    background:#fdfdfd00;
+    height:auto;
+    width:auto;
+    padding:4vw;
+    border:1px red solid;
+    border-radius:30px;
+    }
+     .product4{
+    background:#fdfdfd00;
+    height:auto;
+    width:auto;
+    padding:2vw;    
+    border:1px red solid;
+    border-radius:30px;
+    }
+
     .product1 img{
-     width:43vw;
-     height:auto;
-    margin-top:15vw;
+     width:68vw;
+     height:84vw;
+    margin-top:-6vw;
+    
 
     }
   
     .product2 img{
- width:45vw;
-        height:auto;
-     margin-top:7vw;
+ width:74vw;
+        height:69vw;
+     margin-top:8vw;
   
   }
   
   .product3 img{
-     width:45vw;
+     width:90vw;
     height:auto;
-    margin-top:9vw;
+    margin-top:-5vw;
     }
     
     .product4 img {
-       width:45vw;
-      height:auto;
-        margin-top:10vw
+       width:82vw;
+      height:80vw;
+      margin-top:-2vw;  
+        
+       
         }
 
             .bottoms{
-                
-       display:grid;
-    grid-template-columns:repeat(2, 1fr);
-      height:auto;
-      column-gap:1px;
-      overflow-x: hidden;
-                margin-top:30px;
-                margin-left:20px;
+        width:auto;
+        display:flex;
+        padding:5.5vw;
+        gap:5vw;          /* Space between images */
+        margin-top:10vw;
+        height:100vw; 
+        overflow-x:auto;
+        overflow-y:hidden;
+        
+        align-items:center;
+        scroll-snap-type:x mandatoRy;
+        scroll-behavior:smooth;
+          /* Prevents scrolling in y axis */
+      
+          white-space: nowrap;
+    
         }
+        .bottoms img{
+        scroll-snap-align:center;
+        }
+       .pants1{
+    background:#00000000;
+    height:auto;
+    width:100%;
+    padding:3vw;    
+    border:1px red solid;
+    border-radius:30px;
+       }
+              .pants2{
+    background:#fdfdfd00;
+    height:auto;
+    width:auto;
+    border:1px #ff0000 solid;
+    border-radius:30px;
+    padding:3vw;    
+
+       }
         .pants1 img{
         
      height:auto;
- width:43vw;
+ width:80vw;
+
   }
     .pants2 img{
         height:auto;
-        width:43vw;
+        width:80vw;
     }
    }
       @media (min-width: 768px) and (max-width: 1024px) {
@@ -546,5 +657,5 @@ img,
 
 html{
   scrollbar-width:thin;
-  scrollbar-color:#b30000 #090909;
+  scrollbar-color:#350e0e #090909;
 }
