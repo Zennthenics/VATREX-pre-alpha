@@ -321,7 +321,29 @@ body {
               text-shadow: 0 0 5px #ff1111, 0 0 10px #ff1111;
           }
       }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      @media (max-width: 768px) {
          body{
           overflow-x:hidden;
@@ -539,6 +561,22 @@ body {
           width:80vw;
       }
      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         @media (min-width: 769px) and (max-width: 1024px) {
           .sidebar{
   
@@ -747,6 +785,19 @@ body {
   .bottoms img:hover{
       transform: translateY(-8px) scale(1.04);
   }}
+
+
+
+
+
+
+
+
+
+
+
+
+
   @keyframes fadeIn{
       from{
           opacity:0;
