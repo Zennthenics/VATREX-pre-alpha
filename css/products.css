@@ -294,11 +294,11 @@ body {
         }
     
         .prev {
-            right:68vw;
+            right:60vw;
         }
     
         .next {
-            left: 68vw;
+            left: 60vw;
         }
     
         .describing {
@@ -353,7 +353,7 @@ body {
             height:90vw;
             justify-content:center;
             align-items:center;
-            margin:auto 0;
+            margin:auto;
         }
     
     
