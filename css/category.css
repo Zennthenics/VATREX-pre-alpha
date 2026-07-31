@@ -142,7 +142,7 @@ height:23.2vw;
     /* Center Logo */
     .nav-center{
         position:absolute;
-        left:50%;
+        left:47%;
         transform:translateX(-50%);
         margin-top:1vw;
     }
