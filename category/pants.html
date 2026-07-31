@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𐎂𐎂 VATREX 𐎂𐎂</title>
+    <link rel="stylesheet" href="../css/category.css">
+  </head>
+  <body>
+  <nav class="navbar">
+  
+    <div class="nav-left">
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </div>
+    <div id="sidebar" class="sidebar">
+
+    <button class="close-btn" onclick="closeMenu()">&times;</button>
+
+    <a href="tops.html">TOPS</a>
+    <a href="pants.html">PANTS</a>
+
+</div>
+
+<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+    <div class="nav-center">
+        <img src="../images/VATREXX.webp" alt="VATREX Logo">
+    </div>
+    <div class="nav-right">
+    <a href="https://www.tiktok.com/@..vatrex">
+    <img src="../images/tiktok.webp">
+    </a>
+    </div>
+    
+</nav>
+<div id="products">
+<div class="top1">
+<a href="../products/Vpants.html">
+<img src="../images/VP.webp" class="mockup">
+<img src="../images/frontbeigepants.webp" class="front">
+</a>
+</div>
+<div class="top2">
+<a href="../products/Vredpants.html">
+<img src="../images/redpants.webp" class="mockup">
+<img src="../images/frontredpants.webp" class="front">
+</a>
+</div>
+</div>
+<script>
+
+    function openMenu(){
+    
+        document.getElementById("sidebar").style.left="0";
+    
+        document.getElementById("overlay").style.display="block";
+    
+    }
+    
+    function closeMenu(){
+    
+        document.getElementById("sidebar").style.left="-280px";
+    
+        document.getElementById("overlay").style.display="none";
+    
+    }
+    
+    </script>
+</body>
+</html>
