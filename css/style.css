@@ -106,16 +106,7 @@ body {
       visibility:hidden;
   }
   
-  @keyframes pulse{
   
-      0%,100%{
-          transform:scale(1);
-      }
-  
-      50%{
-          transform:scale(1.05);
-      }
-  }
   
   *{
       margin:0;
@@ -196,10 +187,9 @@ body {
       }
       .DES{
         
-        color:black;
+        color:rgb(203, 4, 4);
          font-family: "metal mania", serif;
         font-size:5vw;
-        animation: glow 3s ease-in-out infinite;
         text-align:center;
         
         height:3vw;
@@ -209,11 +199,10 @@ body {
       }
       .start{
         text-align:center;
-        color:black;
-        animation: glow 3s ease-in-out infinite;
-         font-family: "metal mania", serif;
+        color:rgb(206, 16, 16);
+        font-family: "metal mania", serif;
         margin-top:30px;
-          font-size:4vw;
+        font-size:4vw;
       }
       
         .products {
@@ -300,27 +289,10 @@ body {
                font-size:5vw;
             text-align: center;
              font-family: "metal mania", serif;
-            color:black;
-             animation: glow 3s ease-in-out infinite,fadeIn 0.8s ease;
+            color:rgb(193, 16, 16);
+             animation:fadeIn 0.8s ease;
              
         }
-        @keyframes glow {
-          0%, 100% {
-              text-shadow: 0 0 4px #ff0000, 0 0 8px #ff0000;
-          }
-      
-          25% {
-              text-shadow: 0 0 5px #ff1111, 0 0 10px #ff1111;
-          }
-      
-          50% {
-              text-shadow: 0 0 7px #ff2222, 0 0 14px #ff2222, 0 0 24px #ff2222;
-          }
-      
-          75% {
-              text-shadow: 0 0 5px #ff1111, 0 0 10px #ff1111;
-          }
-      }
 
 
 
@@ -403,7 +375,7 @@ body {
         font-size:7.7vw;
         
         text-align:center;
-        color:black;
+        color:rgb(203, 4, 4);
         height:50px;
         
         padding-top:3vw;
@@ -412,11 +384,11 @@ body {
             .start{
         
         text-align:center;
-                color:black;
+        color:rgb(203, 4, 4);
         margin-top:39px;
           font-size:10vw;}
          .PANTS {
-             color:black;
+             color:rgb(203, 4, 4);
                font-size:10vw;
             text-align: center;
          }
@@ -630,7 +602,7 @@ body {
      font-size:50px;
       }
       .start{
-        color:black; 
+        color:rgb(255, 4, 4); 
         text-align:center;
           font-size:6vw;
         margin-top:5vw;
