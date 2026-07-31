@@ -230,35 +230,37 @@ body {
         
         .products::-webkit-scrollbar {
             height: 8px;
-        }
+        }   
         
-        .product {
+        .products {
             flex: 0 0 auto; /* Prevents shrinking */
                  overflow-x: hidden;
         }
+        .products img {
+        border:2px red solid;
+        border-radius:25px;
+        }
+
         .product1 img{
-            margin-top:-4vw;
             width:28vw;  
-            height:auto;
+            height:29vw;
       }
     
       .product2 img{
-  width:28vw;        
-  height:auto;
+          width:28vw;        
+          height:29vw;
     }
     
     .product3 img{
-          width:25vw;  
-        height:auto;
+          width:20vw;  
+          height:29vw;
   }
       
       .product4 img {
   width:28vw;  
-          height:auto;
-      
-        margin-top: 6vw;
-  
-        object-fit: contain;
+  height:auto;
+  margin-top: 6vw;
+  object-fit: contain;
       }
       .product5 img{
         width:min(480px,80vw);
@@ -349,6 +351,18 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
      @media (max-width: 768px) {
@@ -455,6 +469,7 @@ body {
          }
          .products img{
               scroll-snap-align:center;
+            border:none;
   
          }
       .product1{
@@ -506,8 +521,8 @@ body {
     }
     
     .product3 img{
-       width:80vw;
-      height:85vw;
+       width:76vw;
+      height:90vw;
       margin-top:-5vw;
       }
       
@@ -610,7 +625,7 @@ body {
 
 
 
-     
+
 
 
 
@@ -654,7 +669,7 @@ body {
             
             .DES{
         
-        color:#5a090900;
+        color:#ff0707;
         
         font-size:8vw;
         
@@ -667,8 +682,9 @@ body {
       }
             .PANTS{
       text-align: center;
-                color:black;
+                color:#ff0000;
      font-size:50px;
+     margin-top:9vw;
       }
       .start{
         color:rgb(255, 4, 4); 
@@ -714,6 +730,10 @@ body {
       overflow-x:auto;
                 
         }
+      .products img{
+      border:none;
+
+      }
       .product1{
       height:50vw;
       width:70vw;
@@ -741,10 +761,10 @@ body {
       padding:2vw;
       }
           .product1 img{
-       height:45vw;
-   width:min(330px,100vw);
+       height:46vw;
+   width:min(300px,100vw);
   padding:vw; 
-  margin-top:-6.7vw;
+  margin-top:-5.7vw;
       }
     
           .product2 img{
@@ -757,14 +777,14 @@ body {
         .product3 img{
    width:min(350px,100vw);
         margin-top:0vw;
-      height:auto;
+      height:47vw;
   }
       
           .product4 img {
    width:min(350px,100vw);
-        height:45vw;
+        height:40vw;
       
-        margin-top:-2vw;
+        margin-top:1vw;
   
         object-fit: contain;}
   
@@ -774,7 +794,7 @@ body {
           display:flex;
           padding:3.5vw;
           gap:9vw;          /* Space between images */
-          margin-top:1vw;
+          margin-top:-9vw;
           height:100vw; 
           overflow-x:auto;
           overflow-y:hidden;
@@ -797,14 +817,14 @@ body {
       height:70vw;
       width:100%;
       padding:3vw;    
-      border:1px red solid;
+      border:4px #ff0000 solid;
       border-radius:30px;
          }
                 .pants2{
       background:#fdfdfd00;
       height:70vw;
       width:100%;
-      border:1px #ff0000 solid;
+      border:4px #ff0000 solid;
       border-radius:30px;
       padding:3vw;    
   
