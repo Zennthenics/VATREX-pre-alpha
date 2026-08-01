@@ -38,8 +38,15 @@ body {
         display: flex;
         flex-direction: column;
         transition: 0.5s;
-        height:30vw;
+        height:35vw;
         width: clamp(350px,25vw,500px);
+        border:2px red solid;
+        border-radius:40px;
+        padding:1px;
+    }
+    .product-container img{
+    width:31vw;
+        padding-top:2vw;
     }
     .sidebar{
   
@@ -221,7 +228,7 @@ body {
         font-size:4vw;
         color:white;
         font-family:"Metal Mania", serif;
-        margin-top:-1vw;
+        margin-top:0vw;
     }
     .relatedproducts{
             font-family:"Metal Mania", serif;
@@ -238,7 +245,7 @@ body {
     }
     .relatedproducts img{
      width:27vw;
-    height:32vw;
+    height:26vw;
     border:3px red solid;
     border-radius:30px;
      -webkit-tap-highlight-color: transparent;
@@ -259,7 +266,7 @@ body {
     scrollbar-color: #8b0000 #111;
 }
     .producttext {
-        margin-top:9.5vw;
+        margin-top:0.5vw;
         display: flex;
         
        
@@ -315,20 +322,21 @@ body {
         }
     .products2.slide{
      mask-image: radial-gradient( ellipse at center,
-          #000000 30%,
-        #ff000000 98% );
-         height:29vw;
+          #000000 80%,
+        #ff000000 100% );
+         height:32vw;
+        
     }
     .products3.slide{
-                mask-image: radial-gradient( ellipse at top,   
-        #000000 70%,
-        #ffffff00 94% );
+                mask-image: radial-gradient( ellipse at center,   
+        #000000 43%,
+        #ffffff00 62% );
          height:29vw;
         }
     .products4.slide{
         mask-image: radial-gradient( ellipse at center,   
-        #000000 30%,
-        #ffffff00 78% );
+        #000000 50%,
+        #ffffff00 58% );
          height:29vw;
         
     }
