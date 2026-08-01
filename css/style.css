@@ -89,9 +89,10 @@ body {
 #time{
 color:#000000;
 background:#949494cf;
-height:5vw;
-width:25vw;
+height:3vw;
+width:15vw;
 text-align:center;
+font-size:1.9vw;
 border-radius:6px;
 
 }
@@ -378,7 +379,7 @@ border-radius:25px;
         
 
 
-     @media (max-width: 768px) {
+     @media (max-width: 767px) {
          body{
           overflow-x:hidden;
           
@@ -465,6 +466,17 @@ border-radius:25px;
         height:3px;
         
       }
+         #time{
+color:#000000;
+background:#949494cf;
+height:5vw;
+width:25vw;
+text-align:center;
+border-radius:6px;
+font-size:3.9vw;
+
+
+}
   
          .products {
           width:auto;
@@ -647,7 +659,7 @@ border-radius:25px;
 
 
 
-        @media (min-width: 769px) and (max-width: 1024px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
           .sidebar{
   
       position:fixed;
@@ -775,23 +787,22 @@ border-radius:25px;
       padding:2vw;
       }
           .product1 img{
-       height:46vw;
-   width:min(300px,100vw);
-  padding:vw; 
-  margin-top:-5.7vw;
+       height:40vw;
+   width:min(290px,100vw); 
+  margin-top:-4.9vw;
       }
     
           .product2 img{
    width:min(330px,100vw);
-  height:auto;
+  height:39vw;
   margin-top:-4vw;
   
     }
     
         .product3 img{
-   width:min(350px,100vw);
+   width:min(330px,100vw);
         margin-top:0vw;
-      height:47vw;
+      height:41vw;
   }
       
           .product4 img {
@@ -860,7 +871,19 @@ border-radius:25px;
   .products img:hover,
   .bottoms img:hover{
       transform: translateY(-8px) scale(1.04);
-  }}
+  }
+#time{
+color:#000000;
+background:#949494cf;
+height:3vw;
+width:12vw;
+text-align:center;
+border-radius:6px;
+margin-top:2vw;
+font-size:2.1vw;
+
+}
+}
 
 
 
