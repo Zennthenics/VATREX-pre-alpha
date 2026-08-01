@@ -38,8 +38,8 @@ body {
         display: flex;
         flex-direction: column;
         transition: 0.5s;
-        height:20vw;
-        width: clamp(300px,25vw,500px);
+        height:30vw;
+        width: clamp(350px,25vw,500px);
     }
     .sidebar{
   
@@ -221,6 +221,7 @@ body {
         font-size:4vw;
         color:white;
         font-family:"Metal Mania", serif;
+        margin-top:-1vw;
     }
     .relatedproducts{
             font-family:"Metal Mania", serif;
@@ -233,10 +234,14 @@ body {
         background:#000000;
         overflow-x:auto;
         gap:20px;
+        margin-top:0vw;
     }
     .relatedproducts img{
-        width:27vw;
-         -webkit-tap-highlight-color: transparent;
+     width:27vw;
+    height:32vw;
+    border:3px red solid;
+    border-radius:30px;
+     -webkit-tap-highlight-color: transparent;
     outline: none;
     user-select: none;
     }
@@ -360,7 +365,7 @@ body {
 
 
 
-    @media (max-width: 780px) {
+    @media (max-width: 766px) {
         body {
             overflow-x: hidden;
         }
@@ -644,4 +649,374 @@ body {
     .productss.slide{
             height:auto;
             display:flex;
-        };
+        }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (min-width: 767px) and (max-width: 1024px) {
+    body {    
+        overflow-x: hidden;
+        background:#000000;
+        }
+        ::-webkit-scrollbar{
+            width:8px;
+          }
+          
+          ::-webkit-scrollbar-track{
+            background:#090909;
+          }
+          
+          ::-webkit-scrollbar-thumb{
+            background:linear-gradient(
+                180deg,
+                #ff0000,
+                #8b0000
+            );
+            border-radius:100px;
+            border:2px solid #090909;
+          }
+          
+          ::-webkit-scrollbar-thumb:hover{
+            background:linear-gradient(
+                180deg,
+                #ff4040,
+                #b30000
+            );
+          }
+          
+          html{
+            scrollbar-width:thin;
+            scrollbar-color:#b30000 #090909;
+          }
+        .product-container {
+            margin-top:20vw;
+            position: relative;
+            justify-content: start;
+            display: flex;
+            flex-direction: column;
+            transition: 0.5s;
+            height:40vw;
+            width: clamp(300px,25vw,500px);
+        }
+        .sidebar{
+      
+            position:fixed;
+        
+            top:0;
+            left:-280px;
+        
+            width:280px;
+            height:100vh;
+        
+            background:#111;
+        
+            padding-top:90px;
+        
+            transition:0.35s ease;
+        
+            z-index:2000;
+        }
+        .sidebar a{
+            font-family:"metal mania";
+            display:block;
+        
+            color:white;
+        
+            text-decoration:none;
+        
+            padding:20px 30px;
+        
+            font-size:22px;
+        
+            transition:.3s;
+        }
+        .close-btn{
+        
+            position:absolute;
+        
+            top:20px;
+            right:20px;
+        
+            font-size:35px;
+        
+            background:none;
+        
+            border:none;
+        
+            color:white;
+        
+            cursor:pointer;
+        }
+      .navbar{
+          position:fixed;
+          top:0;
+          left:0;
+         width:100vw;
+          height:7vw;
+      
+          background:#ffffff;
+      
+          display:flex;
+          justify-content:space-between;
+          align-items:center;
+      
+          padding:0 30px;
+      
+          z-index:1000;
+      
+          box-shadow:0 2px 10px rgba(0,0,0,.08);
+      }
+      
+      .nav-left i,
+      .nav-right i{
+          font-size:2.5vw;
+          cursor:pointer;
+          color:#111;
+          transition:.3s;
+      }
+      .nav-right img{
+      width:3vw;
+        margin-right:7vw;
+      
+      }
+      
+      .nav-left i:hover,
+      .nav-right i:hover{
+          color:#850000;
+      }
+      
+      /* Center Logo */
+      .nav-center{
+          position:absolute;
+          left:48%;
+          transform:translateX(-50%);
+          margin-top:1vw;
+      }
+      
+      .nav-center img{
+          height:9vw;
+      }
+      
+      /* Push page below navbar */
+      .content{
+          padding-top:100px;
+      }
+    .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    
+        transform: translateX(100px);
+    
+        transition:
+            opacity .5s ease,
+            transform .5s ease,
+            visibility 0s linear .5s;
+    }
+    
+    .slide.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    
+        transform: translateX(0);
+    
+        transition:
+            opacity .5s ease,
+            transform .5s ease;
+    }
+        .prev, .next {
+            position: absolute;
+            top:30%;
+            
+            background: rgb(0 0 0 / 0%);
+            color: #ffffff;
+            border-style: none;
+            border-color: currentcolor;
+            border-image: initial;
+            cursor: pointer;
+            font-size:clamp(50px,25vw,80px);
+            padding: 10px;
+            border-radius: 100%;
+            z-index: 1000;
+        }
+        
+        .prev {
+            left: -75px;
+                -webkit-tap-highlight-color: transparent;
+            outline: none;
+        }
+        
+        .next {
+            right: -75px;
+                -webkit-tap-highlight-color: transparent;
+            outline: none;
+        }
+        
+        .describing {
+            width: 30%;
+            height:550px;
+            color: rgb(251 251 251);
+            font-weight: 900;
+            display: flex;
+            margin-left:10vw;
+            margin-top:6vw;
+            justify-content:center;
+            margin: auto 1;
+            flex-direction:column;
+            
+        }
+        .related-category{
+            margin-top:12vw;
+            font-size:4vw;
+            color:white;
+            font-family:"Metal Mania", serif;
+        }
+        .relatedproducts{
+                font-family:"Metal Mania", serif;
+            flex-direction:column;
+             width:57.6vw;
+            display:flex;
+            flex-direction:row;
+            margin-top:8vw;
+            transform:translatey(-5vw);
+            background:#000000;
+            overflow-x:auto;
+            gap:20px;
+        }
+        .relatedproducts img{
+            width:27vw;
+             -webkit-tap-highlight-color: transparent;
+        outline: none;
+        user-select: none;
+        border:2px red solid;
+        width:25vw;
+        height:30vw;
+        border-radius:25px;
+        }
+        .description {
+            color: rgb(255, 255, 255);
+            font-size:3.5vw;
+            font-weight: 800;
+            height:30px;
+            width:50vw;
+            font-family:"Metal Mania", serif;
+    
+        }
+        html {
+        scrollbar-width: thin;
+        scrollbar-color: #8b0000 #111;
+    }
+        .producttext {
+            margin-top:9.5vw;
+            display: flex;
+            
+           
+            
+        }
+        
+        .logo-contain2{
+            display:flex;
+            width: 100%;
+            height:16vw;
+            background: rgb(58 49 49 / 0%);
+        }
+        
+        .logo2 {
+            width: 30vw;
+            height: 20vw;
+            display: block;
+            background: transparent;
+        }
+        
+        .buttonsbox {
+            position: fixed;
+            top:50%;
+            right:5px;
+            transform: translateY(-50%);
+            width:clamp(300px,40vw,350px);
+            height:clamp(800px,50vw,1900px);
+              background: rgb(47 42 42);
+            border: 4px solid rgb(86 0 0);
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            justify-content:center;
+        }
+        
+        .buy, .back{
+            width: 100%;
+            height: 80px;
+            font-weight: 900;
+            font-size:30px;
+            border-radius: 30px;
+            cursor: pointer;
+            background:#ff07004a;
+            border:6px #000000 solid ;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+            user-select: none;
+            
+        }
+        .productss1.slide{
+                height:auto;
+            }
+        .products2.slide{
+         mask-image: radial-gradient( ellipse at center,
+              #000000 30%,
+            #ff000000 98% );
+             height:29vw;
+        }
+        .products3.slide{
+                    mask-image: radial-gradient( ellipse at top,   
+            #000000 70%,
+            #ffffff00 94% );
+             height:29vw;
+            }
+        .products4.slide{
+            mask-image: radial-gradient( ellipse at center,   
+            #000000 30%,
+            #ffffff00 78% );
+             height:29vw;
+            
+        }
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(30px);
+            }
+        
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+        .describing{
+            animation:fadeIn 0.8s ease;
+        }}
