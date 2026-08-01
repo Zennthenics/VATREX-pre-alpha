@@ -86,6 +86,15 @@ body {
       width:260px;
       animation:pulse 2s infinite;
   }
+#time{
+color:#000000;
+background:#949494cf;
+height:5vw;
+width:25vw;
+text-align:center;
+border-radius:6px;
+
+}
   
   .loader-text{
       margin-top:25px;
@@ -252,7 +261,7 @@ body {
     }
     
     .product3 img{
-          width:20vw;  
+          width:28vw;  
           height:29vw;
   }
       
@@ -273,9 +282,13 @@ body {
         gap:40px;
         white-space: nowrap;
         overflow:hidden;
-  
+
   
       }
+.bottoms img{
+border:4px red solid;
+border-radius:25px;
+}
       .pants1 img{
       width:30vw;
         height:auto;
@@ -490,9 +503,9 @@ body {
       }
        .product3{
       background:#fdfdfd00;
-      height:auto;
-      width:auto;
-      padding:6vw;
+      height:91vw;
+      width:100%;
+      padding:5vw;
       border:1px red solid;
       border-radius:30px;
       }
@@ -500,7 +513,7 @@ body {
       background:#fdfdfd00;
       height:auto;
       width:auto;
-      padding:2vw;    
+      padding:2vw;   
       border:1px red solid;
       border-radius:30px;
       }
@@ -522,13 +535,13 @@ body {
     
     .product3 img{
        width:76vw;
-      height:90vw;
+      height:83vw;
       margin-top:-5vw;
       }
       
       .product4 img {
          width:82vw;
-        height:80vw;
+        height:83vw;
         margin-top:-2vw;  
           
          
@@ -554,6 +567,7 @@ body {
           }
           .bottoms img{
           scroll-snap-align:center;
+          border:none;
           }
          .pants1{
       background:#00000000;
@@ -810,6 +824,7 @@ body {
           .bottoms img{
           scroll-snap-align:center;
           margin-top:10vw;
+          border:none;
 
           }
          .pants1{
