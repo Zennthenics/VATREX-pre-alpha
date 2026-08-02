@@ -513,11 +513,11 @@ width:70vw;
         }
     
         .prev {
-            right:66vw;
+            right:60vw;
         }
     
         .next {
-            left: 66vw;
+            left: 60vw;
         }
     
         .describing {
@@ -571,13 +571,14 @@ width:70vw;
     
         .product-container {
             position: relative;
-            width:80vw;
+            width:65vw;
             height:100vw;
             margin-top:20vw;
             border:1.9px #804500 solid;
             justify-content:center;
             align-items:center;
             margin-left:2vw;
+        
             
         }
           .product-container2 {
@@ -656,7 +657,7 @@ width:70vw;
     .productss1.slide{
             height:auto;
             margin-top:9vw;
-            width:75vw;
+            width:62vw;
             margin-left:2vw;
         
             
@@ -664,7 +665,7 @@ width:70vw;
     .products2.slide{
      mask-image: radial-gradient(ellipse at center,  #000000 40%, #ff000000 92% );
          height:auto;
-        width:77.2vw;
+        width:70vw;
         margin-left:0vw;
     }
     .products3.slide{
@@ -672,8 +673,7 @@ width:70vw;
         #000003 50%,
         #ffffff00 80% );
          height:auto;
-        width:78vw;
-        margin-left:0vw;
+        width:65vw;
         border:2px black solid;
         border-radius:10vw;
         margin: auto 0;
