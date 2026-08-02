@@ -571,13 +571,13 @@ width:70vw;
     
         .product-container {
             position: relative;
-            width:66vw;
+            width:80vw;
             height:100vw;
             margin-top:20vw;
             border:1.9px #804500 solid;
             justify-content:center;
             align-items:center;
-            padding:2.5vw;
+            margin-left:2vw;
             
         }
           .product-container2 {
