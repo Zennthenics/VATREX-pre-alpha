@@ -513,11 +513,11 @@ width:70vw;
         }
     
         .prev {
-            right:67vw;
+            right:62vw;
         }
     
         .next {
-            left: 67vw;
+            left: 62vw;
         }
     
         .describing {
@@ -571,7 +571,7 @@ width:70vw;
     
         .product-container {
             position: relative;
-            width:73vw;
+            width:66vw;
             height:100vw;
             margin-top:20vw;
             border:1.9px #804500 solid;
