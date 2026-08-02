@@ -513,11 +513,11 @@ width:70vw;
         }
     
         .prev {
-            right:62vw;
+            right:66vw;
         }
     
         .next {
-            left: 62vw;
+            left: 66vw;
         }
     
         .describing {
@@ -559,8 +559,8 @@ width:70vw;
         
     }
     .relatedproducts img{
-        width:60vw;
-        height:70vw;
+        width:50vw;
+        height:55vw;
     }
     
         .producttext {
