@@ -214,7 +214,7 @@ body {
         font-size:clamp(50px,25vw,80px);
         padding: 10px;
         border-radius: 100%;
-        z-index: 1000;
+        z-index:1;
     }
     
     .prev {
@@ -917,7 +917,7 @@ width:70vw;
             font-size:clamp(50px,25vw,80px);
             padding: 10px;
             border-radius: 100%;
-            z-index: 1000;
+            z-index: 1;
         }
         
         .prev {
