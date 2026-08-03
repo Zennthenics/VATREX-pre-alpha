@@ -37,7 +37,7 @@ html {
     border: 2px solid rgb(139, 90, 17);
     border-radius: 40px;
     padding: 1px;
-    margin-top: 10vw;
+    margin-top: 22vw;
     box-sizing: border-box;
 }
 
@@ -57,7 +57,7 @@ html {
     border: 2px solid rgb(139, 90, 17);
     border-radius: 40px;
     padding: 1px;
-    margin-top: 10vw;
+    margin-top: 30vw;
 }
 
 .product-container2 img {
@@ -210,7 +210,7 @@ html {
     font-size: 4vw;
     color: white;
     font-family: "Metal Mania", serif;
-    margin-top: 10vw;
+    margin-top: 25vw;
 }
 
 .relatedproducts {
