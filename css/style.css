@@ -247,7 +247,7 @@ border-radius:6px;
                  overflow-x: hidden;
         }
         .products img {
-        border:2px red solid;
+        border:2px 		#cc3300 solid;
         border-radius:25px;
         }
 
@@ -287,7 +287,7 @@ border-radius:6px;
   
       }
 .bottoms img{
-border:4px red solid;
+border:2px 	#cc3300 solid;
 border-radius:25px;
 }
       .pants1 img{
@@ -502,7 +502,7 @@ font-size:3.9vw;
       height:auto;
       width:100vw;
       padding:7vw;
-      border:1px red solid;
+      border:1px 	#cc3300 solid;
       border-radius:30px;
       }
           .product2{
@@ -510,7 +510,7 @@ font-size:3.9vw;
       width:100vw;
       height:100%;
       padding:2vw;
-      border:1px red solid;
+      border:1px 	#cc3300 solid;
       border-radius:30px;
       }
        .product3{
@@ -518,7 +518,7 @@ font-size:3.9vw;
       height:91vw;
       width:100%;
       padding:5vw;
-      border:1px red solid;
+      border:1px 	#cc3300 solid;
       border-radius:30px;
       }
        .product4{
@@ -526,7 +526,7 @@ font-size:3.9vw;
       height:auto;
       width:auto;
       padding:2vw;   
-      border:1px red solid;
+      border:1px 	#cc3300 solid;
       border-radius:30px;
       }
   
@@ -586,14 +586,14 @@ font-size:3.9vw;
       height:auto;
       width:100%;
       padding:3vw;    
-      border:1px red solid;
+      border:1px 	#cc3300 solid;
       border-radius:30px;
          }
                 .pants2{
       background:#fdfdfd00;
       height:auto;
       width:auto;
-      border:1px #ff0000 solid;
+      border:1px 	#cc3300 solid;
       border-radius:30px;
       padding:3vw;    
   
