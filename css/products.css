@@ -37,7 +37,7 @@ html {
     border: 2px solid rgb(139, 90, 17);
     border-radius: 40px;
     padding: 1px;
-    margin-top: 22vw;
+    margin-top: 30vw;
     box-sizing: border-box;
 }
 
@@ -169,7 +169,7 @@ html {
 
 .prev, .next {
     position: absolute;
-    top: 30%;
+    top: 40%;
     background: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
     border-style: none;
@@ -210,7 +210,7 @@ html {
     font-size: 4vw;
     color: white;
     font-family: "Metal Mania", serif;
-    margin-top: 25vw;
+    margin-top: 33vw;
 }
 
 .relatedproducts {
@@ -222,7 +222,7 @@ html {
     background: rgb(0, 0, 0);
     overflow-x: auto;
     gap: 20px;
-    margin-top: 0vw;
+    margin-top: 1vw;
 }
 
 .relatedproducts img {
@@ -309,14 +309,19 @@ html {
     height: 32vw;
     margin-left: 2vw;
 }
+.products22.slide {
+    mask-image: radial-gradient(rgb(0, 0, 0) 80%, rgba(255, 0, 0, 0) 100%);
+    height: 32vw;
+    margin-left: 2vw;
+}
 
-.products3.slide {
+.products33.slide {
     mask-image: radial-gradient(rgb(0, 0, 0) 43%, rgba(255, 255, 255, 0) 62%);
     height: 35vw;
     margin-left: 2vw;
 }
 
-.products4.slide {
+.products44.slide {
     mask-image: radial-gradient(rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 58%);
     height: 35vw;
     margin-left: 2vw;
@@ -595,6 +600,29 @@ html {
         margin-left: 2vw;
         margin-top:7vw;
     }
+        .products22.slide {
+        mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 92%);
+        height: auto;
+        width: 63vw;
+        margin-left: 6vw;
+        margin-top:-2vw;
+    }
+           .products33.slide {
+        mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 92%);
+        height: auto;
+        width: 63vw;
+        margin-left: 6vw;
+        margin-top:-2vw;
+    }
+           .products44.slide {
+        mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 92%);
+        height: auto;
+        width: 63vw;
+        margin-left: 6vw;
+        margin-top:-2vw;
+    }
+
+
 
     .products3.slide {
         mask-image: radial-gradient(at center top, rgb(0, 0, 3) 50%, rgba(255, 255, 255, 0) 80%);
