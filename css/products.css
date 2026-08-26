@@ -1,1150 +1,1053 @@
 body {
-    margin: 0;
-    min-height: 100vh;
-    overflow-x:hidden;
-   background:#ffffff;
-    overflow-y:scroll;
-    body::-webkit-scrollbar {
-      display: none;
-  }
-  }
-  html {
-      scrollbar-width: thin;
-      scrollbar-color: #8b0000 #111;
-  }
-.opening{
-width:100%;
-height:55vw;
+    overflow-x: hidden;
+    background: black;
 }
-.opening-mb{
-    display:none;
+
+::-webkit-scrollbar {
+    width: 8px;
 }
-  *{
-    margin:0;
-    padding:0;
+
+::-webkit-scrollbar-track {
+    background: rgb(9, 9, 9);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(255, 26, 26), rgb(139, 0, 0));
+    border-radius: 100px;
+    border: 2px solid rgb(9, 9, 9);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgb(255, 64, 64), rgb(179, 0, 0));
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(179, 0, 0) rgb(9, 9, 9);
+}
+
+.product-container {
+    position: relative;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    height: 35vw;
+    width: 35vw;
+    border: 2px solid rgb(139, 90, 17);
+    border-radius: 40px;
+    padding: 1px;
+    margin-top: 30vw;
+    box-sizing: border-box;
+}
+
+.product-container img {
+    width: 31vw;
+    padding-top: 2vw;
+}
+
+.product-container2 {
+    position: relative;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    height: 35vw;
+    width: 35vw;
+    border: 2px solid rgb(139, 90, 17);
+    border-radius: 40px;
+    padding: 1px;
+    margin-top: 30vw;
+}
+
+.product-container2 img {
+    width: 31vw;
+    margin: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: rgb(17, 17, 17);
+    padding-top: 90px;
+    transition: 0.35s;
+    z-index: 2000;
+}
+
+.sidebar a {
+    font-family: "metal mania";
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 7vw;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px;
     box-sizing:border-box;
-  }
-a{
-    text-decoration:none;
-    color:#ffffff;
 }
-.mb-products{
-display:none;
-}
-.mb-bottoms{
-display:none;
-}
-.tb-products{
-display:none;
-}
-.tb-bottoms{
-display:none;
-}
-  #loader{
-      position:fixed;
-      inset:0;
-  
-      background:#050000;
-  
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-  
-      z-index:999999;
-  
-      transition:opacity .8s ease,
-                 visibility .8s ease;
-  }
-  .sidebar{
-  
-      position:fixed;
-  
-      top:0;
-      left:-280px;
-  
-      width:280px;
-      height:100vh;
-  
-      background:#111;
-  
-      padding-top:90px;
-  
-      transition:0.35s ease;
-  
-      z-index:2000;
-  }
-.top-card{
-width:20%;
-    height:25.5vw;
-background:#000000;
-border: 2px #bf0000 solid;
-transition: transform 0.3s ease;
-display:block;
 
+.nav-left i, .nav-right i {
+    font-size: 2.5vw;
+    cursor: pointer;
+    color: rgb(17, 17, 17);
+    transition: 0.3s;
 }
-.top-card:hover{
-transform: translatey(-20px)
-}
-  .sidebar a{
-      font-family:"metal mania";
-      display:block;
-  
-      color:white;
-  
-      text-decoration:none;
-  
-      padding:20px 30px;
-  
-      font-size:22px;
-  
-      transition:.3s;
-  }
-  .close-btn{
-  
-      position:absolute;
-  
-      top:20px;
-      right:20px;
-  
-      font-size:35px;
-  
-      background:none;
-  
-      border:none;
-  
-      color:white;
-  
-      cursor:pointer;
-  }
-  .loader-logo{
-      width:260px;
-      animation:pulse 2s infinite;
-  }
-#time{
-color:#b17777;
-background:#ded6d600;
-height:2.3vw;
-width:12vw;
-margin-left:2px;
-margin-top:20px;
-text-align:center;
-font-size:1.9vw;
-border-radius:6px;
 
+.nav-right img {
+    width: 4vw;
+    margin-right: 0vw;
 }
-  
-  .loader-text{
-      margin-top:25px;
-  
-      color:#ffffff;
-  
-      font-size:25px;
-  
-      font-family:"Metal Mania", serif;
-  
-      letter-spacing:2px;
-  
-      animation:pulse 2s infinite;
-  }
-  
-  #loader.hidden{
-      opacity:0;
-      visibility:hidden;
-  }
-  
-  
-  
-  *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-  }
-  
-  body{
-      font-family:Arial, sans-serif;
-  }
-  
-  /* Navigation */
-  .pc-navbar{
-      position:fixed;
-      top:0;
-      left:0;
-     width:100%;
-      height:6vw;
-  
-      background:#000000;
-      
-  
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-  
-      padding:0 30px;
-  
-      z-index:1000;
-  
-      box-shadow:0 2px 10px rgba(0,0,0,.08);
-  }
-  .phone-navbar{
-display:none;
-  }
-  .nav-left{
-    width:35%;
-    display:flex;
-    margin-left:4vw;
-    background:#ff000000;
-  }
-  .nav-left i,
-  .nav-right i{
-      font-size:2.5vw;
-      cursor:pointer;
-      color:#ffffff;
-      transition:.3s;
-  }
-  .nav-right img{
-  display:none;
-  
-  }
-  
-  .nav-left i:hover,
-  .nav-right i:hover{
-      color:#850000;
-  }
-  
-  /* Center Logo */
-  .nav-center{
-      position:absolute;
-      left:50%;
-      transform:translateX(-50%);
-  }
-  
-  .nav-center img{
-      height:7vw;
-  }
-  
-  /* Push page below navbar */
-  .content{
-      padding-top:100px;
-  }
-  
-      .line{
-          margin-top:15VW;
-          width:100vw;
-      height:0.3vw;
-        color:#00000000;
-        
-        background:#850000;
-  
-        
-      
-        
-      }
-      .DES{
-        
-        color:rgb(0, 0, 0);
-        font-family: 'Montserrat', sans-serif;
-        font-size:5vw;
-        text-align:center;
-        
-        height:3vw;
-        
-        padding-top:13px;
-        margin-top:-15vw;
-      }
-      .start{
-        text-align:center;
-        color:rgb(0, 0, 0);
-        font-family: 'Montserrat', sans-serif;
-        margin-top:30px;
-        font-size:4vw;
-      }
-      
-        .pc-products {
-          
-          height:50vw;
-          width:100%;  
-  
-          display:flex;
-  
-          column-gap: 1vw;          /* Space between images */
-          
-          margin-top: 20px;
-          
-          height:auto;
-           
-          overflow-x: hidden;   
-           
-          overflow-y:auto; 
-        
-            white-space: nowrap; /* bte3ml wrap lel text elly w5da space*/
-            padding: 50px;
-            justify-content:center;
-            box-sizing:border-box;
-            
-            border-radius:35px;
-            background:#c6c6c600;
-        }
-        
-        .products::-webkit-scrollbar {
-            height: 8px;
-        }   
-        
-        .products {
-            flex: 0 0 auto; /* Prevents shrinking */
-                 overflow-x: hidden;
-        }
-       .product1,
-.product2,
-.product3,
-.product4{
-        width:18vw;
-        border-radius:10px;
-        height:24vw;
+
+.nav-left i:hover, .nav-right i:hover {
+    color: rgb(133, 0, 0);
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1vw;
+}
+
+.nav-center img {
+    height: 9vw;
+}
+
+.content {
+    padding-top: 100px;
+}
+
+.slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100px);
+    transition: opacity 0.5s, transform 0.5s, visibility linear 0.5s;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 40%;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-style: none;
+    border-color: currentcolor;
+    border-image: initial;
+    cursor: pointer;
+    font-size: clamp(50px, 25vw, 80px);
+    padding: 10px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.prev {
+    left: -75px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.next {
+    right: -75px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.describing {
+    width: 30%;
+    height: 550px;
+    color: rgb(251, 251, 251);
+    font-weight: 900;
+    display: flex;
+    margin-left: 10vw;
+    margin-top: 6vw;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.related-category {
+    font-size: 4vw;
+    color: white;
+    font-family: "Metal Mania", serif;
+    margin-top: 33vw;
+}
+
+.relatedproducts {
+    font-family: "Metal Mania", serif;
+    width: 61vw;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-5vw);
+    background: rgb(0, 0, 0);
+    overflow-x: auto;
+    gap: 20px;
+    margin-top: 1vw;
+}
+
+.relatedproducts img {
+    width: 27vw;
+    height: 26vw;
+    border: 3px solid red;
+    border-radius: 30px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    user-select: none;
+}
+
+.description {
+    color: rgb(255, 255, 255);
+    font-size: 4.5vw;
+    font-weight: 800;
+    height: 30px;
+    width: 50vw;
+    font-family: "Metal Mania", serif;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(139, 0, 0) rgb(17, 17, 17);
+}
+
+.producttext {
+    margin-top: 0.5vw;
+    display: flex;
+    width: 40vw;
+}
+
+.logo-contain2 {
+    display: flex;
+    width: 100%;
+    height: 16vw;
+    background: rgba(58, 49, 49, 0);
+}
+
+.logo2 {
+    width: 30vw;
+    height: 20vw;
+    display: block;
+    background: transparent;
+}
+
+.buttonsbox {
+    position: fixed;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: clamp(300px, 40vw, 350px);
+    height: clamp(800px, 50vw, 1900px);
+    background: rgb(47, 42, 42);
+    border: 4px solid rgb(86, 0, 0);
+    border-radius: 30px;
+    right: 11px;
+    transform: translateY(-45%);
+    width:30vw; 
+    height:70vw;
+    background: rgb(255 255 255);
+    border:2px solid rgb(0 0 0);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    justify-content:center;
+}
+
+.buy, .back {
+    width: 100%;
+    height: 80px;
+    width:25vw;
+    height: 70px;
+    font-weight: 900;
+    font-size: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: rgba(255, 7, 0, 0.29);
+    border: 6px solid rgb(0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    background: rgb(219 219 219);
+    border: 2px solid rgb(0 0 0);
+    -webkit-tap-highlight-color: #f6f6f600;
+    outline: none;
+    user-select: none;
+    margin-left:2.5vw;
+}
+
+.productss1.slide {
+    height: auto;
+    width: 35vw;
+}
+
+.products2.slide {
+    mask-image: radial-gradient(rgb(0, 0, 0) 80%, rgba(255, 0, 0, 0) 100%);
+    height: 32vw;
+    margin-left: 2vw;
+}
+.products22.slide {
+    mask-image: radial-gradient(rgb(0, 0, 0) 80%, rgba(255, 0, 0, 0) 100%);
+    height: 32vw;
+    margin-left: 2vw;
+}
+
+.products33.slide {
+    mask-image: radial-gradient(rgb(0, 0, 0) 43%, rgba(255, 255, 255, 0) 62%);
+    height: 35vw;
+    margin-left: 2vw;
+}
+
+.products44.slide {
+    mask-image: radial-gradient(rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 58%);
+    height: 35vw;
+    margin-left: 2vw;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.describing {
+    animation: 0.8s ease 0s 1 normal none running fadeIn;
+}
+
+.alt-product {
+    height: 30vw;
+    margin-left: 3vw;
+}
+
+@media (max-width: 766px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 13vw;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+        z-index: 1000;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px;
+        box-sizing: border-box;
+    }
+
+    .nav-left i, .nav-right i {
+        font-size: 6.5vw;
+        cursor: pointer;
+        color: rgb(17, 17, 17);
+        transition: 0.3s;
+    }
+
+    .nav-right img {
+        width: 8vw;
+        margin-right: 0vw;
+    }
+
+    .nav-left i:hover, .nav-right i:hover {
+        color: rgb(133, 0, 0);
+    }
+
+    .nav-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        height: 15vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-center img {
+        height: 15vw;
+    }
+
+    .alt-product {
+        height: 80vw;
+        margin-left: 0vw;
+        width: 70vw;
+    }
+
+    .content {
+        padding-top: 10px;
+    }
+
+    .slide {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(40px);
+        transition: opacity 0.5s, transform 0.5s, visibility linear 0.5s;
+    }
+
+    .productss.slide {
+        height: auto;
+        display: flex;
+    }
+
+    .slide.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .prev, .next {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgb(255, 255, 255);
+        border: medium none currentcolor;
+        cursor: pointer;
+        font-size: 10vw;
+    }
+
+    .prev {
+        right: 66vw;
+    }
+
+    .next {
+        left: 66vw;
+    }
+
+    .describing {
+        width: 100%;
+        height: 100%;
+        background: rgba(247, 234, 234, 0);
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .description {
+        color: rgb(255, 255, 255);
+        text-align: start;
+        margin: auto;
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .related-category {
+        margin-top: -10vw;
+        font-size: 9vw;
+        color: white;
+        font-family: "Metal Mania", serif;
+    }
+
+    .relatedproducts {
+        color: white;
+        flex-direction: row;
+        width: 100%;
+        height: 50vw;
+        display: flex;
+        margin-top: -10vw;
+        transform: translateX(1vw);
+        overflow-x: auto;
+    }
+
+    .relatedproducts img {
+        width: 40vw;
+        height: 39vw;
+    }
+
+    .producttext {
+        width: 300px;
+        transform: translateY(-40vw);
+        margin-top: 48vw;
+    }
+
+    .product-container {
+        position: relative;
+        width: 75vw;
+        height:48vh;
+        border: 1.9px solid rgb(128, 69, 0);
+        justify-content: center;
+        align-items: center;
+        margin: 30vw auto 0px;
+    }
+
+    .product-container2 {
+        position: relative;
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+        height: 100vw;
+        width: 90vw;
+        border: 2px solid rgb(139, 90, 17);
+        border-radius: 40px;
+        padding: 1px;
+        margin-top: 30vw;
+    }
+
+    .product-container2 img {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .productss1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 80vw;
+        margin: auto 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .buttonsbox {
+        transform: translateY(-10vw);
+        margin: -13vw auto auto;
+        position: static;
+        width: 90vw;
+        height: 20vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 44px;
+        border: none;
+        background: none;
+        border-radius: 40px;
+        padding: 14px 0px;
+    }
+
+    .buy, .back {
+        background: rgb(82, 82, 82);
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(146, 146, 146);
+        margin-top: 0px;
+        font-weight: 900;
+        width: 60vw;
+        height: 15vw;
+        border-radius: 40px;
+        font-size: 4.3vw;
+        font-family: aria;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        user-select: none;
+    }
+
+    .buy {
+        background: rgba(255, 0, 0, 0.21);
+    }
+
+    .back {
+        background: rgb(23, 23, 23);
+    }
+
+    .productss1.slide {
+        height: auto;
+        margin-top: 9vw;
+        width: 67vw; 
+        margin-left:4vw;
+    }
+
+    .products2.slide {
+        mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 92%);
+        height: auto;
+        width: 70vw;
+        margin-left: 2vw;
+        margin-top:7vw;
+    }
+        .products22.slide {
+        mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 92%);
+        height: auto;
+        width: 63vw;
+        margin-left: 6vw;
+        margin-top:-2vw;
+    }
+           .products33.slide {
+        mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 92%);
+        height: auto;
+        width: 63vw;
+        margin-left: 6vw;
+        margin-top:-2vw;
+    }
+           .products44.slide {
+        mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 92%);
+        height: auto;
+        width: 63vw;
+        margin-left: 6vw;
+        margin-top:-2vw;
+    }
+
+
+
+    .products3.slide {
+        mask-image: radial-gradient(at center top, rgb(0, 0, 3) 50%, rgba(255, 255, 255, 0) 80%);
+        height: auto;
+        width: 65vw;
+        border: 2px solid black;
+        border-radius: 10vw;
+        margin-left: 4vw;
+        margin-top:8vw;
+    }
+
+    .products4.slide {
+        mask-image: radial-gradient(rgb(0, 0, 3) 55%, rgba(255, 255, 255, 0) 78%);
+        height: auto;
+        width: 65vw;
+        margin-left:5vw;
+        margin-top:6vw;
+    }
+
+    .relatedproducts, .related, .related2 {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        user-select: none;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+        background: rgb(0, 0, 0);
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgb(9, 9, 9);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(rgb(255, 0, 0), rgb(139, 0, 0));
+        border-radius: 100px;
+        border: 2px solid rgb(9, 9, 9);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(rgb(255, 64, 64), rgb(179, 0, 0));
+    }
+
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: rgb(179, 0, 0) rgb(9, 9, 9);
+    }
+
+    .product-container {
+        margin-top: 30vw;
+        position: relative;
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0px;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        background: rgb(17, 17, 17);
+        padding-top: 90px;
+        transition: 0.35s;
+        z-index: 2000;
+    }
+
+    .sidebar a {
+        font-family: "metal mania";
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 20px 30px;
+        font-size: 22px;
+        transition: 0.3s;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 35px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 7vw;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+        z-index: 1000;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px;
         box-sizing:border-box;
-        align-items:center;
-        justify-content:center;
-        margin: auto 0;
-        background:black;
-}.product1:hover,
-.product2:hover,
-.product3:hover,
-.product4:hover{
-      transition:transform 0.3 ease;
-    
-}
-.tops,
-.pants,
-.tiktok{
-color:#f2e8e8;
-width:30%;
-font-size:25px;
-font-family: 'Montserrat', sans-serif;
-transition: color 0.3s ease-in-out 
-
-}
-.tops:hover,
-.pants:hover,
-.tiktok:hover{color:#ff0000;
-}
-.products img{ transition: transform 0.3s ease;
-  width: 100%;                   
-  display: block;}
-.products img:hover{
-    transform: scale(0.9)
-}
-.product1 img,
-.product2 img,
-.product3 img
-{
-            width:16vw;  
-            height:16vw;
-            padding:10px;
-            margin-left:1vw;
-            margin-top:1vw;
-}
-.product4 img{
-            width:14vw;  
-            height:16vw;
-            padding:1px;
-            margin-left:2vw;
-            margin-top:1vw;
-}
-
-      .pc-bottoms{
-      display:flex;
-      gap:30px;
-      height:30vw;
-      width:100%;
-      justify-content:center;
-border-radius:25px;
-    
-  
-      }
-      .pants1{
-       width:30vw;
-       height:30vw;
-      }
-      .pants1 img{
-      width:20vw;
-        height:20vw;
     }
-  
-      .pants2 img{
-  
-          width:20vw;
-  
-          height:20vw;
-      }
-        .PANTS {
-               font-size:5vw;
-            text-align: center;
-            font-family: 'Montserrat', sans-serif;
-            color:rgb(0, 0, 0);
-             animation:fadeIn 0.8s ease;
-             
+
+    .nav-left i, .nav-right i {
+        font-size: 3.5vw;
+        cursor: pointer;
+        color: rgb(17, 17, 17);
+        transition: 0.3s;
+    }
+
+    .nav-right img {
+        width: 5vw;
+        margin-right: 0vw;
+    }
+
+    .nav-left i:hover, .nav-right i:hover {
+        color: rgb(133, 0, 0);
+    }
+
+    .nav-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1vw;
+    }
+
+    .nav-center img {
+        height: 9vw;
+    }
+
+
+
+    .slide {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(100px);
+        transition: opacity 0.5s, transform 0.5s, visibility linear 0.5s;
+    }
+
+    .slide.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 30%;
+        background: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        border-style: none;
+        border-color: currentcolor;
+        border-image: initial;
+        cursor: pointer;
+        font-size: clamp(20px, 25vw, 50px);
+        padding: 10px;
+        border-radius: 100%;
+        z-index: 1;
+    }
+
+    .prev {
+        left: -75px;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+
+    .next {
+        right: -75px;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+
+    .describing {
+        width: 30%;
+        height: 550px;
+        height: 90vw;
+        color: rgb(251, 251, 251);
+        font-weight: 900;
+        display: flex;
+        margin-left: 10vw;
+        margin-top: 6vw;
+        margin-top: -3vw;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .related-category {
+        margin-top: 20vw;
+        margin-top: 10vw;
+        font-size: 4vw;
+        color: white;
+        font-family: "Metal Mania", serif;
+    }
+
+    .relatedproducts {
+        font-family: "Metal Mania", serif;
+        width: 63.6vw;
+        width:101%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 8vw;
+        transform: translateY(-5vw);
+        transform: translateY(-3vw);
+        background: rgb(0, 0, 0);
+        overflow-x: auto;
+        gap: 20px;
+        gap: 50px;
+    }
+
+    .relatedproducts img {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        user-select: none;
+        border: 2px solid red;
+        width: 37vw;
+        height: 35vw;
+        border-radius: 25px;
+    }
+
+    .description {
+        color: rgb(255, 255, 255);
+        font-size: 3.5vw;
+        font-weight: 800;
+        height: 30px;
+        width: 50vw;
+        font-family: "Metal Mania", serif;
+    }
+
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: rgb(139, 0, 0) rgb(17, 17, 17);
+    }
+
+    .producttext {
+        margin-top: 9.5vw;
+        display: flex;
+    }
+
+    .logo-contain2 {
+        display: flex;
+        width: 100%;
+        height: 16vw;
+        background: rgba(58, 49, 49, 0);
+    }
+
+    .logo2 {
+        width: 30vw;
+        height: 20vw;
+        display: block;
+        background: transparent;
+    }
+
+    .buttonsbox {
+        position: fixed;
+        top: 53%;
+        right: 5px;
+        transform: translateY(-50.5%);
+        width: 33vw;
+        height: 93.7vh;
+        background: rgb(47, 42, 42);
+        border: 4px solid rgb(86, 0, 0);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        justify-content: center;
+    }
+.product-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Crucial: lets the sticky box float freely */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Updated sticky box code */
+.buttonsbox {
+    position:fixed;
+    top: 450px;
+    width: 33vw;
+    height: 70vw;
+    background: rgb(255 245 245);
+    border: 7px solid rgb(255 255 255);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    justify-content: center;
+}
+
+
+    .buy, .back {
+        width: 100%;
+        width: 90%;
+        height: 80px;
+        font-weight: 900;
+        font-size: 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        background: rgba(255, 7, 0, 0.29);
+        border: 6px solid rgb(0, 0, 0);
+        background: rgb(118 118 118);
+        border: 2px solid rgb(0 0 0);
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        user-select: none;
+        color:#f8f8f8;
+        
+    }
+
+    .productss1.slide {
+        height: auto;
+        width: 35vw;
+        margin-left:2.3vw;
+    }
+
+    .products2.slide {
+        mask-image: radial-gradient(rgb(0, 0, 0) 100%, rgba(255, 0, 0, 0) 100%);
+        height: 37vw;
+        width: 38vw;
+        margin-left: 0vw;
+    }
+
+    .products3.slide {
+        mask-image: radial-gradient(at center top, rgb(0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
+        height: 37vw;
+        width: 38vw;
+        margin-left: 0vw;
+    }
+
+    .products4.slide {
+        mask-image: radial-gradient(at center bottom, rgb(0, 0, 0) 60%, rgba(255, 255, 255, 0) 70%);
+        height: 37vw;
+        width: 35vw;
+        margin-left: 0vw;
+    }
+    .products22.slide {
+    mask-image: radial-gradient(rgb(0, 0, 0) 80%, rgba(255, 0, 0, 0) 100%);
+    height: 36vw;
+    margin-left: 4vw;
+}
+
+.products33.slide {
+    mask-image: radial-gradient(rgb(0, 0, 0) 43%, rgba(255, 255, 255, 0) 62%);
+    height: 40vw;
+    margin-left: 4.5vw;
+}
+
+.products44.slide {
+    mask-image: radial-gradient(rgb(0 0 0) 50%, rgba(255, 255, 255, 0) 80%);
+    height: 39vw;
+    margin-left: 4.5vw;
+    margin-top:-1vw;
+}
+
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-     @media (max-width: 767px) {
-        
-         body{
-          overflow-x:hidden;
-          
-         }
-         .pc-products{
-             display:none;
-         }
-         .pc-bottoms{
-            display:none;
-         }
-         .tb-products{
-            display:none;
-         }
-         .tb-bottoms{
-             display:none;
-         }
-         .opening{
-            display:none;
-         }
-  .phone-navbar{
-      position:fixed;
-      top:0;
-      left:0;
-      width:100%;
-      height:14.3vw;
-  
-      background:#ffffff;
-  
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-  
-      padding:0 30px;
-  
-      z-index:1000;
-  
-      box-shadow:0 2px 10px rgba(0,0,0,.08);
-  }
-  .pc-navbar{
-      display:none;
-  }
-         
-
-  .nav-left i,
-  .nav-right i{
-      font-size:4.7vw;
-      cursor:pointer;
-      color:#111;
-      transition:.3s;
-  }
-  .nav-right img{
-  width:9vw;
-  display:flex;
-  overflow:hidden;
-  }
-  
-  .nav-left i:hover,
-  .nav-right i:hover{
-      color:#850000;
-  }
-  
-  /* Center Logo */
-  .nav-center{
-      position:absolute;
-      left:50%;
-      transform:translateX(-50%);
-      margin-top:1vw;
-  }
-  
-  .nav-center img{
-      height:15vw;
-  }
-  
-  
-      .DES{
-        font-size:5.7vw;
-        
-        text-align:center;
-        color:rgb(0 0 0);
-        height:50px;
-        
-        padding-top:3vw;
-        margin-top:-12vw;
-      }
-            .start{
-        
-        text-align:center;
-        color:rgb(0 0 0);
-        margin-top:-2px;
-          font-size:10vw;}
-         .PANTS {
-             color:rgb(0 0 0);
-               font-size:10vw;
-            text-align: center;
-         }
-  
-       .line{
-          margin-top:12px;
-        color:#00000000;
-        
-        background:#850000;
-  
-        
-        height:3px;
-        
-      }
-         #time{
-color:#000000;
-background:#949494cf;
-height:6vw;
-width:40vw;
-text-align:center;
-border-radius:6px;
-font-size:4.9vw;
-margin-top:-0.5vw;
-z-index:3000;
-
-
-}
-        .opening-mb{
-        width:100%;
-        height:130vw;
-        display:block;
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
         }
-  
-         .mb-products {
-          width:auto;
-          overflow-x: hidden;
-          display:flex;
-             padding:4vw;
-          gap:5vw;          /* Space between images */
-          margin-top:-1vw;
-          height:100vw; 
-          overflow-x:auto;
-          overflow-y:hidden;
-          scroll-snap-type:x mandatory;
-      scroll-behavior:smooth;
-        z-index:2000;
-           
-         }
-         .mb-products img{
-              scroll-snap-align:center;
-            border:none;
-  
-         }
-      .product1{
-      background:#000000;
-      height:90vw;
-      width:100%;
-      padding:7vw;
-      border:1px 	#cc3300 solid;
-      border-radius:30px;
-      }
-          .product2{
-      background:#000000;
-      width:90vw;
-      height:100%;
-      padding:2vw;
-      border:1px 	#cc3300 solid;
-      border-radius:30px;
-      }
-       .product3{
-      background:#000000fa;
-      height:90vw;
-      width:100%;
-      padding:5vw;
-      border:1px 	#cc3300 solid;
-      border-radius:30px;
-      }
-       .product4{
-      background:#000000;
-      height:90vw;
-      width:90vw;
-      padding:9vw;   
-      border:1px 	#cc3300 solid;
-      border-radius:30px;
-      }
-  
-      .product1 img{
-       width:68vw;
-       height:70vw;
-      margin-top:4vw;
-      
-  
-      }
-    
-      .product2 img{
-   width:77vw;
-          height:70vw;
-       margin-top:8vw;
-    
     }
-    
-    .product3 img{
-       width:76vw;
-      height:80vw;
-      margin-top:-5vw;
-      }
-      
-      .product4 img {
-         width:66vw;
-        height:76vw;
-        margin-top:-5vw;  
-          
-         
-          }
-      
-              .mb-bottoms{
-          width:auto;
-          display:flex;
-          padding:5.5vw;
-          gap:5vw;          /* Space between images */
-          margin-top:10vw;
-          height:100vw; 
-          overflow-x:auto;
-          overflow-y:hidden;
-          
-          align-items:center;
-          scroll-snap-type:x mandatoRy;
-          scroll-behavior:smooth;
-            /* Prevents scrolling in y axis */
-        
-            white-space: nowrap;
-      
-          }
-          .bottoms img{
-          scroll-snap-align:center;
-          border:none;
-          }
-         .pants1{
-      background:#000000;
-      height:auto;
-      width:100%;
-      padding:3vw;    
-      border:1px 	#cc3300 solid;
-      border-radius:30px;
-         }
-                .pants2{
-      background:#000000;
-      height:auto;
-      width:auto;
-      border:1px 	#cc3300 solid;
-      border-radius:30px;
-      padding:3vw;    
-  
-         }
-          .pants1 img{
-          
-       height:auto;
-   width:80vw;
-  
+
+    .describing {
+        animation: 0.8s ease 0s 1 normal none running fadeIn;
     }
-      .pants2 img{
-          height:auto;
-          width:80vw;
-      }
-     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        @media (min-width: 768px) and (max-width: 1024px) {
-        .pc-navbar{
-        display:none;}
-            .phone-navbar{
-      position:fixed;
-      top:0;
-      left:0;
-      width:100%;
-      height:10.3vw;
-  
-      background:#ffffff;
-  
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-  
-      padding:0 40px;
-  
-      z-index:1000;
-  
-      box-shadow:0 2px 10px rgba(0,0,0,.08);
-  }
-                     .pc-products{
-display:none;
-}
-.pc-bottoms{
-    display:none;
-}
-         
-.mb-products{
-display:none;
-}
-.mb-bottoms{
-    display:none;
-}
-.opening{
-width:100%;
-height:60vw;
-}
-            .nav-left i,
-  .nav-right i{
-      font-size:3vw;
-      cursor:pointer;
-      color:#111;
-      transition:.3s;
-  }
-  .nav-right img{
-  width:5vw;
-      display:block;
-  
-  }
-  
-  .nav-left i:hover,
-  .nav-right i:hover{
-      color:#850000;
-  }
-  
-  /* Center Logo */
-  .nav-center{
-      position:absolute;
-      left:50%;
-      transform:translateX(-50%);
-      margin-top:1vw;
-  }
-  
-  .nav-center img{
-      height:12vw;
-  }
-  
-          .sidebar{
-
-      position:fixed;
-  
-      top:0;
-      left:-280px;
-  
-      width:280px;
-      height:100vh;
-  
-      background:#111;
-  
-      padding-top:90px;
-  
-      transition:0.35s ease;
-  
-      z-index:2000;
-  }
-  .sidebar a{
-      font-family:"metal mania";
-      display:block;
-  
-      color:white;
-  
-      text-decoration:none;
-  
-      padding:20px 30px;
-  
-      font-size:22px;
-  
-      transition:.3s;
-  }
-            
-            .DES{
-        
-        color:#ff0707;
-        
-        font-size:6vw;
-        
-        text-align:center;
-        
-        height:50px;
-        
-        padding-top:0px;
-        margin-top:-1vw;
-      }
-        .line{
-        margin-top:1vw;
-        }
-            .PANTS{
-      text-align: center;
-                color:#ff0000;
-     font-size:50px;
-     margin-top:9vw;
-      }
-      .start{
-        color:rgb(255, 4, 4); 
-        text-align:center;
-          font-size:6vw;
-        margin-top:5vw;
-      }
-    
-          .logo-container{
-      width: 100vw;
-              height:50vw;
-          
-      align-items:center;
-          
-      display: flex;
-          
-      justify-content: center; /* Center the logo */
-          
-      padding: 20px 1;
-          
-      overflow-x:hidden
-      }
-      .startinglogo-container{
-      width:100vw;
-      height:50vw;
-      }
-      .startup{
-      width:100%;
-      height:48vw;
-          
-      }
-          .logo{
-      
-      height:60vw;
-              width:100vw;
-      display: block;
-      }
-            .tb-products{
-      display:flex;
-       width:100%;
-      gap:2vw;
-      align-items:center;
-      overflow-x:auto;
-      height:60vw;
-                
-        }
-      .tb-products img{
-      border:none;
-
-      }
-      .product1{
-      height:47vw;
-      width:60vw;
-      border:2px red solid;
-      border-radius:30px;
-      padding:8vw;
-      }
-            .product2{
-      height:47vw;
-      width:60vw;
-      border:2px red solid;
-      border-radius:30px;
-      padding:8vw;
-      }.product3{
-       height:47vw;
-      width:60vw;
-      border:2px red solid;
-      border-radius:30px;
-      padding:2vw;
-      }.product4{
-      height:47vw;
-      width:60vw;
-      border:2px red solid;
-      border-radius:30px;
-      padding:2vw;
-      }
-          .product1 img{
-       height:36vw;
-   width:40vw; 
-  margin-top:-5.9vw;
-      }
-    
-          .product2 img{
-   width:38vw;
-  height:35vw;
-  margin-top:-4vw;
-  
+    .product-container2 {
+        position: relative;
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+        height: 70vw;
+        width: 50vw;
+        border: 2px solid rgb(139, 90, 17);
+        border-radius: 40px;
+        padding: 1px;
+        margin-top: 30vw;
     }
-    
-        .product3 img{
-   width:40vw;
-        margin-top:0vw;
-      height:41vw;
-  }
-      
-          .product4 img {
-   width:40vw;
-        height:40vw;
-      
-        margin-top:1vw;
-  
-        object-fit: contain;}
-  
-    
-      .tb-bottoms{
-          width:auto;
-          display:flex;
-          padding:3.5vw;
-          gap:9vw;          /* Space between images */
-          margin-top:-5vw;
-          height:80vw; 
-          overflow-x:auto;
-          overflow-y:hidden;
-          
-          align-items:center;
-          scroll-snap-type:x mandatoRy;
-          scroll-behavior:smooth;
-            /* Prevents scrolling in y axis */
-        
-            white-space: nowrap;
-      
-          }
-          .bottoms img{
-          scroll-snap-align:center;
-          margin-top:10vw;
-          border:none;
 
-          }
-         .pants1{
-      background:#000000;
-      height:62vw;
-      width:100%;
-      padding:3vw;    
-      border:2px #ff0000 solid;
-      border-radius:30px;
-         }
-                .pants2{
-      background:#000000;
-      height:62vw;
-      width:100%;
-      border:2px #ff0000 solid;
-      border-radius:30px;
-      padding:3vw;    
-  
-         }
-          .pants1 img{
-          
-       height:auto;
-   width:50vw;  
+    .product-container2 img {
+        width: 45vw;
+        margin: auto;
+        height: 45vw;
     }
-      .pants2 img{
-          height:auto;
-          width:50vw;
-      }
-  .products img,
-  .bottoms img{
-      transition: transform 0.3s ease;
-  }
-  .products img:hover,
-  .bottoms img:hover{
-      transform: translateY(-8px) scale(1.04);
-  }
-#time{
-color:#000000;
-background:#949494cf;
-height:3vw;
-width:12vw;
-text-align:center;
-border-radius:6px;
-margin-top:2vw;
-font-size:2.1vw;
-
-}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-  @keyframes fadeIn{
-      from{
-          opacity:0;
-          transform:translateY(30px);
-      }
-  
-      to{
-          opacity:1;
-          transform:translateY(0);
-      }
-  }
-  .title,
-  .products,
-  .logo,
-  .bottoms{
-      animation:fadeIn 0.8s ease;
-  }
-  .logo{
-      animation:glow 2.5s infinite;
-  }
-  html{
-      scroll-behavior:smooth;
-  }
-  .products img:active,
-  .bottoms img:active{
-      transform:scale(0.97);
-  }
-  .products img{
-      -webkit-tap-highlight-color: transparent;
-      outline: none;
-  }
-  a,
-  button,
-  img,
-  .product1 img,
-  .product2 img,
-  .product3 img,
-  .product4 img,
-  .pants1 img,
-  .pants2 img{
-      -webkit-tap-highlight-color: transparent;
-      outline: none;
-      user-select: none;
-  }
-  /* Chrome, Edge, Opera, Safari */
-  
-  ::-webkit-scrollbar{
-    width:8px;
-  }
-  
-  ::-webkit-scrollbar-track{
-    background:#090909;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background:linear-gradient(
-        180deg,
-        #ff1a1a,
-        #8b0000
-    );
-    border-radius:100px;
-    border:2px solid #090909;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover{
-    background:linear-gradient(
-        180deg,
-        #ff4040,
-        #b30000
-    );
-  }
-  
-  html{
-    scrollbar-width:none;
-    scrollbar-color:#350e0e #090909;
-  }
+}

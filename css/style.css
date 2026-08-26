@@ -190,7 +190,7 @@ border-radius:6px;
 display:none;
   }
   .nav-left{
-    width:25%;
+    width:35%;
     display:flex;
     margin-left:4vw;
     background:#ff000000;
@@ -356,6 +356,7 @@ transition: color 0.3s ease-in-out
       gap:30px;
       height:30vw;
       width:100%;
+        MARGIN-TOP:3VW;
       justify-content:center;
 border-radius:25px;
     
@@ -377,8 +378,9 @@ border-radius:25px;
           height:20vw;
       }
         .PANTS {
-               font-size:5vw;
+               font-size:3vw;
             text-align: center;
+            margin-top:1vw;
             font-family: 'Montserrat', sans-serif;
             color:rgb(0, 0, 0);
              animation:fadeIn 0.8s ease;
