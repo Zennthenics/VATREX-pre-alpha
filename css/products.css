@@ -680,7 +680,7 @@ html {
     .product-container {
         position: relative;
         width: 75vw;
-        height:44vh;
+        height:80vw;
         border: 3px solid rgb(199 144 79);
         justify-content: center;
         align-items: center;
@@ -768,17 +768,17 @@ html {
     .products2.slide {
         mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 92%);
         height: auto;
-        width: 70vw;
-        margin-left: 2vw;
+        width: 76vw;
+        margin-left: -1vw;
         margin-top:-1vw;
     }
     
     .products3.slide {
         mask-image: radial-gradient(ellipse at center, rgb(0, 0, 3) 50%, rgba(255, 255, 255, 0) 80%);
         height: auto;
-        width: 65vw;
+        width: 71vw;
         border-radius: 10vw;
-        margin-left: 4vw;
+        margin-left: 1vw;
         margin-top:4vw;
     }
 
@@ -796,12 +796,12 @@ html {
         margin-left:4vw;
     }
         .products23.slide {
-    mask-image: radial-gradient(ellipse at top,rgb(0 0 0 / 92%) 55%, rgb(255 255 255 / 72%)80%);
+    mask-image: radial-gradient(ellipse at top,rgb(0,0,0) 55%, rgb(255 ,255 ,255 , 0)90%);
 
-        width: 64vw;
+        width: 61vw;
         border-radius:20vw;
-        margin-left: 5vw;
-        margin-top:-2vw;
+        margin-left: 7vw;
+        margin-top:-1.5vw;
     }
     .products34.slide {
     mask-image: radial-gradient(ellipse at top,rgb(0, 0, 0) 55%, rgba(255, 255, 255, 0)90%);
