@@ -27,7 +27,7 @@ html {
 }
 
 .product-container {
-    background:#f3f1e4;
+    background: #c1c1c1;
     position: relative;
     justify-content: start;
     display: flex;
@@ -35,10 +35,10 @@ html {
     transition: 0.5s;
     height: 35vw;
     width: 35vw;
-    border: 2px solid rgb(139, 90, 17);
+    border: 2px solid rgb(63 63 63);
     border-radius: 40px;
     padding: 1px;
-    margin-top: 30vw;
+    margin-top: 33vw;
     box-sizing: border-box;
 }
 
@@ -362,19 +362,41 @@ html {
     margin-left:2.5vw;
 }
 .products2.slide {
-    mask-image: radial-gradient(rgb(0, 0, 0) 30%, rgba(255, 0, 0, 0) 70%);
-    height: 32vw;
-    margin-left: 2vw;
-    border-radius:12vw;
+    mask-image: radial-gradient(ellipse at top,rgb(0 0 0/85%) 40%, rgba(255, 0, 0, 0) 80%);
+    height: 34vw;
+    width:38vw;
+    margin-left: -1.2vw;
+    margin-top:-1.5vw;
+    border-radius:1vw;
 }
 
  .products3.slide {
-    mask-image: radial-gradient(ellipse at center,rgb(0, 0, 0) 60%, rgba(255, 255, 255, 0)74%);
+    mask-image: radial-gradient(ellipse at top,rgb(0, 0, 0) 30%, rgba(255, 255, 255, 0)90%);
 
-        width: 30vw;
+        width: 35vw;
         border-radius: 2vw;
-        margin-left: 3vw;
-        margin-top:-3vw;
+        margin-left:-0.9vw;
+        margin-top:-2vw;
+    }
+.productsVWB.slide{
+width:34vw;
+margin-top:-3vw;
+}
+.productswb.slide {
+    mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 100%);
+    width:43vw;
+    margin-left: -3vw;
+    margin-top:-2vw;
+    border-radius:0vw;
+}
+
+ .productswb2.slide {
+    mask-image: radial-gradient(ellipse at center,rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0)94%);
+
+        width: 36vw;
+        border-radius: 2vw;
+        margin-left: -0.8vw;
+        margin-top:-2vw;
     }
     .products4.slide {
         mask-image: radial-gradient(rgb(0, 0, 3) 55%, rgba(255, 255, 255, 0) 78%);
@@ -410,8 +432,9 @@ html {
 
 .products22.slide {
     mask-image: radial-gradient(ellipse at top, rgb(0, 0, 0) 75%, rgba(255, 0, 0, 0) 20%);
-    height: 32vw;
+    height: 35vw;
     margin-left: 2vw;
+    margin-top:-2vw;
 }
 
 .products33.slide {
@@ -789,6 +812,26 @@ html {
         margin-left:5vw;
         margin-top:6vw;
     }
+    .productsVWB.slide{
+width:73.5vw;
+margin-top:-3vw;
+}
+.productswb.slide {
+    mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 100%);
+    width:93vw;
+    margin-left: -6vw;
+    margin-top:-2vw;
+    border-radius:0vw;
+}
+
+ .productswb2.slide {
+    mask-image: radial-gradient(ellipse at center,rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0)94%);
+
+        width: 76vw;
+        border-radius: 2vw;
+        margin-left: -0.8vw;
+        margin-top:-2vw;
+    }
      .productss12.slide {
         height: auto;
         margin-top: 5vw;
@@ -1151,6 +1194,26 @@ html {
         height: 37vw;
         width: 35vw;
         margin-left: 0vw;
+    }
+       .productsVWB.slide{
+width:39vw;
+margin-top:-3vw;
+}
+.productswb.slide {
+    mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(255, 0, 0, 0) 100%);
+    width:49vw;
+    margin-left: -vw;
+    margin-top:-2vw;
+    border-radius:0vw;
+}
+
+ .productswb2.slide {
+    mask-image: radial-gradient(ellipse at center,rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0)94%);
+
+        width: 42vw;
+        border-radius: 2vw;
+        margin-left: -0.8vw;
+        margin-top:-2vw;
     }
       .productss12.slide {
         height: auto;
