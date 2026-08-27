@@ -182,7 +182,7 @@ body {
 .checkout-card {
     position: relative;
 
-    width: min(760px, 100%);
+    width: min(100vw, 100%);
 
     padding: clamp(25px, 5vw, 48px);
 
