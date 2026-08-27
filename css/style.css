@@ -444,11 +444,12 @@ body {
     }
 
     #time {
-        color: rgb(0, 0, 0);
-        background: rgba(148, 148, 148, 0.81);
+        color: rgb(121 34 34);
+        background: rgb(127 127 127 / 0%);
         height: 6vw;
         width: 40vw;
         text-align: center;
+        margin-left:-3vw;
         border-radius: 6px;
         font-size: 4.9vw;
         margin-top: -0.5vw;
