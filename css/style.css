@@ -521,10 +521,10 @@ body {
     }
 
     .product1 img {
-        width: 79vw;
-        height: 79vw;
+        width: 80vw;
+        height: 76vw;
         margin-top:-5vw;
-        margin-left:3vw;
+        padding-left:9vw;
     }
 
     .product2 img {
