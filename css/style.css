@@ -320,7 +320,8 @@ color:#f2e8e8;
 width:30%;
 font-size:25px;
 font-family: 'Montserrat', sans-serif;
-transition: color 0.3s ease-in-out 
+transition: color 0.3s ease-in-out; 
+opacity:0.7;
 
 }
 .tops:hover,
