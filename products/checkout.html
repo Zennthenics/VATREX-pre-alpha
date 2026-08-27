@@ -1,162 +1,309 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta http-equiv="Content-Language" content="en">
     <meta name="google" content="notranslate">
 
+    <title>VATREX — Checkout</title>
 
-    <meta name="viewport"
-
-          content="width=device-width, initial-scale=1.0">
-             
-
-
-    <title>VATREX Checkout</title>
-
-
-
-    <link rel="stylesheet"
-
-          href="../css/checkout.css">
-
-
+    <link rel="stylesheet" href="../css/checkout.css">
 
 </head>
+
 <body>
 
-    <div class="checkout-page">
+    <main class="checkout-page">
 
-        <div class="logo-container">
-            <img src="../images/VATREXX.webp"
+        <!-- Background glow -->
+        <div class="ambient-glow glow-one"></div>
+        <div class="ambient-glow glow-two"></div>
 
-            class="logo"
+        <!-- Header -->
+        <header class="checkout-header">
 
-            alt="VATREX">
-        </div>
-        <div class="checkout-card">
-        <div class="checkout-form">
+            <a href="../index.html" class="logo-container">
+                <img
+                    src="../images/VATREXX.webp"
+                    class="logo"
+                    alt="VATREX"
+                >
+            </a>
 
-            <h1 class="start">Checkout</h1>
-            <p class="starter">Complete your order below.</p>
+            <div class="header-line"></div>
+
+            <p class="checkout-label">CHECKOUT</p>
+
+        </header>
+
+
+        <!-- Main Card -->
+        <section class="checkout-card">
+
+            <div class="checkout-intro">
+
+                <span class="eyebrow">VATREX / ORDER</span>
+
+                <h1>Complete your order.</h1>
+
+                <p>
+                    Enter your details below and we'll take care of the rest.
+                </p>
+
+            </div>
 
 
             <form id="checkoutForm">
 
-                <label for="fullname">Full Name</label>
+                <!-- Personal Information -->
+                <div class="form-section">
+
+                    <div class="section-heading">
+                        <span class="section-number">01</span>
+
+                        <div>
+                            <h2>Contact</h2>
+                            <p>Your contact information</p>
+                        </div>
+                    </div>
 
 
+                    <div class="field">
 
-        <input
+                        <label for="fullname">Full Name</label>
 
-        id="fullname"
+                        <input
+                            id="fullname"
+                            type="text"
+                            name="fullname"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                        >
 
-        type="text"
-
-        name="fullname"
-
-        placeholder="Enter your full name"
-
-        required>
-
-        <label for="email">Email</label>
-
+                    </div>
 
 
-        <input
+                    <div class="field">
 
-        id="email"
+                        <label for="email">Email</label>
 
-        type="email"
+                        <input
+                            id="email"
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
 
-        name="email"
+                    </div>
 
-        placeholder="Enter your e-mail"
 
-        required>
+                    <div class="field">
 
-        <label for="phone">Phone number</label>
+                        <label for="phone">Phone Number</label>
 
-        <input
+                        <input
+                            id="phone"
+                            type="tel"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            autocomplete="tel"
+                            required
+                        >
 
-        id="phone"
+                    </div>
 
-        type="tel"
 
-        name="phone"
+                    <div class="field">
 
-        placeholder="Enter your phone number"
+                        <label for="quantity">Quantity</label>
 
-        required>
-         <label for="quantity">quantity</label>
-        <select id="quantity" name="quantity" required>
+                        <select
+                            id="quantity"
+                            name="quantity"
+                            required
+                        >
 
-        <option value="">how many do you want?</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        </select>
-        <br>
-        <hr>
-        <hr>
-        <h2>Shipping Address</h2>
+                            <option value="">Select quantity</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
 
-<label for="governorate">Governorate</label>
-<select id="governorate" name="governorate" required>
-    <option value="">Select Governorate</option>
-    <option>Cairo</option>
-    <option>Giza</option>
-    <option>Alexandria</option>
-    <option>Qalyubia</option>
-    <option>Sharqia</option>
-    <option>Dakahlia</option>
-    <option>Beheira</option>
-    <option>Monufia</option>
-    <option>Gharbia</option>
-    <option>Kafr El Sheikh</option>
-    <option>Domyat</option>
-    <option>Port Said</option>
-    <option>Ismailia</option>
-    <option>Suez</option>
-    <option>Faiyum</option>
-    <option>Beni Suef</option>
-    <option>Minya</option>
-    <option>Assiut</option>
-    <option>Sohag</option>
-    <option>Qena</option>
-    <option>Luxor</option>
-    <option>Aswan</option>
-    <option>Red Sea</option>
-    <option>el wadi el gdid</option>
-    <option>Matrouh</option>
-    <option>North Sinai</option>
-    <option>South Sinai</option>
-</select>
+                        </select>
 
-<label for="city">City / District</label>
-<input type="text" id="city" placeholder="e.g. Nasr City"required>
+                    </div>
 
-<label for="street">Street Address</label>
-<input type="text" id="street" placeholder="Street name and building number"required>
+                </div>
 
-<label for="apartment">Apartment / Floor </label>
-<input type="text" id="apartment" placeholder="Apartment, floor, landmark"required>
 
-<label for="postal">Postal Code (Optional)</label>
-<input type="tel" id="postal" maxlength="5" placeholder="e.g. 12345">
-  <div id="buttonbox">
-  <button type="submit" ID="submit-order">Submit Order</button>
-  <button type="button" onclick="location.href='../index.html'" class="back">Back</button>
-  </div>          
-</form>
-  </div>      
-        </div>
+                <!-- Shipping -->
+                <div class="form-section">
 
-    </div>
-<script src="../javascript/checkout.js"></script>
+                    <div class="section-heading">
+
+                        <span class="section-number">02</span>
+
+                        <div>
+                            <h2>Shipping</h2>
+                            <p>Where should we deliver your order?</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="governorate">Governorate</label>
+
+                        <select
+                            id="governorate"
+                            name="governorate"
+                            required
+                        >
+
+                            <option value="">Select Governorate</option>
+
+                            <option>Cairo</option>
+                            <option>Giza</option>
+                            <option>Alexandria</option>
+                            <option>Qalyubia</option>
+                            <option>Sharqia</option>
+                            <option>Dakahlia</option>
+                            <option>Beheira</option>
+                            <option>Monufia</option>
+                            <option>Gharbia</option>
+                            <option>Kafr El Sheikh</option>
+                            <option>Domyat</option>
+                            <option>Port Said</option>
+                            <option>Ismailia</option>
+                            <option>Suez</option>
+                            <option>Faiyum</option>
+                            <option>Beni Suef</option>
+                            <option>Minya</option>
+                            <option>Assiut</option>
+                            <option>Sohag</option>
+                            <option>Qena</option>
+                            <option>Luxor</option>
+                            <option>Aswan</option>
+                            <option>Red Sea</option>
+                            <option>El Wadi El Gdid</option>
+                            <option>Matrouh</option>
+                            <option>North Sinai</option>
+                            <option>South Sinai</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="city">City / District</label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="e.g. Nasr City"
+                            autocomplete="address-level2"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="street">Street Address</label>
+
+                        <input
+                            type="text"
+                            id="street"
+                            name="street"
+                            placeholder="Street name and building number"
+                            autocomplete="street-address"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="apartment">Apartment / Floor</label>
+
+                        <input
+                            type="text"
+                            id="apartment"
+                            name="apartment"
+                            placeholder="Apartment, floor or landmark"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="postal">
+                            Postal Code
+                            <span class="optional">OPTIONAL</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="postal"
+                            name="postal"
+                            maxlength="5"
+                            placeholder="e.g. 12345"
+                            inputmode="numeric"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div id="buttonbox">
+
+                    <button
+                        type="submit"
+                        id="submit-order"
+                    >
+                        <span>Submit Order</span>
+                        <span class="button-arrow">→</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        onclick="location.href='../index.html'"
+                        class="back"
+                    >
+                        Back
+                    </button>
+
+                </div>
+
+
+                <p class="secure-note">
+                    VATREX / ORDER PROCESSING
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="../javascript/checkout.js"></script>
 
 </body>
 </html>

@@ -294,7 +294,7 @@ body {
     width: 20vw;
     height: 20vw;
     padding: 10px;
-    margin-left:-0.5vw;
+    margin-left:-0vw;
     margin-top: -vw;
     border-radius:3vw;
 }
@@ -303,7 +303,6 @@ body {
     width: 18vw;
     height: 20vw;
     padding: 1px;
-    margin-left: -0.1vw;
     margin-top: -0.3vw;
     border-radius:4vw;
 }
