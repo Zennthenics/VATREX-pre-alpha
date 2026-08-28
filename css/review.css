@@ -3,11 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0d0d0d;
-    color: white;
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgb(255 0 0 / 20%),
+            #2d2d2d00 35%
+        ),
+        #050505;
+
+    color: #f5f5f5;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+.ambient-glow {
+    position: fixed;
+
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+
+    background: rgba(230, 40, 0, 0.3);
+
+    filter: blur(100px);
+
+    pointer-events: none;
+
+    z-index: -1;
 }
 
 .review-page {
@@ -21,11 +52,21 @@ body {
 
 .review-card {
     width: 100%;
-    max-width:80VW;
-    background: #171717;
-    border: 1px solid #2d2d2d;
+    max-width: 90vw;
+
+    background: rgba(23, 23, 23, 0.72);
+    border: 1px solid rgba(255, 60, 60, 0.25);
     border-radius: 18px;
     padding: 35px;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 0, 0.12),
+        0 0 60px rgba(255, 0, 0, 0.06);
+
+    position: relative;
 }
 
 .logo-container {
@@ -34,7 +75,7 @@ body {
 }
 
 .logo {
-    width:44vw;
+    width:24vw;
     user-select: none;
     pointer-events: none;
 }
@@ -165,21 +206,31 @@ button {
 
 .review-card {
     width: 100%;
-    max-width: 800px;
-    background: #171717;
-    border: 1px solid #2d2d2d;
+    max-width: 90vw;
+
+    background: rgba(23, 23, 23, 0.72);
+    border: 1px solid rgba(255, 60, 60, 0.25);
     border-radius: 18px;
     padding: 35px;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 0, 0.12),
+        0 0 60px rgba(255, 0, 0, 0.06);
+
+    position: relative;
 }
 
 .logo-container {
     text-align: center;
     margin-bottom: 0px;
-    height:30vw;
+    height:20vw;
 }
 
 .logo {
-    width:90vw;
+    width:70vw;
     user-select: none;
     pointer-events: none;
 }
