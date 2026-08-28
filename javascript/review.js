@@ -97,7 +97,7 @@ document.getElementById("confirm-button").addEventListener("click", async () => 
 
     try {
 
-        response = await fetch("http://node1.waifly.com:25224/checkout", {
+        response = await fetch("https://vatrex-production.up.railway.app/checkout", {
 
             method: "POST",
 
