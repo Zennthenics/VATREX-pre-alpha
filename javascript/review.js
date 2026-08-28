@@ -38,12 +38,12 @@ const shippingPrices = {
 
 // Product images
 const productImages = {
-    "vatrex-ss": "../images/VSS.webp",
-    "vatrex-ls": "../images/VLS.webp",
+    "vatrex-plainblackrss": "../images/VSS.webp",
+    "vatrex-lighteningls": "../images/VLS.webp",
     "vatrex-HOODIE": "../images/VH.webp",
-    "vatrex-v-LASTLY-pants": "../images/VP.webp",
-    "vatrex-mixed-shoulderss": "../images/VATREXmix.webp",
-    "vatrex-shadow-pants": "../images/redpants.webp"
+    "vatrex-beige-pants": "../images/VP.webp",
+    "vatrex-wb-plain-shirt": "../images/VWB.webp",
+    "vatrex-black-pants": "../images/redpants.webp"
 };
 
 const quantity = Number(data.quantity) || 1;
