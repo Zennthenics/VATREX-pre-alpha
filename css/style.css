@@ -10,7 +10,33 @@ html {
     scrollbar-width: none;
     scrollbar-color: rgb(139, 0, 0) rgb(17, 17, 17);
 }
+.pc-filtercards{
+width:100%;
 
+height:25vw;
+justify-content:center;
+box-sizing:border-box;
+margin-top:14vw; 
+gap:30px;
+display:flex;
+flex-direction:row;
+}
+.topsfiltercard{
+width:100%;
+height:30vw;
+justify-content:center;
+align-items:center;
+display:block;
+transition:transform 0.5s ease;
+}
+.topsfiltercard:hover{
+transform:scale(1.05);
+
+}
+.vatrex.filter.card{
+width:30vw;
+height:36vw;
+}
 .opening {
     width: 100%;
     height: 55vw;
@@ -81,7 +107,7 @@ a {
 }
 
 .top-card:hover {
-    transform: translateY(-20px);
+    transform:translateY(-30px)
 }
 
 .sidebar a {
@@ -205,9 +231,9 @@ body {
 }
 
 .line {
-    margin-top: 15vw;
-    width: 100vw;
-    height: 0.3vw;
+    margin-top: 14vw;
+    width: 100%;
+    height: 0.2vw;
     color: rgba(0, 0, 0, 0);
     background: rgb(133, 0, 0);
 }
@@ -233,7 +259,7 @@ body {
 .pc-products {
     width: 100%;
     display: flex;
-    column-gap: 1vw;
+    column-gap: 1.2vw;
     margin-top: 20px;
     height: auto;
     overflow: hidden auto;
@@ -264,13 +290,11 @@ body {
     margin: auto 0px;
 }
 
-.product1:hover, .product2:hover, .product3:hover, .product4:hover {
-}
 
 .tops, .pants, .tiktok {
     color: rgb(242, 232, 232);
     width: 30%;
-    font-size: 25px;
+    font-size: 2vw;
     font-family: Montserrat, sans-serif;
     transition: color 0.3s ease-in-out;
     opacity: 0.7;
@@ -280,21 +304,14 @@ body {
     color: rgb(255, 0, 0);
 }
 
-.products img {
-    transition: transform 0.3s;
-    width: 100%;
-    display: block;
-}
 
-.products img:hover {
-    transform: scale(0.9);
-}
+
 
 .product1 img, .product2 img, .product3 img {
     width: 20vw;
     height: 20vw;
     padding: 10px;
-    margin-left:-0vw;
+    margin-left:-1.1vw;
     margin-top: -vw;
     border-radius:3vw;
 }
@@ -304,6 +321,7 @@ body {
     height: 20vw;
     padding: 1px;
     margin-top: -0.3vw;
+    margin-left:-5px;
     border-radius:4vw;
 }
 
@@ -345,7 +363,7 @@ body {
     body {
         overflow-x: hidden;
     }
-
+    
     .pc-products {
         display: none;
     }
@@ -364,6 +382,9 @@ body {
 
     .opening {
         display: none;
+    }
+    .pc-filtercards{
+    display:none;
     }
 
     .phone-navbar {
@@ -597,296 +618,6 @@ body {
         width: 80vw;
     }}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .pc-navbar {
-        display: none;
-    }
-
-    .phone-navbar {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 10.3vw;
-        background: rgb(255, 255, 255);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px 40px;
-        z-index: 1000;
-        box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px;
-    }
-
-    .pc-products {
-        display: none;
-    }
-
-    .pc-bottoms {
-        display: none;
-    }
-
-    .mb-products {
-        display: none;
-    }
-
-    .mb-bottoms {
-        display: none;
-    }
-
-    .opening {
-        width: 100%;
-        height: 60vw;
-    }
-
-    .nav-left i, .nav-right i {
-        font-size: 3vw;
-        cursor: pointer;
-        color: rgb(17, 17, 17);
-        transition: 0.3s;
-    }
-
-    .nav-right img {
-        width: 5vw;
-        display: block;
-    }
-
-    .nav-left i:hover, .nav-right i:hover {
-        color: rgb(133, 0, 0);
-    }
-
-    .nav-center {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 1vw;
-    }
-
-    .nav-center img {
-        height: 12vw;
-    }
-
-    .sidebar {
-        position: fixed;
-        top: 0px;
-        left: -280px;
-        width: 280px;
-        height: 100vh;
-        background: rgb(17, 17, 17);
-        padding-top: 90px;
-        transition: 0.35s;
-        z-index: 2000;
-    }
-
-    .sidebar a {
-        font-family: "metal mania";
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 20px 30px;
-        font-size: 22px;
-        transition: 0.3s;
-    }
-
-    .DES {
-        color: rgb(255, 7, 7);
-        font-size: 6vw;
-        text-align: center;
-        height: 50px;
-        padding-top: 0px;
-        margin-top: -1vw;
-    }
-
-    .line {
-        margin-top: 1vw;
-    }
-
-    .PANTS {
-        text-align: center;
-        color: rgb(255, 0, 0);
-        font-size: 50px;
-        margin-top: 9vw;
-    }
-
-    .start {
-        color: rgb(255, 4, 4);
-        text-align: center;
-        font-size: 6vw;
-        margin-top: 5vw;
-    }
-
-    .logo-container {
-        width: 100vw;
-        height: 50vw;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        overflow-x: hidden;
-    }
-
-    .startinglogo-container {
-        width: 100vw;
-        height: 50vw;
-    }
-
-    .startup {
-        width: 100%;
-        height: 48vw;
-    }
-
-    .logo {
-        height: 60vw;
-        width: 100vw;
-        display: block;
-    }
-
-    .tb-products {
-        display: flex;
-        width: 100%;
-        gap: 2vw;
-        align-items: center;
-        overflow-x: auto;
-        height: 60vw;
-    }
-
-    .tb-products img {
-        border-width: medium;
-        border-style: none;
-        border-color: currentcolor;
-        border-image: none;
-    }
-
-    .product1 {
-        background:#f8f3e7;
-        height: 47vw;
-        width: 60vw;
-        border: 2px solid red;
-        border-radius: 30px;
-        padding: 8vw;
-    }
-
-    .product2 {
-        background:#f8f3e7;
-        height: 47vw;
-        width: 60vw;
-        border: 2px solid red;
-        border-radius: 30px;
-        padding: 8vw;
-    }
-
-    .product3 {
-        background:#f8f3e7;
-        height: 47vw;
-        width: 60vw;
-        border: 2px solid red;
-        border-radius: 30px;
-        padding: 2vw;
-    }
-
-    .product4 {
-        background:#f8f3e7;
-        height: 47vw;
-        width: 60vw;
-        border: 2px solid red;
-        border-radius: 30px;
-        padding: 2vw;
-    }
-
-    .product1 img {
-        height: 36vw;
-        width: 40vw;
-        margin-top: -5.9vw;
-    }
-
-    .product2 img {
-        width: 38vw;
-        height: 35vw;
-        margin-top: -4vw;
-    }
-
-    .product3 img {
-        width: 40vw;
-        margin-top: 0vw;
-        height: 41vw;
-    }
-
-    .product4 img {
-        width: 40vw;
-        height: 40vw;
-        margin-top: 1vw;
-        object-fit: contain;
-    }
-
-    .tb-bottoms {
-        width: auto;
-        display: flex;
-        padding: 3.5vw;
-        gap: 9vw;
-        margin-top: -5vw;
-        height: 80vw;
-        overflow: auto hidden;
-        align-items: center;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        white-space: nowrap;
-    }
-
-    .bottoms img {
-        
-        scroll-snap-align: center;
-        margin-top: 10vw;
-        border-width: medium;
-        border-style: none;
-        border-color: currentcolor;
-        border-image: none;
-    }
-
-    .pants1 {
-        background:#f8f3e7;
-        height: 62vw;
-        width: 100%;
-        padding: 3vw;
-        border: 2px solid rgb(255, 0, 0);
-        border-radius: 30px;
-    }
-
-    .pants2 {
-        background:#f8f3e7;
-        height: 62vw;
-        width: 100%;
-        border: 2px solid rgb(255, 0, 0);
-        border-radius: 30px;
-        padding: 3vw;
-    }
-
-    .pants1 img {
-        height: auto;
-        width: 50vw;
-    }
-
-    .pants2 img {
-        height: auto;
-        width: 50vw;
-    }
-
-    .products img, .bottoms img {
-        transition: transform 0.3s;
-    }
-
-    .products img:hover, .bottoms img:hover {
-        transform: translateY(-8px) scale(1.04);
-    }
-
-    #time {
-        color: rgb(0, 0, 0);
-        background: rgba(148, 148, 148, 0.81);
-        height: 3vw;
-        width: 12vw;
-        text-align: center;
-        border-radius: 6px;
-        margin-top: 2vw;
-        font-size: 2.1vw;
-    }
-}
 
 @keyframes fadeIn {
     0% {
