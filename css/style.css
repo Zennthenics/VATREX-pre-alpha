@@ -330,9 +330,10 @@ color:#951111;
     flex-direction: column;  /* Stack: Image -> Description -> Coming soon */
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 110%;
     font-family:montserrat, sans-serif;
-    font-weight:700;
+    font-weight:400;
+    letter-spacing:0.2vw;
 }
 .product1 img, .product2 img, .product3 img {
     width: 13vw;
