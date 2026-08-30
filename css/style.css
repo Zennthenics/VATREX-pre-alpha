@@ -139,16 +139,16 @@ a {
     animation: 2s ease 0s infinite normal none running pulse;
 }
 
-#time {
+.time {
     color: rgb(153 153 153);
     background: rgba(222, 214, 214, 0);
     height: 2.3vw;
-    width: 12vw;
-    margin-left: 2px;
-    margin-top: 20px;
+    width: 10vw;
+    margin-left: -2px;
+    margin-top: 1.5vw;
     text-align: center;
-    font-size: 1.9vw;
-    border-radius: 6px;
+    font-size: 1vw;
+    border-radius: px;
 }
 
 .loader-text {
@@ -310,13 +310,13 @@ color:#951111;
 }
 .description1, 
 .description2, 
-.description3 {
+.description3,
+.description4 {
     display: block;          /* Forces text onto its own line below the image */
     width: 100%;             /* Ensures text takes up the full width of the card */
-    max-width: 100%;         /* Restricts text from extending beyond card borders */
-    padding: 10px 15px;      /* Gives neat spacing inside the card edge */
+    max-width: 100%;         /* Restricts text from extending beyond card borders */    
     box-sizing: border-box;  /* Includes padding in the total width calculation */
-    
+    font-size:1vw;
     /* Text layout and wrapping safety */
     word-wrap: break-word;   /* Breaks long unspaced words across lines */
     overflow-wrap: break-word;
@@ -357,7 +357,7 @@ color:#951111;
     gap: 30px;
     height: 30vw;
     width: 100%;
-    margin-top: 2vw;
+    margin-top: 4vw;
     justify-content: center;
     border-radius: 25px;
 }
@@ -370,11 +370,14 @@ color:#951111;
 .pants1 img {
     width: 12.5vw;
     height: 12vw;
+    margin-top:1vw;
 }
 
 .pants2 img {
     width: 12.5vw;
     height: 12vw;
+    margin-top:1vw;
+
 }
 
 .PANTS {
