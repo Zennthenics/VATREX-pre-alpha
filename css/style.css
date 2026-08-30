@@ -684,8 +684,7 @@ color:#951111;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         white-space: nowrap;
-    }
-
+        scrollbar-width:none}
     .mb-bottoms img {
         scroll-snap-align: center;
         border-width: medium;
