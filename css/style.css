@@ -34,8 +34,8 @@ transform:scale(1.05);
 
 }
 .vatrex.filter.card{
-width:30vw;
-height:36vw;
+width:22vw;
+height:25vw;
 }
 .opening {
     width: 100%;
@@ -98,8 +98,8 @@ a {
 }
 
 .top-card {
-    width: 20%;
-    height: 25.5vw;
+    width: 13%;
+    height: 20.5vw;
     background: #121212;
     border: 2px solid rgb(132, 98, 0);
     transition: transform 0.3s;
@@ -231,7 +231,7 @@ body {
 }
 
 .line {
-    margin-top: 14vw;
+    margin-top: 2vw;
     width: 100%;
     height: 0.2vw;
     color: rgba(0, 0, 0, 0);
@@ -253,7 +253,7 @@ body {
     color: rgb(0, 0, 0);
     font-family: Montserrat, sans-serif;
     margin-top: 30px;
-    font-size: 4vw;
+    font-size: 1.8vw;
 }
 
 .pc-products {
@@ -293,8 +293,8 @@ body {
 
 .tops, .pants, .tiktok {
     color: rgb(242, 232, 232);
-    width: 30%;
-    font-size: 2vw;
+    width: 20%;
+    font-size: 1.2vw;
     font-family: Montserrat, sans-serif;
     transition: color 0.3s ease-in-out;
     opacity: 0.7;
@@ -305,23 +305,50 @@ body {
 }
 
 
+.emblem{
+color:#951111;
+}
+.description1, 
+.description2, 
+.description3 {
+    display: block;          /* Forces text onto its own line below the image */
+    width: 100%;             /* Ensures text takes up the full width of the card */
+    max-width: 100%;         /* Restricts text from extending beyond card borders */
+    padding: 10px 15px;      /* Gives neat spacing inside the card edge */
+    box-sizing: border-box;  /* Includes padding in the total width calculation */
+    
+    /* Text layout and wrapping safety */
+    word-wrap: break-word;   /* Breaks long unspaced words across lines */
+    overflow-wrap: break-word;
+    white-space: normal;     /* Allows text to naturally wrap downward */
+    text-align: center;      /* Centers your product titles beneath images */
+}
 
-
+/* Parent container fix to ensure elements stay ordered vertically */
+.top-card a {
+    display: flex;
+    flex-direction: column;  /* Stack: Image -> Description -> Coming soon */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family:montserrat, sans-serif;
+    font-weight:700;
+}
 .product1 img, .product2 img, .product3 img {
-    width: 20vw;
-    height: 20vw;
+    width: 13vw;
+    height: 13vw;
     padding: 10px;
-    margin-left:-1.1vw;
+    margin-left:-6px;
     margin-top: -vw;
     border-radius:3vw;
 }
 
 .product4 img {
-    width: 18vw;
-    height: 20vw;
+    width: 11vw;
+    height: 13vw;
     padding: 1px;
     margin-top: -0.3vw;
-    margin-left:-5px;
+    margin-left:11px;
     border-radius:4vw;
 }
 
@@ -330,7 +357,7 @@ body {
     gap: 30px;
     height: 30vw;
     width: 100%;
-    margin-top: 3vw;
+    margin-top: 2vw;
     justify-content: center;
     border-radius: 25px;
 }
@@ -341,29 +368,106 @@ body {
 }
 
 .pants1 img {
-    width: 20vw;
-    height: 20vw;
+    width: 12.5vw;
+    height: 12vw;
 }
 
 .pants2 img {
-    width: 20vw;
-    height: 20vw;
+    width: 12.5vw;
+    height: 12vw;
 }
 
 .PANTS {
-    font-size: 3vw;
+    font-size: 1.5vw;
     text-align: center;
     margin-top: 1vw;
     font-family: Montserrat, sans-serif;
     color: rgb(0, 0, 0);
     animation: 0.8s ease 0s 1 normal none running fadeIn;
 }
+.about-us {
+    width: 100%;
+    padding: 100px 8%;
+    background: #111;
+    color: #fff;
+    box-sizing: border-box;
+}
 
+.brandtext {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.brandtext h2 {
+    margin: 0;
+    font-size: clamp(40px, 6vw, 80px);
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.about-line {
+    width: 70px;
+    height: 3px;
+    background: #fff;
+    margin: 30px 0 40px;
+}
+
+.brandtext p {
+    max-width: 850px;
+    margin: 0 0 25px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #bdbdbd;
+    letter-spacing: 0.2px;
+}
+
+.brandtext strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+.about-quote {
+    margin-top: 55px;
+    padding: 30px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about-quote span {
+    font-size: clamp(18px, 2.5vw, 30px);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.brandtext h3 {
+    margin-top: 40px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 800;
+}
 @media (max-width: 767px) {
     body {
         overflow-x: hidden;
     }
-    
+    .description1,
+    .description2,
+    .description3{
+        display:none;
+    }
     .pc-products {
         display: none;
     }
