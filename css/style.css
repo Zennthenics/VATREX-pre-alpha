@@ -641,10 +641,10 @@ object-position:center;
     }
 
     .product1 img {
-        width: 80vw;
+        width: 76vw;
         height: 76vw;
         margin-top:-5vw;
-        padding-left:9vw;
+        padding-left:0vw;
     }
 
     .product2 img {
