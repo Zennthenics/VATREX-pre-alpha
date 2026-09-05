@@ -8,6 +8,7 @@ if (!data) {
 // Shipping prices
 const shippingPrices = {
     "Cairo": 60,
+    "new cairo": 60,
     "Giza": 60,
     "Alexandria": 70,
     "Qalyubia": 70,
