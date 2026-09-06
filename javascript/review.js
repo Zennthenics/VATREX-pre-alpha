@@ -42,7 +42,7 @@ const productImages = {
     "vatrex-plainblackrss": "../images/VSS.webp",
     "vatrex-lighteningls": "../images/VLS.webp",
     "vatrex-HOODIE": "../images/VH.webp",
-    "vatrex-beige-pants": "../images/VP.webp",
+    "vatrex-grey-pants": "../images/VGP.webp",
     "vatrex-wb-plain-shirt": "../images/VWB.webp",
     "vatrex-black-pants": "../images/redpants.webp"
 };

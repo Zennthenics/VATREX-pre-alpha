@@ -5,32 +5,32 @@ console.log("Product ID:", productId);
 const products = {
     "vatrex-plainblackrss": {
         name: "VATREX plain black SS",
-        price: 799,
+        price: 400,
         image: "../images/VSS.webp"
     },
     "vatrex-lighteningls": {
         name: "VATREX lightening LS shirt",
-        price: 899,
+        price: "not priced yet",
         image: "../images/VLS.webp"
     },
     "vatrex-HOODIE": {
         name: "VATREX Hoodie",
-        price: 1499,
+        price: "not priced yet",
         image: "../images/VH.webp"
     },
-    "vatrex-beige-pants": {
-        name: "VATREX Beige Pants",
-        price: 999,
-        image: "../images/VP.webp"
+    "vatrex-grey-pants": {
+        name: "VATREX grey Pants",
+        price: "not priced yet",
+        image: "../images/VGP.webp"
     },
     "vatrex-wb-plain-shirt": {
         name: "VATREX B&W Plain Shirt",
-        price: 1299,
+        price: 400,
         image: "../images/frontwbshirt.webp"
     },
     "vatrex-black-pants": {
         name: "VATREX Plain black Pants",
-        price: 1099,
+        price: "not priced yet",
         image: "../images/redpants.webp"
     }
 };

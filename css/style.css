@@ -72,9 +72,9 @@ a {
 .mb-products {
     display: none;
 }
-.order-strip {
+.order-strippc {
     width: 100%;
-    height:1.9vw;
+    height:3.5vw;
     background: #000000;
     overflow: hidden;
     display: flex;
@@ -82,6 +82,9 @@ a {
     position: relative;
     z-index:100;
     margin-top:0.vw;
+}
+.order-stripmb{
+display: none;
 }
 .order-textpc {
     color: #e1e1e1;
@@ -519,7 +522,7 @@ color:#951111;
 display:none;
 }
 @media (max-width: 767px) {
-    .order-strip {
+    .order-stripmb {
         width: 100%;
         height: 45px;
         background: #000;
@@ -528,6 +531,9 @@ display:none;
         align-items: center;
         z-index:100;
         position: relative;
+    }
+    .order-strippc{
+    display: none;
     }
     .order-textmb {
         color: #fff;
