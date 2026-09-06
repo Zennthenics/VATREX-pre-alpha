@@ -149,7 +149,15 @@ display:none;
 .top-card:hover {
     transform:translateY(-30px)
 }
-
+.top-card:hover .line2{
+    background-color:white;
+}
+.top-card:hover .description1,
+.top-card:hover .description2,
+.top-card:hover .description3,
+.top-card:hover .description4{
+color:#900000;
+}
 .sidebar a {
     font-family: "metal mania";
     display: block;
@@ -197,14 +205,16 @@ width:100%;
     color: rgb(153 153 153);
     background: rgba(222, 214, 214, 0);
     height: 2.3vw;
-    width: 10vw;
-    margin-left: -2px;
-    margin-top: 1.5vw;
+    width: 100%;
+    white-space:nowrap;
+    margin-top: .5vw;
     text-align: center;
     font-size: 1vw;
-    border-radius: px;
+    transition: color .3s ease;
 }
-
+.top-card:hover .time{
+color:#900000
+}
 .loader-text {
     margin-top: 25px;
     color: rgb(255, 255, 255);
@@ -218,7 +228,11 @@ width:100%;
     opacity: 0;
     visibility: hidden;
 }
-
+.line2{
+width:100%;
+height:.1vw;
+background:#8f0000;
+transition: background-color .4s ease;}
 * {
     margin: 0px;
     padding: 0px;
@@ -375,7 +389,8 @@ color:#951111;
     word-wrap: break-word;   /* Breaks long unspaced words across lines */
     overflow-wrap: break-word;
     white-space: normal;     /* Allows text to naturally wrap downward */
-    text-align: center;      /* Centers your product titles beneath images */
+    text-align: center;
+    transition: color .3s ease;/* Centers your product titles beneath images */
 }
 
 /* Parent container fix to ensure elements stay ordered vertically */
@@ -392,18 +407,15 @@ color:#951111;
 .product1 img, .product2 img, .product3 img {
     width: 13vw;
     height: 13vw;
-    padding: 10px;
-    margin-left:-6px;
-    margin-top: -vw;
+    padding:.1vw;
+    margin-top:-.6vw;
     border-radius:3vw;
 }
 
 .product4 img {
     width: 11vw;
     height: 13vw;
-    padding: 1px;
     margin-top: -0.3vw;
-    margin-left:11px;
     border-radius:4vw;
 }
 
