@@ -32,6 +32,11 @@ const products = {
         name: "VATREX Plain black Pants",
         price: "not priced yet",
         image: "../images/redpants.webp"
+    },
+    "vatrex-white-pants": {
+        name: "VATREX White Pants",
+        price: "not priced yet",
+        image: "../images/vwp.webp"
     }
 };
 

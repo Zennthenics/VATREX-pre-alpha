@@ -10,10 +10,27 @@ html {
     position: relative;
     display: block;
     text-decoration: none;
-    color: #000000;
-    font-family: 'montserrat', sans-serif;
+    color: #ffffff;
     text-align: center;
     font-weight: 600;
+}
+.line{
+width:100%;
+height:.2vw;
+background-color:#ffffff;
+margin-top:-1.1vw;
+transition: background-color .3s ease;
+}
+
+.topcard:hover{
+background-color:#ffffff;
+border: 2px #000000 solid;
+    
+transform: translateY(-10px);
+
+}
+.topcard:hover .line{
+background-color:#ab0505;
 }
 
 #products {
@@ -46,41 +63,35 @@ display:none;
 }
 
 .topcard {
-    width: 18vw;
-    background: rgb(224 224 224);
-    border: 2px solid #cdcdcd;
-    height: 27vw;
-    border-radius: 4px;
+    width: 16vw;
+    background: rgb(0 0 0);
+    border: 2px solid #9e0000;
+    height: 24vw;
     margin-top: -5vw;
     transition: 0.3s;
 }
 
-.topcard:hover {
-    transform: translateY(-10px);
-}
 
-#description2 {
-    font-size: 1.6vw;
-    margin-top: 0.8vw;
+.topcard:hover #description{
+color:#9e0000;
+}
+#description{
+    font-size: 1.3vw;
+    margin-top: 1.1vw;
     margin-left:0.1vw;
+    font-family:"montserrat",sans-serif;
+    font-weight:800;
+    letter-spacing:.17vw;
+    white-space:normal;
+    color:white;
+    transition: color .3s ease-in
 }
 
-#description3 {
-    font-size: 1.6vw;
-    margin-top: 0.8vw;
-
-}
-
-#description1 {
-    font-size: 1.6vw;
-    margin-top: 0.5vw;
-
-}
 
 .product-link1 img, .product-link2 img, .product-link3 img {
     border-radius: 20px;
-    width: 18vw;
-    height:18vw;
+    width: 16vw;
+    height:14.8vw;
     margin-top: 0.1vw;}
 #cat-text {
     display: flex;
@@ -214,32 +225,20 @@ display:none;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10vw;
-        margin-top: 20vw;
-        height:120vw;
+        margin-top: 16vw;
+        height:104%;
         padding:5px;
     }
-    #description2 {
-    font-size: 3.6vw;
-    margin-top: 0.8vw;
-    margin-left:0.1vw;
-}
-
-#description3 {
-    font-size: 4vw;
-    margin-top: 0vw;
-
-}
-
-#description1 {
-    font-size: 3.9vw;
-    margin-top: 0.5vw;
+#description{
+    font-size: 3.2vw;
+    margin-top: 3vw;
 
 }
 .topcard {
     width: 40vw;
-    background: rgb(224 224 224);
+    background: rgb(0 0 0);
     border: 2px solid #cdcdcd;
-    height: 57vw;
+    height: 63vw;
     border-radius: 4px;
     margin-top: -5vw;
     transition: 0.3s;
