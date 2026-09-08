@@ -583,6 +583,7 @@ transition: opacity 1.5s ease, transform .3s ease;
 .mb-pantssection {
 width:100%;
 display:block;
+margin-top:1vw;
     
 }
 
@@ -693,13 +694,14 @@ display:block;
 
     .time {
         color: rgb(255 255 255);
-        background: rgb(32 32 32);
+        background: rgb(255 255 255 / 26%);
         height: 6vw;
-        width: 30vw;
+        width: 35.22vw;
         text-align: center;
         border-radius: 6px;
         font-size: 4.9vw;
-        margin-top: -0.5vw;
+        margin-top:1vw;
+        margin-left:2vw;
         z-index: 3000;
     }
 
@@ -709,21 +711,29 @@ display:block;
         display: block;
     }
 
-    .mb-products {
-        width: auto;
-        display: flex;
-        padding: 4vw;
-        gap: 5vw;
-        margin-top: -1vw;
-        height: 100vw;
-        overflow: auto hidden;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        z-index: 2000;
-        
-        
-    }
+.mb-products {
+    width: 100%;
+    display: flex;
 
+    gap: 0vw;
+    padding: 5vw;
+
+    margin-top: -1vw;
+
+    height: 100vw;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+}
+
+.mb-products::-webkit-scrollbar {
+    display: none;
+}
     .mb-products img {
         scroll-snap-align: center;
         border-width: meduim;
@@ -731,70 +741,65 @@ display:block;
         border-color: currentcolor;
         border-image: none;
     }
+.description{
+color:#ffffff;
+text-align:center;
+font-size:4vw;
+font-family:"monterrat",sans-serif;
+font-weight:600;
+letter-spacing:.5vw;
+white-space:normal;
+}
 
-    .product1 {
-        background: rgb(0 0 0);
-        height: 90vw;
-        width: 100%;
-        padding: 7vw;
-        border: 2px solid rgb(145 1 1);
-        border-radius: 30px;
-        
-    }
+.product1,
+.product2,
+.product3,
+.product4 {
+    flex: 0 0 62vw;
+    height: 100%;
+margin-left:15vw;
+margin-right:15vw;
+    box-sizing: border-box;
 
-    .product2 {
-        background: rgb(0 0 0);
-        width: 90vw;
-        height: 100%;
-        padding: 2vw;
-        border: 2px solid rgb(145 1 1);
-        border-radius: 30px;
-    }
+    scroll-snap-align: center;
 
-    .product3 {
-        background:rgb(0 0 0);
-        height: 90vw;
-        width: 100%;
-        padding: 5vw;
-        border: 2px solid rgb(145 1 1);
-        border-radius: 30px;
-    }
+    border: 2px solid rgb(145 1 1);
+    border-radius: 0px;
 
-    .product4 {
-        background: rgb(0 0 0);
-        height: 90vw;
-        width: 90vw;
-        padding: 9vw;
-        border: 2px solid rgb(145 1 1);
-        border-radius: 30px;
-    }
-
+    background: rgb(24 24 24);
+}
     .product1 img {
-        width: 80vw;
-        height: 76vw;
-        margin-top:-5vw;
-        padding-left:6vw;
-        padding:3vw;
+        width: 100%;
+        height: 60%;
+        
+        margin-top:5vw;
+        object-fit:contain;
+        object-position:center;
     }
 
     .product2 img {
-        width: 83vw;
-        height: 80vw;
-        margin-top: 0vw;
+        width: 100%;
+        height: 60%;
+        margin-top:4vw;
+        object-fit:contain;
+        object-position:center;
+        
     }
 
     .product3 img {
-        width: 76vw;
-        height: 80vw;
-        margin-top: -5vw;
+        width: 100%;
+        height: 68%;
+        margin-top: 1vw;
+        object-fit:contain;
+        object-position:center;
     }
 
     .product4 img {
-        width: 76vw;
-        height: 83vw;
-        margin-top: -10vw;
-        margin-left:-1.9vw;
-        BORDER-radius:20vw;
+        width: 100%;
+        height: 70%;
+        margin-top: -1vw;
+        object-fit:contain;
+        object-position:center;
     }
 
     .mb-bottoms {
@@ -818,32 +823,40 @@ display:block;
         border-image: none;
     }
 
-    .pants1 {
-        background: rgb(0 0 0);
-        height: auto;
-        width: 100%;
-        padding: 3vw;
-        border: 2px solid rgb(145 1 1);
-        border-radius: 30px;
-    }
+    .pants1,.pants2 {
+    flex: 0 0 62vw;
+    height: 100%;
+    margin-left:15vw;
+    margin-right:15vw;
+    box-sizing: border-box;
 
-    .pants2 {
-        background: rgb(0 0 0);
-        height: auto;
-        width: auto;
-        border: 2px solid rgb(145 1 1);
-        border-radius: 30px;
-        padding: 3vw;
+    scroll-snap-align: center;
+
+    border: 2px solid rgb(145 1 1);
+    border-radius: 0px;
+
+    background: rgb(0 0 0);
     }
 
     .pants1 img {
-        height: auto;
-        width: 80vw;
+        height:70%;
+        width: 100%;
+        object-fit:contain;
+        object-position:center;
     }
 
     .pants2 img {
-        height: auto;
-        width: 80vw;
+        height:70%;
+        width: 100%;
+        object-fit:contain;
+        object-position:center;
+    }
+    .price{
+    color:red;
+    font-weight:600;
+    font-size:4vw;
+    margin-top:2vw;
+    margin-left:3vw;
     }
 .about-us {
     width: 100%;
