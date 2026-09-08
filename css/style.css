@@ -142,20 +142,19 @@ display:none;
     height: 20.5vw;
     background: #121212;
     border: 2px solid rgb(132, 98, 0);
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color .3s ease;
     display: block;
 }
 
 .top-card:hover {
-    transform:translateY(-30px)
-}
-.top-card:hover .line2{
+    transform:translateY(-30px);
     background-color:white;
 }
-.top-card:hover .description1,
-.top-card:hover .description2,
-.top-card:hover .description3,
-.top-card:hover .description4{
+.top-card:hover .line2{
+    background-color:#000000;
+}
+.top-card:hover .description
+{
 color:#900000;
 }
 .sidebar a {
@@ -357,8 +356,9 @@ body {
     justify-content: center;
     margin: auto 0px;
 }
-
-
+.price{
+color:#8f0000;
+}
 .tops, .pants, .tiktok {
     color: rgb(242, 232, 232);
     width: 20%;
@@ -376,23 +376,9 @@ body {
 .emblem{
 color:#951111;
 }
-.description1, 
-.description2, 
-.description3,
-.description4 {
-    display: block;          /* Forces text onto its own line below the image */
-    width: 100%;             /* Ensures text takes up the full width of the card */
-    max-width: 100%;         /* Restricts text from extending beyond card borders */    
-    box-sizing: border-box;  /* Includes padding in the total width calculation */
-    font-size:1vw;
-    /* Text layout and wrapping safety */
-    word-wrap: break-word;   /* Breaks long unspaced words across lines */
-    overflow-wrap: break-word;
-    white-space: normal;     /* Allows text to naturally wrap downward */
-    text-align: center;
-    transition: color .3s ease;/* Centers your product titles beneath images */
+.description{
+margin-top:.3vw;
 }
-
 /* Parent container fix to ensure elements stay ordered vertically */
 .top-card a {
     display: flex;
@@ -403,6 +389,9 @@ color:#951111;
     font-family:montserrat, sans-serif;
     font-weight:400;
     letter-spacing:0.2vw;
+    white-space:normal;
+    font-size:1vw;
+    text-align:center;
 }
 .product1 img, .product2 img, .product3 img {
     width: 13vw;
@@ -430,7 +419,7 @@ color:#951111;
 }
 
 .pants1 {
-    width: 30vw;
+    width: 33vw;
     height: 30vw;
 }
 
@@ -565,11 +554,6 @@ display:none;
     }
         .order-textpc {
        display:none;
-    }
-    .description1,
-    .description2,
-    .description3{
-        display:none;
     }
     .mbtops-card{
 width:100%;
@@ -839,14 +823,14 @@ margin-right:15vw;
     }
 
     .pants1 img {
-        height:70%;
+        height:65%;
         width: 100%;
         object-fit:contain;
         object-position:center;
     }
 
     .pants2 img {
-        height:70%;
+        height:65%;
         width: 100%;
         object-fit:contain;
         object-position:center;
