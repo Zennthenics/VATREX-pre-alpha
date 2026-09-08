@@ -218,19 +218,19 @@ html {
 
 .relatedproducts {
     font-family: "Metal Mania", serif;
-    width: 61vw;
+    width: 100%;
     height:30vw;
     display: flex;
     flex-direction: row;
     transform: translateY(-5vw);   
     overflow-x: auto;
     gap: 20px;
-    justify-content:center;
+    justify-content:start;
 align-items:center;
 box-sizing:border-box;
 }
 .relatedproduct{
-width:100%;
+width:20%;
 height:26vw;
 background:#f4f2e3;
 border: 2px #000000 solid;
@@ -241,35 +241,12 @@ box-sizing:border-box;
 z-index:100;
 
 }
-.relatedt {
-    width: 22vw;
-    height: 25vw;
-    margin-left:4VW;
-    border-radius: 4vw;
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-    user-select: none;
-    z-index:100;
-}
-.relatedts {
-    width: 26vw;
-    height: 25vw;
-    margin-left:2VW;
-    border-radius: 4vw;
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-    user-select: none;
-    z-index:100;
-}
-.relatedp{
-    width: 23vw;
-    height: 25vw;
-    margin-left:3.5VW;
-    border-radius: 4vw;
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-    user-select: none;
-    z-index:100;
+.relatedproduct img{
+width:100%;
+height:90%;
+object-fit:contain;
+object-position:center;
+
 }
 .description {
     color: rgb(0 0 0);
@@ -319,8 +296,8 @@ color:#000000;
     transform: translateY(-45%);
     width:27vw; 
     height:100%;
-    background: rgb(40 40 40);
-    border:2px solid rgb(0 0 0);
+    background: rgb(0 0 0);
+    border:2px solid rgb(154 0 0);
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -391,11 +368,11 @@ color:#000000;
 }
 
 .buy:hover {
-    background-color: #000000;
+    background-color: #9a0000;
     color:white;
 }
 .back:hover {
-    background-color: #000000;
+    background-color: #9a0000;
     color: #ffffff;
 }
 @keyframes fadeIn {
