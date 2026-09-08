@@ -5,11 +5,6 @@ const selectedSize = params.get("size");
 
 console.log("Product ID:", productId);
 console.log("Selected size:", selectedSize);
-if (!["S", "M", "L"].includes(selectedSize)) {
-    alert("Invalid or missing size.");
-    window.location.href = "../index.html";
-    throw new Error("Invalid size");
-}
 
 const products = {
     "vatrex-plainblackrss": {
@@ -46,6 +41,11 @@ const products = {
         name: "VATREX White Pants",
         price: "not priced yet",
         image: "../images/vwp.webp"
+    },
+    "raptor-black-bag": {
+        name: "RAPTOR black bag",
+        price: 1350,
+        image: "../images/frontraptorbag.webp"
     }
 };
 

@@ -45,7 +45,8 @@ const productImages = {
     "vatrex-grey-pants": "../images/VGP.webp",
     "vatrex-wb-plain-shirt": "../images/vwb.webp",
     "vatrex-black-pants": "../images/redpants.webp",
-    "vatrex-white-pants": "../images/vwp.webp"
+    "vatrex-white-pants": "../images/vwp.webp",
+    "raptor-black-bag": "../images/frontraptorbag.webp"
 };
 
 const quantity = Number(data.quantity) || 1;
