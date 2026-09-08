@@ -77,15 +77,23 @@
             <p class="description">
                 VATREX b&w plain shirt
             </p>
+                <div class="size-selector">
+        <p>SIZE</p>
+
+        <div class="size-options">
+            <button type="button" class="size-button" data-size="S">S</button>
+            <button type="button" class="size-button" data-size="M">M</button>
+            <button type="button" class="size-button" data-size="L">L</button>
+        </div>
+    </div>
         </div>
 
     </div>
 
 </div>
     <div class="buttonsbox">
-
-        <button onclick=
-        "location.href='checkout.html?product=vatrex-wb-plain-shirt'" class="buy">
+<!-- VATREX b&w plain shirt -->
+<button id="buy-button" class="buy" data-product="vatrex-wb-plain-shirt">
     pre-order
 </button>
         <button onclick="location.href='../index.html'" class="back">Back</button>
@@ -104,7 +112,16 @@
 
 
 <script src="../javascript/products.js"></script>
+      <h2 class="related-category">Related Products</h2>
+      <br>
+    <div class="relatedproducts" id ="relation">
+    <div class="relatedproduct">
+     <a href="vatrex white pants.html">
+    <img src="../images/sidewhitepants.webp" class="relatedt" alt="related product">
+    </a>
+    </div>
 <script>
+    
     function openMenu(){
     
         document.getElementById("sidebar").style.left="0";

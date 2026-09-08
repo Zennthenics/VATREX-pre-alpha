@@ -1,6 +1,15 @@
 const params = new URLSearchParams(window.location.search);
+
 const productId = params.get("product");
+const selectedSize = params.get("size");
+
 console.log("Product ID:", productId);
+console.log("Selected size:", selectedSize);
+if (!["S", "M", "L"].includes(selectedSize)) {
+    alert("Invalid or missing size.");
+    window.location.href = "../index.html";
+    throw new Error("Invalid size");
+}
 
 const products = {
     "vatrex-plainblackrss": {
@@ -67,6 +76,7 @@ document.getElementById("checkoutForm").addEventListener("submit", (e) => {
             name: selectedProduct.name,
             price: selectedProduct.price,
         },
+        size: selectedSize,
         }));
 
     window.location.href = "review.html";

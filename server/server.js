@@ -60,6 +60,9 @@ app.post("/checkout", async (req, res) => {
     if (![1, 2, 3].includes(req.body.quantity)) {
     return res.status(400).send("Invalid quantity");
 }
+    if (!["S", "M", "L"].includes(req.body.size)) {
+    return res.status(400).send("Invalid size");
+}
 
 
     try {
@@ -78,6 +81,7 @@ app.post("/checkout", async (req, res) => {
                 productname,
                 quantity,
                 productprice,
+                size,
                 shippingPrice,
                 totalPrice
                 
@@ -96,6 +100,7 @@ app.post("/checkout", async (req, res) => {
                 req.body.product.name,
                 req.body.quantity,
                 req.body.product.price,
+                req.body.size,
                 req.body.shippingPrice,
                 req.body.totalPrice
                 

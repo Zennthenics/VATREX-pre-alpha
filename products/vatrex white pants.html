@@ -74,16 +74,25 @@
     <button class="next">&#10095;</button>
 
 </div>
-        <div class="producttext">
-            <p class="description">
-                VATREX White Pants
-            </p>
-        </div>
+<div class="producttext">
+    <p class="description">
+        VATREX White Pants
+    </p>
 
+    <div class="size-selector">
+        <p>SIZE</p>
+
+        <div class="size-options">
+            <button type="button" class="size-button" data-size="S">S</button>
+            <button type="button" class="size-button" data-size="M">M</button>
+            <button type="button" class="size-button" data-size="L">L</button>
+        </div>
     </div>
+</div>
 
     <div class="buttonsbox">
-        <button onclick="location.href='checkout.html?product=vatrex-white-pants'" class="buy">
+<!-- VATREX White Pants -->
+<button id="buy-button" class="buy" data-product="vatrex-white-pants">
     pre-order
 </button>
 <button onclick="location.href='../index.html'" class="back">Back</button>
@@ -93,7 +102,14 @@
 <script src="../javascript/products.js"></script>
 </div>
 <br>
-
+      <h2 class="related-category">Related Products</h2>
+      <br>
+    <div class="relatedproducts" id ="relation">
+    <div class="relatedproduct">
+     <a href="VATREX WB.html">
+    <img src="../images/frontwbshirt.webp" class="relatedt" alt="related product">
+    </a>
+    </div>
     <script>
 function openMenu(){
 

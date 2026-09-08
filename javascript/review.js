@@ -74,6 +74,9 @@ document.getElementById("customer-postal").textContent =
 document.getElementById("summary-product-price").textContent =
     `${data.product.price} EGP`;
 
+document.getElementById("product-size").textContent =
+`Size: ${data.size}`;
+
 document.getElementById("summary-quantity").textContent=
 
 `${quantity}`;
