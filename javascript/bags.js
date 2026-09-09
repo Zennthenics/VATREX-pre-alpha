@@ -1,54 +1,53 @@
-```javascript
-document.addEventListener("DOMContentLoaded", () => {
 
-    const buyButton = document.getElementById("buy-button");
+const slides = document.querySelectorAll(".slide");
 
-    if (!buyButton) return;
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
 
-    buyButton.addEventListener("click", () => {
+let current = 1;
 
-        const product = {
-            id: "raptor-black-bag",
-            name: "RAPTOR Black Heavy Bag",
-            price: 1350,
-            image: "../images/psraptorbag.webp",
-            quantity: 1
-        };
+next.onclick = function () {
 
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    slides[current].classList.remove("active");
 
-        // Check if the bag is already in the cart
-        const existingProduct = cart.find(item => item.id === product.id);
+    current++;
 
-        if (existingProduct) {
-            existingProduct.quantity += 1;
-        } else {
-            cart.push(product);
-        }
+    if (current >= slides.length) {
+        current = 0;
+    }
 
-        localStorage.setItem("cart", JSON.stringify(cart));
+    slides[current].classList.add("active");
+};
 
-        // Send the customer to the cart
-        window.location.href = "../cart.html";
-    });
+prev.onclick = function () {
+
+    slides[current].classList.remove("active");
+
+    current--;
+
+    if (current < 0) {
+        current = slides.length - 1;
+    }
+
+    slides[current].classList.add("active");
+};
+
+
+// BUY BUTTON
+
+const buyButton = document.getElementById("buy-button");
+
+buyButton.addEventListener("click", () => {
+
+    const productId = buyButton.dataset.product;
+
+    if (!productId) {
+        alert("Product ID is missing.");
+        return;
+    }
+
+    window.location.href =
+        `checkout.html?product=${productId}`;
 
 });
-```
 
-```html
-<button id="buy-button" class="buy" data-product="raptor-black-bag">
-    buy now
-</button>
-```
-
-
-
-```javascript
-{
-    id: "raptor-black-bag",
-    name: "RAPTOR Black Heavy Bag",
-    price: 1350,
-    image: "../images/psraptorbag.webp",
-    quantity: 1
-}
-```

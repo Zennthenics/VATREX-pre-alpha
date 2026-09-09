@@ -32,11 +32,44 @@ prev.onclick = function () {
 };
 
 
-// BUY BUTTON
+// SIZE SELECTION
 
+const sizeButtons = document.querySelectorAll(".size-button");
+const selectedSizeText = document.getElementById("selected-size");
 const buyButton = document.getElementById("buy-button");
 
+let selectedSize = null;
+
+sizeButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        sizeButtons.forEach(btn => {
+            btn.classList.remove("selected");
+        });
+
+        button.classList.add("selected");
+
+        selectedSize = button.dataset.size;
+
+        if (selectedSizeText) {
+            selectedSizeText.textContent =
+                `Selected size: ${selectedSize}`;
+        }
+
+    });
+
+});
+
+
+// BUY BUTTON
+
 buyButton.addEventListener("click", () => {
+
+    if (!selectedSize) {
+        alert("Please select a size.");
+        return;
+    }
 
     const productId = buyButton.dataset.product;
 
@@ -46,6 +79,6 @@ buyButton.addEventListener("click", () => {
     }
 
     window.location.href =
-        `checkout.html?product=${productId}`;
+        `checkout.html?product=${productId}&size=${selectedSize}`;
 
 });

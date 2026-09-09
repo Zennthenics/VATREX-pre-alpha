@@ -722,12 +722,11 @@ margin-top:1vw;
     width: 100%;
     display: flex;
 
-    gap: 0vw;
     padding: 5vw;
 
     margin-top: -1vw;
 
-    height: 100vw;
+    height: 99vw;
 
     overflow-x: auto;
     overflow-y: hidden;
@@ -815,7 +814,7 @@ margin-right:15vw;
         padding: 5.5vw;
         gap: 5vw;
         margin-top: 10vw;
-        height: 100vw;
+        height: 99vw;
         overflow: auto hidden;
         align-items: center;
         scroll-snap-type: x mandatory;
@@ -842,7 +841,7 @@ margin-right:15vw;
     border: 2px solid rgb(145 1 1);
     border-radius: 0px;
 
-    background: rgb(0 0 0);
+    background: rgb(24 24 24);
     }
 
     .pants1 img {
