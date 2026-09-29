@@ -807,10 +807,10 @@ margin-right:15vw;
 
     scroll-snap-align: center;
 
-    border: 2px solid rgb(145 1 1);
+    border: 3px solid rgb(137 0 0);
     border-radius: 0px;
 
-    background: rgb(24 24 24);
+    background: rgb(27 27 27);
 }
     .product1 img {
         width: 100%;
