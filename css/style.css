@@ -581,14 +581,13 @@ display:none;
     .mb-bags{
 
     width: 100%;
-    display: flex;
+    display:grid;
+    grid-template-columns:repeat(2,2fr);
 
     gap: 0vw;
-    padding: 5vw;
+    margin-left:1vw;
 
-    margin-top: -1vw;
-
-    height: 100vw;
+    height: 100%;
 
     overflow-x: auto;
     overflow-y: hidden;
@@ -739,168 +738,87 @@ margin-top:1vw;
 
     .time {
         color: rgb(255 255 255);
-        background: rgb(255 255 255 / 26%);
-        height: 6vw;
-        width: 35.22vw;
+        width:100%;
         text-align: center;
-        border-radius: 6px;
-        font-size: 4.9vw;
+        font-size: 3vw;        
+        gap:30px;
         margin-top:1vw;
-        margin-left:2vw;
         z-index: 3000;
     }
 
     .opening-mb {
         width: 100%;
-        height: 130vw;
+        height:130vw;
         display: block;
     }
 
 .mb-products {
     width: 100%;
-    display: flex;
-
-    padding: 5vw;
-
-    margin-top: -1vw;
-
-    height: 99vw;
-
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-
-    scrollbar-width: none;
+    display:grid;
+    grid-template-columns:repeat(2,47.6vw);
+    justify-content:center;
+    align-items:center;
+    gap:6vw;
+    height: 100%;
 }
 
 .mb-products::-webkit-scrollbar {
     display: none;
 }
-    .mb-products img {
-        scroll-snap-align: center;
-        border-width: meduim;
-        border-style: none;
-        border-color: currentcolor;
-        border-image: none;
-    }
 .description{
 color:#ffffff;
 text-align:center;
-font-size:4vw;
+font-size:3.2vw;
+padding:2vw;
 font-family:"monterrat",sans-serif;
 font-weight:600;
-letter-spacing:.5vw;
+letter-spacing:.4vw;
+    margin-top:3vw;
 white-space:normal;
 }
-
-.product1,
-.product2,
-.product3,
-.product4 {
-    flex: 0 0 62vw;
-    height: 100%;
-margin-left:15vw;
-margin-right:15vw;
-    box-sizing: border-box;
-
-    scroll-snap-align: center;
-
-    border: 3px solid rgb(137 0 0);
-    border-radius: 0px;
-
-    background: rgb(27 27 27);
+.product{
+width:99%;
+height:98%;
+background:#353535;
+justify-content:center;
+align-items:center;
 }
-    .product1 img {
+.product img {
         width: 100%;
         height: 60%;
         
-        margin-top:5vw;
         object-fit:contain;
         object-position:center;
     }
 
-    .product2 img {
-        width: 100%;
-        height: 60%;
-        margin-top:4vw;
-        object-fit:contain;
-        object-position:center;
-        
-    }
-
-    .product3 img {
-        width: 100%;
-        height: 68%;
-        margin-top: 1vw;
-        object-fit:contain;
-        object-position:center;
-    }
-
-    .product4 img {
-        width: 100%;
-        height: 70%;
-        margin-top: -1vw;
-        object-fit:contain;
-        object-position:center;
-    }
 
     .mb-bottoms {
-        width: auto;
-        display: flex;
-        padding: 5.5vw;
-        gap: 5vw;
-        margin-top: 10vw;
-        height: 99vw;
-        overflow: auto hidden;
-        align-items: center;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        white-space: nowrap;
-        scrollbar-width:none}
-    .mb-bottoms img {
-        scroll-snap-align: center;
-        border-width: medium;
-        border-style: none;
-        border-color: currentcolor;
-        border-image: none;
-    }
-
-    .pants1,.pants2 {
-    flex: 0 0 62vw;
-    height: 100%;
-    margin-left:15vw;
-    margin-right:15vw;
-    box-sizing: border-box;
-
-    scroll-snap-align: center;
-
-    border: 2px solid rgb(145 1 1);
-    border-radius: 0px;
-
-    background: rgb(24 24 24);
-    }
-
-    .pants1 img {
-        height:65%;
         width: 100%;
-        object-fit:contain;
-        object-position:center;
+        height:100%;
+        display:grid;
+        grid-template-columns:repeat(2,47.5vw);
+        gap: 6vw;}
+
+    .pants{
+    
+    height: 98%;
+
+    width:99%;
+    background:#000000;
     }
 
-    .pants2 img {
-        height:65%;
+    .pants img {
+        height:60%;
         width: 100%;
         object-fit:contain;
         object-position:center;
     }
     .price{
-    color:red;
-    font-weight:600;
-    font-size:4vw;
+    color:#c20b0e;
+    font-weight:900;
+    font-size:3vw;
     margin-top:2vw;
-    margin-left:3vw;
+    text-align:center;
     }
         .tiktok-container {
         flex-direction: column;

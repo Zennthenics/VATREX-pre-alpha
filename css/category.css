@@ -34,12 +34,13 @@ background-color:#ab0505;
 }
 
 #products {
-    display: flex;
-    gap: 5vw;
-    margin-top: 10vw;
+    display:grid;
+    grid-template-columns:repeat(3,20vw);
+    margin-top: 8vw;
     width: 100%;
-    height: 33vw;
-    justify-content: center;
+    height:100%;
+    justify-content:center;
+    align-items:center;
 }
 .tops-start {
     margin-top: 4.1vw;
@@ -51,9 +52,8 @@ display:none;
 }
 
 .tops-cat {
-    width: 103%;
+    width: 100%;
     height: 52vw;
-    margin-left: -1.4vw;
 }
 
 .pants-cat {
@@ -63,12 +63,13 @@ display:none;
 }
 
 .topcard {
-    width: 16vw;
+    width: 14vw;
     background: rgb(0 0 0);
     border: 2px solid #9e0000;
-    height: 24vw;
-    margin-top: -5vw;
+    height: 20vw;
     transition: 0.3s;
+    align-items:center;
+    justify-content:center;
 }
 
 
@@ -76,8 +77,8 @@ display:none;
 color:#9e0000;
 }
 #description{
-    font-size: 1.3vw;
-    margin-top: 1.1vw;
+    font-size: .9vw;
+    margin-top: vw;
     margin-left:0.1vw;
     font-family:"montserrat",sans-serif;
     font-weight:800;
@@ -90,9 +91,10 @@ color:#9e0000;
 
 .product-link1 img, .product-link2 img, .product-link3 img {
     border-radius: 20px;
-    width: 16vw;
-    height:14.8vw;
-    margin-top: 0.1vw;}
+    width:100%;
+    height:100%;
+    margin-top: 0.1vw;
+    object-fit:contain;}
 #cat-text {
     display: flex;
     width: 100%;
@@ -224,10 +226,9 @@ color:#9e0000;
     #products {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10vw;
-        margin-top: 16vw;
-        height:104%;
-        padding:5px;
+        gap: 6vw;
+        margin-top: 20vw;
+        height:100%;
     }
 #description{
     font-size: 3.2vw;
@@ -235,12 +236,10 @@ color:#9e0000;
 
 }
 .topcard {
-    width: 40vw;
+    width:100%;
     background: rgb(0 0 0);
-    border: 2px solid #cdcdcd;
     height: 63vw;
     border-radius: 4px;
-    margin-top: -5vw;
     transition: 0.3s;
 }
 
@@ -257,10 +256,11 @@ color:#9e0000;
     }
 .product-link1 img, .product-link2 img, .product-link3 img {
     border-radius: 20px;
-    padding: 1vw;
-    width: 38vw;
-    height:38vw;
+    width:100%;
+    height:100%;
     margin-top: 0.1vw;
+    object-fit:contain;
+    object-position:center;
 }
 
 
