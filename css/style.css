@@ -140,8 +140,8 @@ display:none;
 .top-card {
     width: 17%;
     height: 23.5vw;
-    background: #121212;
-    border: 2px solid rgb(132, 98, 0);
+    background: #272626;
+    border: 2px solid rgb(104, 18, 18);
     transition: transform 0.3s, background-color .3s ease;
     display: block;
 }
@@ -380,7 +380,7 @@ color:#8f0000;
     font-size: 1.2vw;
     font-family: Montserrat, sans-serif;
     transition: color 0.3s ease-in-out;
-    opacity: 0.7;
+    opacity:1;
 }
 
 .tops:hover, .pants:hover, .tiktok:hover {
@@ -401,12 +401,13 @@ margin-top:.3vw;
     align-items: center;
     width: 100%;
     height: 100%;
-    font-family:montserrat, sans-serif;
-    font-weight:400;
-    letter-spacing:0.2vw;
+    font-family:'montserrat', sans-serif;
+    font-weight:700;
+    letter-spacing:.1vw;
     white-space:normal;
     font-size:1.3vw;
     text-align:center;
+    color:#cccaca;
 }
 .product1 img,.product2 img,.product3 img,.product4 img{
 width:100%;
@@ -755,7 +756,7 @@ margin-top:1vw;
 .mb-products {
     width: 100%;
     display:grid;
-    grid-template-columns:repeat(2,47.6vw);
+    grid-template-columns:repeat(2,45.6vw);
     justify-content:center;
     align-items:center;
     gap:6vw;
@@ -796,15 +797,16 @@ align-items:center;
         width: 100%;
         height:100%;
         display:grid;
-        grid-template-columns:repeat(2,47.5vw);
-        gap: 6vw;}
-
+        grid-template-columns:repeat(2,45.5vw);
+        gap: 6vw;
+        justify-content:center;
+        align-items:center;}
     .pants{
     
     height: 98%;
 
     width:99%;
-    background:#000000;
+    background:#353535;
     }
 
     .pants img {
