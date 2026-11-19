@@ -444,7 +444,7 @@ width:100%;
 
 
 
-@media (max-width: 766px) {
+@media (max-width: 1024px) {
     body {
         overflow-x: hidden;
     }
@@ -650,6 +650,11 @@ border-radius:20px;
     
     justify-content: center;
     gap: 20px;
+}
+.size-button {
+width:20%;
+height:15vw;
+font-size:3vw;
 }
 
     .product-container {
